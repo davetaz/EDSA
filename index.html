@@ -1,0 +1,113 @@
+<html>
+<head>
+
+<script src="js/d3.v3.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/nv.d3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/nv.d3.css">
+</head>
+<body>
+<h2 width="50%;" style="float: left; display: inline;">EU Demand Analysis Dashbaord</h2>
+<nav style="float: right; padding-right: 20px; display: inline;">
+<p>Group by: Country <input type="radio" name="group" value="country" CHECKED>  Skill <input type="radio" name="group" value="skill"></p>
+<p>Include UK? <input type="checkbox" name="uk" value="uk" CHECKED></p>
+</nav>
+<div id="chart1">
+<svg style="height: 500px;">
+</svg>
+</div>
+<rawdata>
+</rawdata>
+<script>
+
+var uk = true;
+var group = "country";
+var chart;
+nv.addGraph(function() {
+    chart = nv.models.multiBarChart()
+      .transitionDuration(350)
+      .reduceXTicks(true)   //If 'false', every single x-axis tick label will be rendered.
+      .rotateLabels(0)      //Angle to rotate x-axis labels.
+      .showControls(true)   //Allow user to switch between 'Grouped' and 'Stacked' mode.
+      .groupSpacing(0.1)    //Distance between each group of bars.
+    ;
+ 
+//    chart.xAxis
+//        .tickFormat(d3.format(',f'));
+ 
+    chart.yAxis
+        .tickFormat(d3.format(',.1f'));
+  
+    return processData(chart,group,uk);
+});
+
+function updateChart(chart,data) {
+
+	d3.select('#chart1 svg')
+		.datum(data)
+		.call(chart);
+
+	nv.utils.windowResize(chart.update);
+
+} 
+
+function processData(chart,group,uk) {
+   d3.csv("data/jobs_short.csv", function(jobs) {
+	var data = [];
+	var out = {};
+	for (num in jobs) {
+		item = jobs[num];
+		subject = item.Skill;
+		if (group == "skill") {
+			if (uk == false && item.Country == "UK") {
+				continue;
+			} else {
+				subject = item.Country;
+			}
+		}
+		if (!out[subject]) {
+			out[subject] = [];
+		}
+		var x = out[subject].length;
+		var values = {};
+		//values["x"] = x;
+		if (uk == false && item.Country == "UK") {
+		} else {
+			if (group == "country") {
+				values["x"] = item.Country;
+				values["y"] = parseFloat(item.Jobs);
+			} else {
+				values["x"] = item.Skill;
+				values["y"] = parseFloat(item.Jobs);
+			}
+			out[subject].push(values);
+		}
+	}
+	for (topic in out) {
+		var obs = {};
+		obs["key"] = topic;
+		obs["values"] = out[topic];
+		data.push(obs);
+	}
+	updateChart(chart,data);
+  });
+}
+
+$( document ).ready(function() {
+  $("input[name=uk]").click(function() {
+	if (this.checked) {
+		uk = true;
+	} else {
+		uk = false;
+	}
+	processData(chart,group,uk);
+  });
+  $("input[name=group]:radio").change( function () {
+	group = $(this).val();
+	processData(chart,group,uk);
+  });
+});
+ 
+</script>
+</body>
+</html>
