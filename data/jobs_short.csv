@@ -1,67 +1,67 @@
-id,Country,Skill,Jobs,Percentage
-234,UK,Data Management,21,4.99
-234,UK,Data Quality Management,1,0.24
-234,UK,Data Governance,27,6.41
-234,UK,Data Analysis,14,3.33
-234,UK,Data Engineering,126,29.93
-234,UK,Data Visualization,3,0.71
-234,UK,Artificial Intelligence,30,7.13
-234,UK,Cloud Computing,89,21.14
-234,UK,Mathematics,14,3.33
-234,UK,Statistics,1,0.24
-234,UK,Business Intelligence,95,22.57
-231,Germany,Data Management,3,4.17
-231,Germany,Data Quality Management,0,0.00
-231,Germany,Data Governance,2,2.78
-231,Germany,Data Analysis,0,0.00
-231,Germany,Data Engineering,11,15.28
-231,Germany,Data Visualization,0,0.00
-231,Germany,Artificial Intelligence,3,4.17
-231,Germany,Cloud Computing,25,34.72
-231,Germany,Mathematics,11,15.28
-231,Germany,Statistics,1,1.39
-231,Germany,Business Intelligence,16,22.22
-233,France,Data Management,1,2.27
-233,France,Data Quality Management,0,0.00
-233,France,Data Governance,0,0.00
-233,France,Data Analysis,0,0.00
-233,France,Data Engineering,1,2.27
-233,France,Data Visualization,2,4.55
-233,France,Artificial Intelligence,5,11.36
-233,France,Cloud Computing,17,38.64
-233,France,Mathematics,1,2.27
-233,France,Statistics,0,0.00
-233,France,Business Intelligence,17,38.64
-221,Spain,Data Management,0,0.00
-221,Spain,Data Quality Management,0,0.00
-221,Spain,Data Governance,0,0.00
-221,Spain,Data Analysis,1,5.00
-221,Spain,Data Engineering,4,20.00
-221,Spain,Data Visualization,2,10.00
-221,Spain,Artificial Intelligence,0,0.00
-221,Spain,Cloud Computing,9,45.00
-221,Spain,Mathematics,0,0.00
-221,Spain,Statistics,0,0.00
-221,Spain,Business Intelligence,4,20.00
-220,Italy,Data Management,0,0.00
-220,Italy,Data Quality Management,0,0.00
-220,Italy,Data Governance,1,7.14
-220,Italy,Data Analysis,0,0.00
-220,Italy,Data Engineering,4,28.57
-220,Italy,Data Visualization,0,0.00
-220,Italy,Artificial Intelligence,0,0.00
-220,Italy,Cloud Computing,4,28.57
-220,Italy,Mathematics,0,0.00
-220,Italy,Statistics,0,0.00
-220,Italy,Business Intelligence,5,35.71
-228,Poland,Data Management,1,3.33
-228,Poland,Data Quality Management,0,0.00
-228,Poland,Data Governance,0,0.00
-228,Poland,Data Analysis,0,0.00
-228,Poland,Data Engineering,8,26.67
-228,Poland,Data Visualization,0,0.00
-228,Poland,Artificial Intelligence,11,36.67
-228,Poland,Cloud Computing,4,13.33
-228,Poland,Mathematics,0,0.00
-228,Poland,Statistics,0,0.00
-228,Poland,Business Intelligence,6,20.00
+id,Country,Skill,Jobs,Country_Percentage,Skills_Percentage
+234,UK,Data Management,21,4.99,80.77
+234,UK,Data Quality Management,1,0.24,100.00
+234,UK,Data Governance,27,6.41,90.00
+234,UK,Data Analysis,14,3.33,93.33
+234,UK,Data Engineering,126,29.93,81.82
+234,UK,Data Visualization,3,0.71,42.86
+234,UK,Artificial Intelligence,30,7.13,61.22
+234,UK,Cloud Computing,89,21.14,60.14
+234,UK,Mathematics,14,3.33,53.85
+234,UK,Statistics,1,0.24,50.00
+234,UK,Business Intelligence,95,22.57,66.43
+231,Germany,Data Management,3,4.17,11.54
+231,Germany,Data Quality Management,0,0,0.00
+231,Germany,Data Governance,2,2.78,6.67
+231,Germany,Data Analysis,0,0,0.00
+231,Germany,Data Engineering,11,15.28,7.14
+231,Germany,Data Visualization,0,0,0.00
+231,Germany,Artificial Intelligence,3,4.17,6.12
+231,Germany,Cloud Computing,25,34.72,16.89
+231,Germany,Mathematics,11,15.28,42.31
+231,Germany,Statistics,1,1.39,50.00
+231,Germany,Business Intelligence,16,22.22,11.19
+233,France,Data Management,1,2.27,3.85
+233,France,Data Quality Management,0,0,0.00
+233,France,Data Governance,0,0,0.00
+233,France,Data Analysis,0,0,0.00
+233,France,Data Engineering,1,2.27,0.65
+233,France,Data Visualization,2,4.55,28.57
+233,France,Artificial Intelligence,5,11.36,10.20
+233,France,Cloud Computing,17,38.64,11.49
+233,France,Mathematics,1,2.27,3.85
+233,France,Statistics,0,0,0.00
+233,France,Business Intelligence,17,38.64,11.89
+221,Spain,Data Management,0,0,0.00
+221,Spain,Data Quality Management,0,0,0.00
+221,Spain,Data Governance,0,0,0.00
+221,Spain,Data Analysis,1,5,6.67
+221,Spain,Data Engineering,4,20,2.60
+221,Spain,Data Visualization,2,10,28.57
+221,Spain,Artificial Intelligence,0,0,0.00
+221,Spain,Cloud Computing,9,45,6.08
+221,Spain,Mathematics,0,0,0.00
+221,Spain,Statistics,0,0,0.00
+221,Spain,Business Intelligence,4,20,2.80
+220,Italy,Data Management,0,0,0.00
+220,Italy,Data Quality Management,0,0,0.00
+220,Italy,Data Governance,1,7.14,3.33
+220,Italy,Data Analysis,0,0,0.00
+220,Italy,Data Engineering,4,28.57,2.60
+220,Italy,Data Visualization,0,0,0.00
+220,Italy,Artificial Intelligence,0,0,0.00
+220,Italy,Cloud Computing,4,28.57,2.70
+220,Italy,Mathematics,0,0,0.00
+220,Italy,Statistics,0,0,0.00
+220,Italy,Business Intelligence,5,35.71,3.50
+228,Poland,Data Management,1,3.33,3.85
+228,Poland,Data Quality Management,0,0,0.00
+228,Poland,Data Governance,0,0,0.00
+228,Poland,Data Analysis,0,0,0.00
+228,Poland,Data Engineering,8,26.67,5.19
+228,Poland,Data Visualization,0,0,0.00
+228,Poland,Artificial Intelligence,11,36.67,22.45
+228,Poland,Cloud Computing,4,13.33,2.70
+228,Poland,Mathematics,0,0,0.00
+228,Poland,Statistics,0,0,0.00
+228,Poland,Business Intelligence,6,20,4.20

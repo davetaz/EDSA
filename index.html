@@ -7,13 +7,19 @@
 <link rel="stylesheet" type="text/css" href="css/nv.d3.css">
 </head>
 <body>
-<header style="width: 50%; float: left; display: inline;">
+<header style="width: 80%; float: left; display: inline;">
+<div style="width: 40%; display: inline-block">
 <h2>EU Demand Analysis Dashbaord</h2>
 <p>Demand for data science skill in Europe. Data source <a href="http://linkedin.com" target="_blank">LinkedIn</a>.</p>
+</div>
+<div style="width: 50%; display: none; padding-left: 20px; text-align: center;" id="percent_warning">
+	<div style="color: red;">WARNING: You have selected to view data on a percentage scale. This does not mean that there is an even distibution of demand accross countries or skills.</div>
+</div>
 </header>
 <nav style="float: right; padding-right: 20px; display: inline;">
 <p>Group by: Country <input type="radio" name="group" value="country" CHECKED>  Skill <input type="radio" name="group" value="skill"></p>
 <p>Include UK? <input type="checkbox" name="uk" value="uk" CHECKED></p>
+<p>Percentage scale?<input type="checkbox" name="percentage" value="percentage"></p>
 </nav>
 <div id="chart1">
 <svg style="height: 500px;">
@@ -25,24 +31,27 @@
 <script>
 
 var uk = true;
+var as_percent = false;
 var group = "country";
 var chart;
 nv.addGraph(function() {
     chart = nv.models.multiBarChart()
       .transitionDuration(350)
       .reduceXTicks(true)   //If 'false', every single x-axis tick label will be rendered.
-      .rotateLabels(0)      //Angle to rotate x-axis labels.
       .showControls(true)   //Allow user to switch between 'Grouped' and 'Stacked' mode.
       .groupSpacing(0.1)    //Distance between each group of bars.
-    ;
+      .staggerLabels(true)
+      .tooltip(function(key, x, y, e, graph) { return "<h3>" + key + "</h3><p>" + x + " demand: <b>" + parseFloat(y).toFixed(0) + "</b></p>";})
+   ;
  
 //    chart.xAxis
 //        .tickFormat(d3.format(',f'));
  
     chart.yAxis
-        .tickFormat(d3.format(',.1f'));
+        .axisLabel('Number of Jobs')
+        .tickFormat(d3.format(',.0f'));
   
-    return processData(chart,group,uk);
+    return processData(chart,group,uk,as_percent);
 });
 
 function updateChart(chart,data) {
@@ -55,7 +64,7 @@ function updateChart(chart,data) {
 
 } 
 
-function processData(chart,group,uk) {
+function processData(chart,group,uk,percentage) {
    d3.csv("data/jobs_short.csv", function(jobs) {
 	var data = [];
 	var out = {};
@@ -80,9 +89,15 @@ function processData(chart,group,uk) {
 			if (group == "country") {
 				values["x"] = item.Country;
 				values["y"] = parseFloat(item.Jobs);
+				if (percentage) {
+					values["y"] = parseFloat(item.Country_Percentage);
+				}
 			} else {
 				values["x"] = item.Skill;
 				values["y"] = parseFloat(item.Jobs);
+				if (percentage) {
+					values["y"] = parseFloat(item.Skills_Percentage);
+				}
 			}
 			out[subject].push(values);
 		}
@@ -93,6 +108,7 @@ function processData(chart,group,uk) {
 		obs["values"] = out[topic];
 		data.push(obs);
 	}
+	console.log(data);
 	updateChart(chart,data);
   });
 }
@@ -104,11 +120,21 @@ $( document ).ready(function() {
 	} else {
 		uk = false;
 	}
-	processData(chart,group,uk);
+	processData(chart,group,uk,as_percent);
+  });
+  $("input[name=percentage]").click(function() {
+	if (this.checked) {
+		as_percent = true;
+		document.getElementById("percent_warning").style.display="inline-block";
+	} else {
+		as_percent = false;
+		document.getElementById("percent_warning").style.display="none";
+	}
+	processData(chart,group,uk,as_percent);
   });
   $("input[name=group]:radio").change( function () {
 	group = $(this).val();
-	processData(chart,group,uk);
+	processData(chart,group,uk,as_percent);
   });
 });
  
