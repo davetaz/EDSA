@@ -23,6 +23,9 @@ footer {
 	display: inline;
 	position: absolute;
 	right: 20px;
+	line-height: 1.4em;
+	text-align: right;
+	padding-top: 0.5em;
 }
 #credit a {
 	color: #eee;
