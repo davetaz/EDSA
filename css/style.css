@@ -1,0 +1,47 @@
+body {
+  background-color: #404040;
+  color: #eee;
+  font-family: 'FreeUniversal', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+footer {
+	width: 100%;
+}
+#credit {
+	font-size: 10px;
+	display: inline;
+	position: absolute;
+	right: 20px;
+}
+#credit a {
+	color: #eee;
+	text-decoration: underline;
+}
+#radar {
+	position: relative;
+	left: 0px;
+	width: 50%;
+	display: inline;
+}
+#legend {
+	position: absolute;
+	display: inline;
+	padding-top: 2em;
+}
+#help {
+	display: inline;
+}
+#code {
+	display: inline;
+}
