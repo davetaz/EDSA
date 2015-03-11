@@ -9,19 +9,18 @@
 //http://nbremer.blogspot.nl/2013/09/making-d3-radar-chart-look-bit-better.html
 
 var RadarChart = {
-  draw: function(id, d, end){
-  var print = false;
+  draw: function(id, d, end, print){
   var colors = ["#1f77b4","#9467bd","#2ca02c"];
   for (i=0;i<end;i++) {
   	colors.splice(0,1);
   }
   var cfg = {
-	 radius: 5,
+	 radius: 4,
 	 w: 280,
 	 h: 280,
 	 factor: 1,
 	 factorLegend: .85,
-	 levels: 5,
+	 levels: 4,
 	 maxValue: 1,
 	 radians: 2 * Math.PI,
 	 opacityArea: 0.5,
@@ -46,7 +45,6 @@ var RadarChart = {
 	var allAxis = (d[0].map(function(i, j){return i.axis}));
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
-	var Format = d3.format('%');
 	d3.select(id).select("svg").remove();
 	
 	var g = d3.select(id)
@@ -92,7 +90,7 @@ var RadarChart = {
 	   .style("color", function(j, i){if (print) {return "black";} else {return "white";}})
 	   .attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (cfg.h/2-levelFactor) + ")")
 	   .style("fill", function(j, i){if (print) {return "black";} else {return "white";}})
-	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
+	   .text((j+1)*cfg.maxValue);
 	}
 	
 	series = 0;
@@ -196,7 +194,7 @@ var RadarChart = {
 					tooltip
 						.attr('x', newX)
 						.attr('y', newY)
-						.text(Format(d.value))
+						.text(d.value*4)
 						.transition(200)
 						.style('opacity', 1);
 						

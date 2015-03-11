@@ -4,6 +4,7 @@ var width  = 850,
 
 var color = d3.scale.category10();
 var data = {};
+var print = false;
 
 $.ajaxSetup ({
     // Disable caching of AJAX responses
@@ -11,6 +12,29 @@ $.ajaxSetup ({
 });
 
 $(document).ready(function() {
+	queue()
+	    .defer(d3.csv, "data/test-data.csv")
+	    .await(ready);
+});
+
+$(document).keypress(function(e) {
+	if (e.which == 112 && print) {
+		print = false;
+		$("body").css('background-color','#404040');
+		$("body").css('color','#eee');
+		$("#credit > a").css('color','#eee');
+		$(".logoimg").attr("src","img/ODB_white.png");
+		$("#githubimg").attr("src","img/github-128_white.png");
+		$("#helpimg").attr("src","img/help_white.png");
+	} else if (e.which == 112 && !print) {
+		print = true;
+		$("body").css('background-color','white');
+		$("body").css('color','#111');
+		$("#credit > a").css('color','#111');
+		$(".logoimg").attr("src","img/ODB_black.png");
+		$("#githubimg").attr("src","img/github-128_black.png");
+		$("#helpimg").attr("src","img/help_black.png");
+	}
 	queue()
 	    .defer(d3.csv, "data/test-data.csv")
 	    .await(ready);
@@ -40,6 +64,7 @@ function ready(error, d) {
 var legendVals = {};
 
 function drawKey(d) {
+	$('#legend').html("");
 	for (i=0;i<d.length;i++) {
 		text = d[i]["Type"];
 		enabled = true;
@@ -79,5 +104,5 @@ function drawStats(d) {
 			top.push(data);
 		}
 	}
-	RadarChart.draw("#radar", top, 0);	
+	RadarChart.draw("#radar", top, 0, print);	
 }
