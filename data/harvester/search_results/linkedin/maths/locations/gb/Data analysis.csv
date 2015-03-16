@@ -1,3 +1,4 @@
-Date,London,Cambridge,Manchester,Reading,Birmingham,Bristol,Slough,Guildford,"Kingston upon Thames",Glasgow,Twickenham,Edinburgh,Oxford,Leeds,"See More"
-2015-03-11,506,57,34,30,28,24,24,21,18,19,18,16,14,15,14
-2015-03-12,549,60,34,32,29,28,22,21,18,17,17,16,15,14,14
+Date,London,Cambridge,Manchester,Reading,Guildford,Birmingham,Bristol,Slough,Glasgow,Twickenham,"Kingston upon Thames",Portsmouth,Swindon,Edinburgh,"See More",Oxford,Leeds
+2015-03-11,506,57,34,30,21,28,24,24,19,18,18,,,16,14,14,15
+2015-03-12,549,60,34,32,21,29,28,22,17,17,18,,,16,14,15,14
+2015-03-16,553,56,38,36,33,30,27,23,21,19,18,18,17,15,15,,

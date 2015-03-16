@@ -1,3 +1,4 @@
-Date,London,Manchester,Edinburgh,Birmingham,Reading,Leeds,Cambridge,Slough,Sheffield,Guildford,Gloucester,Oxford,Bristol,Glasgow,"See More"
-2015-03-11,439,77,41,42,34,32,31,24,23,22,20,18,17,17,17
-2015-03-12,444,77,45,42,34,33,30,23,22,21,20,18,17,17,17
+Date,London,Manchester,Edinburgh,Cambridge,Redhill,Birmingham,Leeds,Reading,Guildford,Slough,Sheffield,Oxford,Bristol,Exeter,"See More",Gloucester,Glasgow
+2015-03-11,439,77,41,31,,42,32,34,22,24,23,18,17,,17,20,17
+2015-03-12,444,77,45,30,,42,33,34,21,23,22,18,17,,17,20,17
+2015-03-16,464,88,45,39,39,38,37,34,30,25,22,20,19,19,19,,
