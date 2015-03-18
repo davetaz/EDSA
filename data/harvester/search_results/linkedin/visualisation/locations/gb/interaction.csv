@@ -1,4 +1,5 @@
-Date,London,Manchester,Reading,Cambridge,Belfast,Edinburgh,Slough,Guildford,Bristol,Birmingham,Leeds,Twickenham,Southall,Exeter,"See More",Stevenage,Warrington,Liverpool,Chester
-2015-03-11,1100,134,102,100,72,64,50,53,52,74,,,,24,24,,62,47,33
-2015-03-12,914,77,79,65,63,52,34,33,37,51,,29,32,29,27,27,,,
-2015-03-16,939,86,83,74,69,56,44,43,39,33,32,32,32,29,29,,,,
+Date,London,Manchester,Reading,Cambridge,Belfast,Edinburgh,Warrington,Bristol,Guildford,Birmingham,Liverpool,Slough,Leeds,Twickenham,"See More",Southall,Exeter,Stevenage,Chester
+2015-03-11,1100,134,102,100,72,64,62,52,53,74,47,50,,,24,,24,,33
+2015-03-12,914,77,79,65,63,52,,37,33,51,,34,,29,27,32,29,27,
+2015-03-16,939,86,83,74,69,56,,39,43,33,,44,32,32,29,32,29,,
+2015-03-18,970,108,86,77,76,57,57,56,55,53,44,42,38,35,35,,,,

@@ -1,4 +1,5 @@
-Date,London,Slough,Southall,Guildford,Edinburgh,Manchester,Reading,Cambridge,Bristol,Oxford,Nottingham,Twickenham,Birmingham,Brighton,"See More",Glasgow
-2015-03-11,390,49,23,25,15,14,27,24,24,15,16,14,15,,14,14
-2015-03-12,409,36,24,27,23,19,26,23,24,15,15,14,16,,14,14
-2015-03-16,456,37,29,28,26,26,26,24,23,18,17,17,14,14,14,
+Date,London,Slough,Manchester,Guildford,Southall,Edinburgh,Cambridge,Bristol,Reading,Oxford,Twickenham,Nottingham,Birmingham,Brighton,"See More",Glasgow
+2015-03-11,390,49,14,25,23,15,24,24,27,15,14,16,15,,14,14
+2015-03-12,409,36,19,27,24,23,23,24,26,15,14,15,16,,14,14
+2015-03-16,456,37,26,28,29,26,24,23,26,18,17,17,14,14,14,
+2015-03-18,464,37,29,27,27,26,25,23,23,19,19,18,15,15,15,

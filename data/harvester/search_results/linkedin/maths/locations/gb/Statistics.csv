@@ -1,4 +1,5 @@
-Date,London,Glasgow,Cambridge,Reading,Edinburgh,Manchester,Slough,Twickenham,Birmingham,Guildford,Bristol,"Hemel Hempstead",Leeds,Oxford,"See More",Belfast,Sheffield,"Milton Keynes",Coventry
-2015-03-11,870,84,59,60,54,56,46,45,47,27,27,,33,30,27,,,,30
-2015-03-12,448,,25,36,25,33,25,23,17,13,14,,,20,9,16,15,9,
-2015-03-16,971,81,66,63,62,60,52,51,49,45,35,32,32,30,30,,,,
+Date,London,Glasgow,Cambridge,Reading,Manchester,Edinburgh,Birmingham,Twickenham,Slough,Guildford,"Hemel Hempstead",Bristol,Leeds,Coventry,"See More",Oxford,Belfast,Sheffield,"Milton Keynes"
+2015-03-11,870,84,59,60,56,54,47,45,46,27,,27,33,30,27,30,,,
+2015-03-12,448,,25,36,33,25,17,23,25,13,,14,,,9,20,16,15,9
+2015-03-16,971,81,66,63,60,62,49,51,52,45,32,35,32,,30,30,,,
+2015-03-18,987,83,67,63,60,58,53,52,50,47,34,33,33,29,29,,,,

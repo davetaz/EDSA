@@ -1,4 +1,5 @@
-Date,Telefonica,VMware,VCE,"Provide Group Europe",FICO,Cloudreach,"Amazon UK","Alternative Networks plc",Salesforce,"techfolk Ltd","Skyscape Cloud Services","Rackspace, the #1 managed cloud company","SHI International Corp.",Dell,Amazon,"See More","JM Digital",IBM,"Tata Communications"
-2015-03-11,144,33,33,24,24,24,21,13,11,,16,17,9,9,,9,14,,11
-2015-03-12,157,35,31,27,22,24,21,13,10,,13,17,,9,,9,14,10,10
-2015-03-16,152,33,31,28,24,24,19,16,12,12,11,10,10,9,9,9,,,
+Date,Telefonica,VMware,"Provide Group Europe",VCE,FICO,Cloudreach,"Amazon UK","Alternative Networks plc","techfolk Ltd",Salesforce,"SHI International Corp.",Amazon,"Tata Communications","Rackspace, the #1 managed cloud company",Dell,"See More","Skyscape Cloud Services","JM Digital",IBM
+2015-03-11,144,33,24,33,24,24,21,13,,11,9,,11,17,9,9,16,14,
+2015-03-12,157,35,27,31,22,24,21,13,,10,,,10,17,9,9,13,14,10
+2015-03-16,152,33,28,31,24,24,19,16,12,12,10,9,,10,9,9,11,,
+2015-03-18,151,33,33,29,25,24,19,17,16,12,12,10,10,10,9,9,,,

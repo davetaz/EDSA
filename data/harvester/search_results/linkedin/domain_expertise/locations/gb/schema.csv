@@ -1,4 +1,5 @@
-Date,London,Birmingham,Manchester,Leeds,Reading,Glasgow,Bristol,Coventry,Oxford,Edinburgh,Cambridge,Aberdeen,Guildford,Southampton,"See More",Nottingham,Sheffield
-2015-03-11,1934,338,329,247,286,248,242,229,199,196,183,173,164,,164,,164
-2015-03-12,1965,332,325,265,306,240,247,219,213,199,190,182,,169,169,173,
-2015-03-16,2001,377,331,293,288,256,254,249,235,212,208,197,182,181,181,,
+Date,London,Birmingham,Manchester,Leeds,Reading,Bristol,Glasgow,Coventry,Oxford,Edinburgh,Cambridge,Aberdeen,Lancaster,Southampton,"See More",Guildford,Nottingham,Sheffield
+2015-03-11,1934,338,329,247,286,242,248,229,199,196,183,173,,,164,164,,164
+2015-03-12,1965,332,325,265,306,247,240,219,213,199,190,182,,169,169,,173,
+2015-03-16,2001,377,331,293,288,254,256,249,235,212,208,197,,181,181,182,,
+2015-03-18,2020,368,341,307,289,253,249,237,232,213,203,201,189,188,188,,,
