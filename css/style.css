@@ -17,6 +17,8 @@ h2 {
 }
 footer {
 	width: 100%;
+	position: absolute;
+	top: 500px;
 }
 #credit {
 	font-size: 10px;
@@ -31,6 +33,12 @@ footer {
 	color: #eee;
 	text-decoration: underline;
 }
+#map {
+	position: absolute;
+	left: 480px;
+	display: inline;
+	top: 70px;
+}
 #radar {
 	position: relative;
 	left: 0px;
@@ -41,6 +49,8 @@ footer {
 	position: absolute;
 	display: inline;
 	padding-top: 2em;
+	left: 420px;
+	top: 70px;
 }
 #help {
 	display: inline;

@@ -5,6 +5,7 @@ var width  = 850,
 var color = d3.scale.category10();
 var data = {};
 var print = false;
+var current = {};
 
 $.ajaxSetup ({
     // Disable caching of AJAX responses
@@ -13,8 +14,10 @@ $.ajaxSetup ({
 
 $(document).ready(function() {
 	queue()
+	    .defer(d3.json, "data/world-50m.json") 
+            .defer(d3.csv, "data/eu-country-names.csv") 
 	    .defer(d3.csv, "data/test-data.csv")
-	    .await(ready);
+	    .await(drawMap);
 });
 
 $(document).keypress(function(e) {
@@ -35,43 +38,24 @@ $(document).keypress(function(e) {
 		$("#githubimg").attr("src","img/github-128_black.png");
 		$("#helpimg").attr("src","img/help_black.png");
 	}
-	queue()
-	    .defer(d3.csv, "data/test-data.csv")
-	    .await(ready);
 });
-
-function getColor(d,i){
-	var overlayHueMin = 238,
-	overlayHueMax = 240,
-	overlaySatMin = 1,
-	overlaySatMax = 1,
-	overlayValMin = 0.95,
-	overlayValMax = 0.8;
-	
-	var p = d.odbdata[year]["ODB-Scaled"] / 40;
-	var h = overlayHueMin + p * (overlayHueMax - overlayHueMin);
-	var s = overlaySatMin + p * (overlaySatMax - overlaySatMin);
-	var v = overlayValMin + p * (overlayValMax - overlayValMin);
-	return d3.hsl(h,s,v);
-}
-
-function ready(error, d) {
-	data = d;
-	drawKey(d);
-	drawStats(d);
-};
-
 var legendVals = {};
 
 function drawKey(d) {
 	$('#legend').html("");
-	for (i=0;i<d.length;i++) {
-		text = d[i]["Type"];
-		enabled = true;
-		legendVals[text] = enabled;
+	keys = Object.keys(d);
+	if (legendVals["Capability"] === undefined) {
+		for (i=0;i<keys.length;i++) {
+			text = keys[i];
+			legendVals[text] = true;
+		}
 	}
 	for (item in legendVals) {
-		var output = '<input type="checkbox" checked="true" id="' + item + '" onClick="toggle(\''+item+'\');"/>' + item + '<br/>';
+		if (legendVals[item]) {
+			var output = '<input type="checkbox" checked="'+legendVals[item]+'" id="' + item + '" onClick="toggle(\''+item+'\');"/>' + item + '<br/>';
+		} else {
+			var output = '<input type="checkbox" id="' + item + '" onClick="toggle(\''+item+'\');"/>' + item + '<br/>';
+		}
 		$('#legend').append(output);
 	}
 }
@@ -82,27 +66,33 @@ function toggle(id) {
 	} else {
 		legendVals[id] = true;
 	}
-	drawStats(data);
+	drawStatsObject(current);
 }
 
-function drawStats(d) {
+function drawStatsObject(d) {
+	current = d;
+	drawKey(d);
 	var top = [];
-	var keyit = d[0];
-	var keys = Object.keys(keyit).reverse();
-	for (i=0;i<d.length;i++) {
-		var data = [];
-		for (j=0;j<keys.length;j++){
-			var obj = {};
-			key = keys[j].replace(/_/g," ");
-			if (key != "Type" && legendVals[d[i]["Type"]]) {
-				obj.axis = key;
-				obj.value = d[i][keys[j]] / 4;
-				data.push(obj);
-			}
-		}
-		if (legendVals[d[i]["Type"]]) {	
-			top.push(data);
+	var keys = Object.keys(d["Capability"]).reverse();
+	if (legendVals["Capability"]) {
+		top.push(getValues(d["Capability"],keys));
+	}
+	if (legendVals["Capacity"]) { 
+		top.push(getValues(d["Capacity"],keys));
+	}
+	RadarChart.draw("#radar", top, 0, print);
+}
+function getValues(d,keys) {
+	var data = [];
+	var ignore = ["Country","Type","ISO2","Rank Scaled"];
+	for (j=0;j<keys.length;j++){
+		var obj = {};
+		key = keys[j].replace(/_/g," ");
+		if (ignore.indexOf(key) < 0) {
+			obj.axis = key;
+			obj.value = d[keys[j]] / 4;
+			data.push(obj);
 		}
 	}
-	RadarChart.draw("#radar", top, 0, print);	
+	return data;
 }
