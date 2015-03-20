@@ -16,18 +16,24 @@ h2 {
   padding-bottom: 0.5em;
 }
 footer {
-	width: 100%;
+	width: 1024px;
 	position: absolute;
-	top: 500px;
+	top: 700px;
 }
 #credit {
 	font-size: 10px;
 	display: inline;
 	position: absolute;
-	right: 20px;
+	right: 90px;
 	line-height: 1.4em;
 	text-align: right;
 	padding-top: 0.5em;
+}
+#odi-logo {
+	position: absolute;
+	right: 20px;
+	top: 4px;
+	height: 26px;
 }
 #credit a {
 	color: #eee;
@@ -57,4 +63,32 @@ footer {
 }
 #code {
 	display: inline;
+}
+#skillsTitle {
+	position: absolute;
+	top: 470px;
+}
+#skillsChart {
+	position: absolute;
+	top: 500px;
+	width: 1024px;
+	text-align: center;
+}
+#noSkillData {
+	padding-top: 1em;
+	font-size: 1.4em;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 10px;
+}
+.skill text {
+  text-anchor: end;
+  font-size: 10px;
 }

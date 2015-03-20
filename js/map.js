@@ -57,6 +57,7 @@ function drawMap(error, world, names, data) {
       .on("click", function(d,i) {
         document.getElementById("country").innerHTML = d.name;
         drawStatsObject(d.data);
+	skillsChart(d.ISO2,"general");
         zoomTo(d);
       })
       .on("mouseout",  function(d,i) {
@@ -72,7 +73,7 @@ function getColor(d,i){
 //	console.log("IN HERE");
 	var overlayHueMin = 0.52,
 	overlayHueMax = 0.53,
-	overlaySatMin = 1,
+	overlaySatMin = 0.8,
 	overlaySatMax = 1,
 	overlayValMin = 0.22,
 	overlayValMax = 0.23;

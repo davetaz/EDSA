@@ -9,8 +9,8 @@
 //http://nbremer.blogspot.nl/2013/09/making-d3-radar-chart-look-bit-better.html
 
 var RadarChart = {
-  draw: function(id, d, end, print){
-  var colors = ["#1f77b4","#9467bd","#2ca02c"];
+  draw: function(id, d, iso2, end, print){
+  var colors = ["#730100","#506c6f","#1f77b4","#9467bd","#2ca02c"];
   for (i=0;i<end;i++) {
   	colors.splice(0,1);
   }
@@ -114,8 +114,11 @@ var RadarChart = {
 		.attr("class", "legend")
 		.text(function(d){return d})
 		.style("font-family", "sans-serif")
+		.on("click",function(d) { skillsChart(iso2,d); })
 	   	.style("fill", function(j, i){if (print) {return "black";} else {return "white";}})
 		.style("font-size", "11px")
+	 	.style("text-decoration","underline")
+		.style("cursor","pointer")
 		.attr("text-anchor", "middle")
 		.attr("dy", "1.5em")
 		.attr("transform", function(d, i){return "translate(0, -10)"})

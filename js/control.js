@@ -72,6 +72,7 @@ function toggle(id) {
 function drawStatsObject(d) {
 	current = d;
 	drawKey(d);
+	var iso2 = d["Capability"]["ISO2"];
 	var top = [];
 	var keys = Object.keys(d["Capability"]).reverse();
 	if (legendVals["Capability"]) {
@@ -80,7 +81,7 @@ function drawStatsObject(d) {
 	if (legendVals["Capacity"]) { 
 		top.push(getValues(d["Capacity"],keys));
 	}
-	RadarChart.draw("#radar", top, 0, print);
+	RadarChart.draw("#radar", top, iso2, 0, print);
 }
 function getValues(d,keys) {
 	var data = [];

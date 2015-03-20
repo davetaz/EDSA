@@ -8,12 +8,14 @@
 </head>
 <body>
   <div id="container">
-    <h1>Capability vs Capacity in Data Science</h1>
+    <h1>EDSA demand analysis dashboard</h1>
     <div id="main">
 	<h2 id="country">Select a country</h2>
 	<div id="radar"></div>
     	<div id="legend"></div>
         <div id="map"></div>
+	<h3 id="skillsTitle">Jobs Market (LinkedIn)</h3>
+	<div id="skillsChart"></div>
     </div>
     <footer>
     <div id="code" title="Get the code">
@@ -23,10 +25,11 @@
 	<img id="helpimg" src="img/help_white.png" width="30px" alt="Help"/>
     </div>
     <div id="credit">
-	License: <a href="http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB" target="_blank" rel="license">CC-BY-SA</a> | Visualisation by <a target="_blank" href="http://theodi.org/team/david-tarrant">David Tarrant</a> | <a target="_blank" href="data/test-data.csv">Get the data</a>
+	License: <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license">CC-BY-SA</a> | Visualisation by <a target="_blank" href="http://theodi.org/team/david-tarrant">David Tarrant</a> | <a target="_blank" href="data/test-data.csv">Get the data</a>
     <br/>
        This project received funding from the European Unions's Horizon 2020 research and innovation programme under grant agreement No 643937
     </div>
+    <img id="odi-logo" src="img/ODI-White.png" alt="The Open Data Institute"></img>
     </footer>
   </div>
   <script src="js/jquery-1.10.2.min.js"></script>
@@ -34,6 +37,7 @@
   <script src="js/queue.v1.min.js"></script>
   <script src="js/topojson.js"></script>
   <script src="js/radarChart.js"></script>
+  <script src="js/skillsChart.js"></script>
   <script src="js/map.js"></script>
   <script src="js/control.js"></script>
 </body>

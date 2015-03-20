@@ -63,7 +63,7 @@ function writeAdditionalData($output_prefix,$language,$term,$type,$data) {
 	$output_dir = $output_prefix . "/" . $type . "/" . $language;
 	@mkdir($output_dir,0755,true);
 	$file = $output_dir . "/" . $term . ".csv";
-	$input_titles[] = "Date";	
+	$input_titles[] = "date";	
 	foreach ($data as $item => $stuff) {
 		$input_titles[] = $item;
 	}
@@ -89,7 +89,7 @@ function writeAdditionalData($output_prefix,$language,$term,$type,$data) {
 		$linenum = 0;
 	}
 	$date = date("Y-m-d");
-	$output[$linenum]["Date"] = $date;
+	$output[$linenum]["date"] = $date;
 	for($i=1;$i<count($titles);$i++) {
 		$count = $data[$titles[$i]];
 		$count = str_replace(",","",$count);
@@ -110,7 +110,7 @@ function writeAdditionalData($output_prefix,$language,$term,$type,$data) {
 
 function writeLanguageCounts($output_prefix,$language,$data) {
 	$file = $output_prefix . "/" . $language . ".csv";
-	$input_titles[] = "Date";	
+	$input_titles[] = "date";	
 	foreach ($data as $item => $stuff) {
 		$input_titles[] = $item;
 	}
@@ -136,7 +136,7 @@ function writeLanguageCounts($output_prefix,$language,$data) {
 		$linenum = 0;
 	}
 	$date = date("Y-m-d");
-	$output[$linenum]["Date"] = $date;
+	$output[$linenum]["date"] = $date;
 	for($i=1;$i<count($titles);$i++) {
 		$count = $data[$titles[$i]]["count"];
 		$count = str_replace(",","",$count);

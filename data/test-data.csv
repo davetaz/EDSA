@@ -1,5 +1,5 @@
 Country,ISO2,Type,Rank_Scaled,Machine_learning,Domain_expertise,Data_engineering,Advanced_computing,Visualisation,Hacker_mindset,Scientific_method,Math_and_statistics
 United Kingdom,GB,Capability,100,3,3,3,3,2,1,4,3
 United Kingdom,GB,Capacity,100,2,3,3,2,2,1,2,3
-Norway,NO,Capability,80,2,1,2,3,4,2,2,3
-Norway,NO,Capacity,80,1,1,1,3,3,0,1,2
+Norway,NO,Capability,10,2,1,2,3,4,2,2,3
+Norway,NO,Capacity,10,1,1,1,3,3,0,1,2
