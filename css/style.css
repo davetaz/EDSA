@@ -20,6 +20,23 @@ footer {
 	position: absolute;
 	top: 700px;
 }
+#edsa-bit {
+	position: absolute;
+	left: 870px;
+	top: 0px;
+}
+#edsa-logo {
+	height: 64px;
+}
+#edsa-title {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	position: relative;
+	top: -6px;
+}
 #credit {
 	font-size: 10px;
 	display: inline;
