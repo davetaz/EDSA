@@ -2,9 +2,10 @@
 var width  = 560,
     height = 400;
 
-var projection = d3.geo.mercator()
-                .translate([250, 650])
-                .scale(400);
+var projection = d3.geo.azimuthalEqualArea()
+//var projection = d3.geo.mercator()
+                .translate([150, 850])
+                .scale(750);
 
 var path = d3.geo.path()
     .projection(projection);
