@@ -105,12 +105,14 @@ function skillsChart(iso2,type) {
 		svg.append("g")
 			.attr("class", "x axis")
 			.attr("transform", "translate(0," + height + ")")
-			.style("fill","white")
+			.style("fill", function(j, i){if (print) {return "black";} else {return "white";}})
+//			.style("fill","white")
 			.call(xAxis);
 
 		svg.append("g")
 			.attr("class", "y axis")
-			.style("fill","white")
+			.style("fill", function(j, i){if (print) {return "black";} else {return "white";}})
+//			.style("fill","white")
 			.call(yAxis);
 	});
 }

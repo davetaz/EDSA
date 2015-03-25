@@ -29,6 +29,7 @@ $(document).keypress(function(e) {
 		$(".logoimg").attr("src","img/ODB_white.png");
 		$("#githubimg").attr("src","img/github-128_white.png");
 		$("#helpimg").attr("src","img/help_white.png");
+		drawStatsObject(current);
 	} else if (e.which == 112 && !print) {
 		print = true;
 		$("body").css('background-color','white');
@@ -37,6 +38,7 @@ $(document).keypress(function(e) {
 		$(".logoimg").attr("src","img/ODB_black.png");
 		$("#githubimg").attr("src","img/github-128_black.png");
 		$("#helpimg").attr("src","img/help_black.png");
+		drawStatsObject(current);
 	}
 });
 var legendVals = {};

@@ -17,7 +17,7 @@ var svg = d3.select("#map").append("svg")
     .on("zoom", redraw))
     .append("g");
 
-function drawMap(error, world, names, data) {
+function drawMap(error, world, names, data, print) {
     var countries = topojson.object(world, world.objects.countries).geometries,
         neighbors = topojson.neighbors(world, countries),
         i = -1,
