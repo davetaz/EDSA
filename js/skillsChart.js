@@ -10,6 +10,7 @@ function getSkillColor(name) {
 }
 
 function skillsChart(iso2,type) {
+	$('#skillsTitle').html(type + " demand (LinkedIn)");
 	var prefix = "data/harvester/search_results/linkedin/";
 	type = type.replace(/ /g,"_").toLowerCase();
 	iso2 = iso2.toLowerCase();
