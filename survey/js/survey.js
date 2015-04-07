@@ -13,7 +13,42 @@ function addListeners() {
 			processSector($(this).attr('id'));
 		});
 	});
+	$('#addnotID').click(function() {
+		addElement($(this).attr('id'));
+	});
+	$('#addniceID').click(function() {
+		addElement($(this).attr('id'));
+	});
+	$('#addessentialID').click(function() {
+		addElement($(this).attr('id'));
+	});
 }
+
+function mremove(id) {
+	console.log(id);
+	$("#"+id).fadeOut(function() { 
+		$("#"+id).remove();
+	});
+	
+}
+
+function addElement(id) {
+	id = id.replace("add","");
+	Ply.dialog('prompt', {
+		title: 'Add',
+		form: { name: 'Name' }
+	}).done(function (ui) {
+		var el = document.createElement('div');
+		var outid = ui.data.name;
+		outid.replace(" ","_");
+		el.innerHTML = ui.data.name + '<i class="js-remove" onClick="mremove(\''+outid+'\');">✖</i>';
+		el.setAttribute("id",outid);
+		console.log(id);
+		console.log(el);
+		document.getElementById(id).appendChild(el);
+	});
+}
+
 
 function processSector(sector) {
 	$('div','#sectorsel').each(function(){
