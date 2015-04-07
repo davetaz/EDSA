@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<title>Importance of data science areas</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<link href="css/ply.css" rel="stylesheet" type="text/css"/>
+	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css"/>
+
+	<link href="css/app.css" rel="stylesheet" type="text/css"/>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+
+
+	<!-- Multi connected lists -->
+	<a name="m"></a>
+	<div class="container">
+		
+		<div id="sector" style="margin-left: 30px">
+			<div><div data-force="5" class="layer title title_xl">Select your sector</div></div>
+
+			<div class="layer tile" style="width: 83%;">
+				<div class="tile__list list2" id="sectorsel">
+					<div id="sector_media">Media and Advertising</div>
+					<div id="sector_it">Data and Information Systems</div>
+					<div id="sector_construction">Construction and engineering</div>
+					<div id="sector_telecoms">Telecommunications</div>
+					<div id="sector_defense">Aerospace and defence</div>
+					<div id="sector_services">Professional services</div>
+					<div id="sector_finance">Finance, Insurance and Real Estate</div>
+					<div id="sector_consultancy">Consultancy</div>
+					<div id="sector_energy">Energy</div>
+					<div id="sector_agriculture">Agriculture</div>
+					<div id="sector_transport">Transport</div>
+					<div id="sector_public">Government and public sector</div>
+					<div id="sector_health">Health</div>
+					<div id="sector_consumer">Consumer services</div>
+					<div id="sector_automotive">Automative industry</div>
+					<div id="sector_manufacturing">Manufacturing</div>
+					<div id="sector_mining">Mining</div>
+				</div>
+			</div>
+		</div>
+
+		<br/>
+
+		<div id="ability" style="margin-left: 30px">
+			<div><div data-force="5" class="layer title title_xl">Data science experience</div></div>
+		
+			<div class="layer tile" style="width: 83%;">
+				<input id="involvement" type="range" min="0" max="100" style="width: 900px;"/>
+				<label id="exp_manager">Requirements only</label>
+				<label id="exp_some"></label>
+				<label id="exp_middle">Confident with many areas</label>
+				<label id="exp_upper"></label>
+				<label id="exp_everyday">Practice daily</label>
+			</div>
+		</div>
+		<br/>
+
+		<div id="multi" style="margin-left: 30px">
+			<div><div data-force="5" class="layer title title_xl">Rate the importance (drag and drop)</div></div>
+
+			<div class="layer tile" data-force="30">
+				<div class="tile__name" id="Not_required">Not required</div>
+				<div class="tile__list" id="notID">
+					<div id="Math_and_statistics">Math and statistics</div>
+					<div id="Machine_learning">Machine learning</div>
+					<div id="Domain_expertise">Domain expertise</div>
+				</div>
+			</div>
+
+			<div class="layer tile" data-force="25">
+				<div class="tile__name" id="nice_to_have">Some knowledge required</div>
+				<div class="tile__list" id="niceID">
+					<div id="Data_skills">Data skills</div>
+					<div id="Advanced_computing">Advanced computing</div>
+					<div id="Data_visulisation">Data visulisation</div>
+				</div>
+			</div>
+
+			<div class="layer tile" data-force="20">
+				<div class="tile__name" id="essential">Essential</div>
+				<div class="tile__list" id="essentialID">
+					<div id="Scientific_method">Scientific method</div>
+					<div id="Open_culture">Open culture</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div align="center">
+	<button id="submit" onClick="processForm('myForm');">Submit</button>
+	</div>
+
+
+	<script src="js/Sortable.js"></script>
+	<script src="js/Ply.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="js/ng-sortable.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/survey.js"></script>
+
+</body>
+</html>
