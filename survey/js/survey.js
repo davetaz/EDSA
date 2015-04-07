@@ -5,6 +5,8 @@ data["essential"] = new Array();
 
 $( document ).ready(function() {
 	addListeners();
+	populateForms();
+	updateForm();
 });
 
 function addListeners() {
@@ -29,6 +31,9 @@ function mremove(id) {
 	$("#"+id).fadeOut(function() { 
 		$("#"+id).remove();
 	});
+	$("#capcap_"+id).fadeOut(function() { 
+		$("#capcap_"+id).remove();
+	});
 	
 }
 
@@ -39,13 +44,15 @@ function addElement(id) {
 		form: { name: 'Name' }
 	}).done(function (ui) {
 		var el = document.createElement('div');
-		var outid = ui.data.name;
-		outid.replace(" ","_");
+		var outid = ui.data.name
+		outid = outid.replace(" ","_");
 		el.innerHTML = ui.data.name + '<i class="js-remove" onClick="mremove(\''+outid+'\');">✖</i>';
 		el.setAttribute("id",outid);
 		console.log(id);
 		console.log(el);
 		document.getElementById(id).appendChild(el);
+		//addToCapCap("capcap_"+id,outid,ui.data.name,50,50);
+		updateForm();
 	});
 }
 
@@ -56,6 +63,51 @@ function processSector(sector) {
 	});
 	$("#" + sector).addClass("selected");	
 	data["Sector"] = sector;
+}
+
+
+function updateForm() {
+	processUpdate('essentialID');
+	processUpdate('niceID');
+	processUpdate('notID');
+}
+function populateForms() {
+	addToList('trainingEssentialID','Face to face training');
+	addToList('trainingEssentialID','Webinars');
+	addToList('trainingEssentialID','eLearning');
+	addToList('trainingNiceID','Translated from English');
+	addToList('trainingNiceID','Tailored to sector');
+	addToList('trainingNiceID','Accredited');
+	addToList('trainingNiceID','Uses non-open, non-free software');
+	addToList('trainingNotID','Coaching');
+	addToList('trainingNotID','Assessed');
+	addToList('trainingNotID','Internal assignments');	
+}
+
+function addToList(id,item) {
+	itemID = item.replace(/ /g,"_");
+	$('#'+id).append('<div id="'+itemID+'">'+item+'</div>');
+}
+
+function processUpdate(inid) {
+    $('#capcap').fadeOut(function() {
+        $('div','#'+inid).each(function(){
+       	  id = $(this).attr('id');
+	  el = $('#' + id);
+	  value = el.html();
+	  capacity = $('#capacity_' + id).val();
+	  capability = $('#capability_' + id).val();
+	  $('#capcap_'+id).remove();
+	  addToCapCap(inid,id,value,capacity,capability);
+        });
+        $('#capcap').fadeIn();
+    });
+	
+}
+
+function addToCapCap(inid,id,value,capacity,capability) {
+	var html = '<table id="capcap_'+id+'" class="capcaptable" width="100%"><tr><td width="20%">'+value+'</td><td width="80%"><label class="caplabel">Capability</label><input id="capability_'+id+'" type="range" min="0" max="100" style="width: 80%;" value="'+capability+'"/><br/><label class="caplabel">Capacity</label><input id="capacity_'+id+'" type="range" min="0" max="100" style="width: 80%;" value="'+capacity+'"/></td></tr></table>';
+	$('#capcap_'+inid).append(html);
 }
 
 function processForm(form) {

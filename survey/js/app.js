@@ -58,6 +58,20 @@
 			animation: 150
 		});
 	});
+	
+	// Multi groups
+	Sortable.create(byId('multi2'), {
+		animation: 150,
+		draggable: '.tile',
+		handle: '.tile__name'
+	});
+
+	[].forEach.call(byId('multi2').getElementsByClassName('tile__list'), function (el){
+		Sortable.create(el, {
+			group: 'photo',
+			animation: 150
+		});
+	});
 
 })();
 

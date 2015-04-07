@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 	<link href="css/ply.css" rel="stylesheet" type="text/css"/>
-	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css"/>
+	<link href="css/roboto.css" rel="stylesheet" type="text/css"/>
 
 	<link href="css/app.css" rel="stylesheet" type="text/css"/>
 	<link href="css/range.css" rel="stylesheet" type="text/css"/>
@@ -67,6 +67,25 @@
 		<div id="multi" style="margin-left: 30px">
 			<div><div data-force="5" class="layer title title_xl">Rate the importance (drag and drop)</div></div>
 
+			<div class="layer tile" data-force="20">
+				<div class="tile__name" id="essential">Essential</div>
+				<div class="tile__list" id="essentialID">
+					<div id="Scientific_method">Scientific method</div>
+					<div id="Open_culture">Open culture</div>
+				</div>
+				<button id="addessentialID">Add</button>
+			</div>
+			
+			<div class="layer tile" data-force="25">
+				<div class="tile__name" id="nice_to_have">Some knowledge required</div>
+				<div class="tile__list" id="niceID">
+					<div id="Data_skills">Data skills</div>
+					<div id="Advanced_computing">Advanced computing</div>
+					<div id="Data_visulisation">Data visulisation</div>
+				</div>
+				<button id="addniceID">Add</button>
+			</div>
+			
 			<div class="layer tile" data-force="30">
 				<div class="tile__name" id="Not_required">Not required</div>
 				<div class="tile__list" id="notID">
@@ -77,27 +96,52 @@
 				<button id="addnotID">Add</button>
 			</div>
 
-			<div class="layer tile" data-force="25">
-				<div class="tile__name" id="nice_to_have">Some knowledge required</div>
-				<div class="tile__list" id="niceID">
-					<div id="Data_skills">Data skills</div>
-					<div id="Advanced_computing">Advanced computing</div>
-					<div id="Data_visulisation">Data visulisation</div>
+		</div>
+		<br/>
+		<div id="sector" style="margin-left: 30px">
+			<div><div data-force="5" class="layer title title_xl">Capability and capacity</div></div>
+			
+			<div id="capcap" class="layer tile" style="width: 83%;">
+				<div id="capcap_essentialID" style="width: 100%;">
+					<h2>Essential Skills</h2>
 				</div>
-				<button id="addniceID">Add</button>
+				<div id="capcap_niceID" style="width: 100%;">
+					<h2>Some knowledge required</h2>
+				</div>
+				<div id="capcap_notID" style="width: 100%;">
+					<h2>Not required</h2>
+				</div>
 			</div>
+		</div>
+		<br/>
+		<div id="multi2" style="margin-left: 30px">
+			<div><div data-force="5" class="layer title title_xl">Training requirements (drag and drop)</div></div>
 
 			<div class="layer tile" data-force="20">
 				<div class="tile__name" id="essential">Essential</div>
-				<div class="tile__list" id="essentialID">
-					<div id="Scientific_method">Scientific method</div>
-					<div id="Open_culture">Open culture</div>
+				<div class="tile__list" id="trainingEssentialID">
 				</div>
 				<button id="addessentialID">Add</button>
 			</div>
+			
+			<div class="layer tile" data-force="25">
+				<div class="tile__name" id="where_possible">Where possible</div>
+				<div class="tile__list" id="trainingNiceID">
+				</div>
+				<button id="addniceID">Add</button>
+			</div>
+			
+			<div class="layer tile" data-force="30">
+				<div class="tile__name" id="Not_required">Not required</div>
+				<div class="tile__list" id="trainingNotID">
+				</div>
+				<button id="addnotID">Add</button>
+			</div>
 
 		</div>
+		<br/>
 	</div>
+	
 	<div align="center">
 	<button id="submit" onClick="processForm('myForm');">Submit</button>
 	</div>
@@ -105,11 +149,11 @@
 
 	<script src="js/Sortable.js"></script>
 	<script src="js/Ply.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="js/angular.min.js"></script>
 	<script src="js/ng-sortable.js"></script>
 
-	<script src="js/app.js"></script>
 	<script src="js/survey.js"></script>
+	<script src="js/app.js"></script>
 
 </body>
 </html>

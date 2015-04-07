@@ -701,6 +701,8 @@
 				// Save sorting
 				this.save();
 			}
+			// CUSTOM EDSA LINE!
+			updateForm();
 		},
 
 

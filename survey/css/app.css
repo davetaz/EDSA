@@ -13,6 +13,9 @@ html, body {
 	font-weight: 300;
 }
 
+hr {
+	border: 1px dashed #730100;
+}
 
 h1 {
 	color: #FF3F00;
@@ -262,4 +265,13 @@ img {
 
 #nested ul li {
 	background-color: rgba(0,0,0,.05);
+}
+.caplabel {
+	position: relative;
+	bottom: 7px;
+	display: inline-block;
+	min-width: 100px;
+}
+.capcaptable {
+	border-bottom: 1px dashed #730100;
 }
