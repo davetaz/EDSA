@@ -1,12 +1,11 @@
 var data = {};
-data["not_required"] = new Array();
-data["nice_to_have"] = new Array();
-data["essential"] = new Array();
+data["skills"] = new Array();
+data["training"] = new Array();
 
 $( document ).ready(function() {
-	addListeners();
 	populateForms();
 	updateForm();
+	addListeners();
 });
 
 function addListeners() {
@@ -22,6 +21,15 @@ function addListeners() {
 		addElement($(this).attr('id'));
 	});
 	$('#addessentialID').click(function() {
+		addElement($(this).attr('id'));
+	});
+	$('#addtrainingNotID').click(function() {
+		addElement($(this).attr('id'));
+	});
+	$('#addtrainingNiceID').click(function() {
+		addElement($(this).attr('id'));
+	});
+	$('#addtrainingEssentialID').click(function() {
 		addElement($(this).attr('id'));
 	});
 }
@@ -72,20 +80,57 @@ function updateForm() {
 	processUpdate('notID');
 }
 function populateForms() {
-	addToList('trainingEssentialID','Face to face training');
-	addToList('trainingEssentialID','Webinars');
-	addToList('trainingEssentialID','eLearning');
-	addToList('trainingNiceID','Translated from English');
-	addToList('trainingNiceID','Tailored to sector');
-	addToList('trainingNiceID','Accredited');
-	addToList('trainingNiceID','Uses non-open, non-free software');
-	addToList('trainingNotID','Coaching');
-	addToList('trainingNotID','Assessed');
-	addToList('trainingNotID','Internal assignments');	
+	addToForm('sectorsel','Media and Advertising');
+	addToForm('sectorsel','Data and Information Systems');
+	addToForm('sectorsel','Construction and engineering');
+	addToForm('sectorsel','Telecomms');
+	addToForm('sectorsel','Aerospace and defence');
+	addToForm('sectorsel','Professional services');
+	addToForm('sectorsel','Finance, Insurance and Real Estate');
+	addToForm('sectorsel','Consultancy');
+	addToForm('sectorsel','Energy');
+	addToForm('sectorsel','Agriculture');
+	addToForm('sectorsel','Transport');
+	addToForm('sectorsel','Government and public sector');
+	addToForm('sectorsel','Health');
+	addToForm('sectorsel','Consumer services');
+	addToForm('sectorsel','Automative industry');
+	addToForm('sectorsel','Manufacturing');
+	addToForm('sectorsel','Mining');	
+
+	addToForm('essentialID','Scientific method');
+	addToForm('essentialID','Open Culture');
+	addToForm('niceID','Data skills');
+	addToForm('niceID','Advanced computing');
+	addToForm('niceID','Data visualisation');
+	addToForm('notID','Math and statistics');
+	addToForm('notID','Machine learning');
+	addToForm('notID','Domain expertise');
+	
+	addToForm('trainingEssentialID','Face to face training');
+	addToForm('trainingEssentialID','Webinars');
+	addToForm('trainingEssentialID','eLearning');
+	addToForm('trainingNiceID','Translated from English');
+	addToForm('trainingNiceID','Tailored to sector');
+	addToForm('trainingNiceID','Accredited');
+	addToForm('trainingNiceID','Uses non-open, non-free software');
+	addToForm('trainingNotID','Coaching');
+	addToForm('trainingNotID','Assessed');
+	addToForm('trainingNotID','Internal assignments');	
 }
 
-function addToList(id,item) {
-	itemID = item.replace(/ /g,"_");
+
+function addToForm(id,item) {
+	prefix = "";
+	if (id == 'sectorsel') {
+		prefix = "";
+	}
+	itemID = item.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+	itemID = itemID.replace(/\s{2,}/g," ");
+	itemID = itemID.replace(/ /g,"_");
+	if (prefix != "") {
+		itemID = prefix + "_" + itemID;
+	}
 	$('#'+id).append('<div id="'+itemID+'">'+item+'</div>');
 }
 
@@ -111,18 +156,49 @@ function addToCapCap(inid,id,value,capacity,capability) {
 }
 
 function processForm(form) {
+	data["skills"]["not_required"] = new Array();
+	data["skills"]["nice_to_have"] = new Array();
+	data["skills"]["essential"] = new Array();
+	data["skills"]["capcap"] = new Array();
+	data["training"]["not_required"] = new Array();
+	data["training"]["nice_to_have"] = new Array();
+	data["training"]["essential"] = new Array();
 
-    $('div','#notID').each(function(){
-      data["not_required"].push($(this).attr('id')); 
-    });	
-    $('div','#niceID').each(function(){
-      data["nice_to_have"].push($(this).attr('id')); 
-    });	
-    $('div','#essentialID').each(function(){
-      data["essential"].push($(this).attr('id')); 
-    });
-    data["involvement"] = $('#involvement').val();	
-   
-    console.log(data);
+	$('div','#notID').each(function(){
+		localid = $(this).attr('id');
+		console.log(localid);
+		data["skills"]["not_required"].push(localid);
+		data["skills"]["capcap"][localid] = new Array();
+		data["skills"]["capcap"][localid]["capacity"] = $('#capacity_' + localid).val();
+		data["skills"]["capcap"][localid]["capability"] = $('#capability_' + localid).val();
+	});	
+	$('div','#niceID').each(function(){
+		localid = $(this).attr('id');
+		data["skills"]["nice_to_have"].push(localid);
+		data["skills"]["capcap"][localid] = new Array();
+		data["skills"]["capcap"][localid]["capacity"] = $('#capacity_' + localid).val();
+		data["skills"]["capcap"][localid]["capability"] = $('#capability_' + localid).val();
+	});	
+	$('div','#essentialID').each(function(){
+		localid = $(this).attr('id');
+		data["skills"]["essential"].push(localid);
+		data["skills"]["capcap"][localid] = new Array();
+		data["skills"]["capcap"][localid]["capacity"] = $('#capacity_' + localid).val();
+		data["skills"]["capcap"][localid]["capability"] = $('#capability_' + localid).val();
+	});
+
+	data["Involvement"] = $('#involvement').val();	
+
+	$('div','#trainingNotID').each(function(){
+		data["training"]["not_required"].push($(this).attr('id')); 
+	});	
+	$('div','#trainingNiceID').each(function(){
+		data["training"]["nice_to_have"].push($(this).attr('id')); 
+	});	
+	$('div','#trainingEssentialID').each(function(){
+		data["training"]["essential"].push($(this).attr('id')); 
+	});
+
+	console.log(data);
 }
 

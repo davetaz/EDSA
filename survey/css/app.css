@@ -37,6 +37,31 @@ button {
 	font-weight: 300;
 }
 
+.navbutton { 
+	width: 50px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	top: 200px;
+	z-index: 20;
+}
+#next {
+	right: 20px;
+}
+#prev {
+	left: 20px;
+}
+
+.invisibleList {
+	list-style-type: none;
+	overflow: auto;
+}
+.invisibleList li {
+	width: 100%;
+	height: 600px;
+}
+
 ul {
 	margin: 0;
 	padding: 0;

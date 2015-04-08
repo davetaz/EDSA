@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-	<title>Importance of data science areas</title>
+	<title>Data science survey</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -14,6 +14,8 @@
 	<link href="css/app.css" rel="stylesheet" type="text/css"/>
 	<link href="css/range.css" rel="stylesheet" type="text/css"/>
 	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.jcarousellite.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
 </head>
 <body>
 
@@ -21,34 +23,19 @@
 	<!-- Multi connected lists -->
 	<a name="m"></a>
 	<div class="container">
-		
+		<ul class="invisibleList">
+		<li>	
 		<div id="sector" style="margin-left: 30px">
 			<div><div data-force="5" class="layer title title_xl">Select your sector</div></div>
 
 			<div class="layer tile" style="width: 83%;">
 				<div class="tile__list list2" id="sectorsel">
-					<div id="sector_media">Media and Advertising</div>
-					<div id="sector_it">Data and Information Systems</div>
-					<div id="sector_construction">Construction and engineering</div>
-					<div id="sector_telecoms">Telecomms</div>
-					<div id="sector_defense">Aerospace and defence</div>
-					<div id="sector_services">Professional services</div>
-					<div id="sector_finance">Finance, Insurance and Real Estate</div>
-					<div id="sector_consultancy">Consultancy</div>
-					<div id="sector_energy">Energy</div>
-					<div id="sector_agriculture">Agriculture</div>
-					<div id="sector_transport">Transport</div>
-					<div id="sector_public">Government and public sector</div>
-					<div id="sector_health">Health</div>
-					<div id="sector_consumer">Consumer services</div>
-					<div id="sector_automotive">Automative industry</div>
-					<div id="sector_manufacturing">Manufacturing</div>
-					<div id="sector_mining">Mining</div>
 				</div>
 			</div>
 		</div>
-
 		<br/>
+
+		</li><li>
 
 		<div id="ability" style="margin-left: 30px">
 			<div><div data-force="5" class="layer title title_xl">Data science experience</div></div>
@@ -64,14 +51,14 @@
 		</div>
 		<br/>
 
+		</li><li>
+
 		<div id="multi" style="margin-left: 30px">
 			<div><div data-force="5" class="layer title title_xl">Rate the importance (drag and drop)</div></div>
 
 			<div class="layer tile" data-force="20">
 				<div class="tile__name" id="essential">Essential</div>
 				<div class="tile__list" id="essentialID">
-					<div id="Scientific_method">Scientific method</div>
-					<div id="Open_culture">Open culture</div>
 				</div>
 				<button id="addessentialID">Add</button>
 			</div>
@@ -79,9 +66,6 @@
 			<div class="layer tile" data-force="25">
 				<div class="tile__name" id="nice_to_have">Some knowledge required</div>
 				<div class="tile__list" id="niceID">
-					<div id="Data_skills">Data skills</div>
-					<div id="Advanced_computing">Advanced computing</div>
-					<div id="Data_visulisation">Data visulisation</div>
 				</div>
 				<button id="addniceID">Add</button>
 			</div>
@@ -89,16 +73,16 @@
 			<div class="layer tile" data-force="30">
 				<div class="tile__name" id="Not_required">Not required</div>
 				<div class="tile__list" id="notID">
-					<div id="Math_and_statistics">Math and statistics</div>
-					<div id="Machine_learning">Machine learning</div>
-					<div id="Domain_expertise">Domain expertise</div>
 				</div>
 				<button id="addnotID">Add</button>
 			</div>
 
 		</div>
 		<br/>
-		<div id="sector" style="margin-left: 30px">
+		
+		</li><li>
+
+		<div id="capouter" style="margin-left: 30px">
 			<div><div data-force="5" class="layer title title_xl">Capability and capacity</div></div>
 			
 			<div id="capcap" class="layer tile" style="width: 83%;">
@@ -114,6 +98,9 @@
 			</div>
 		</div>
 		<br/>
+		
+		</li><li>
+
 		<div id="multi2" style="margin-left: 30px">
 			<div><div data-force="5" class="layer title title_xl">Training requirements (drag and drop)</div></div>
 
@@ -121,32 +108,36 @@
 				<div class="tile__name" id="essential">Essential</div>
 				<div class="tile__list" id="trainingEssentialID">
 				</div>
-				<button id="addessentialID">Add</button>
+				<button id="addtrainingEssentialID">Add</button>
 			</div>
 			
 			<div class="layer tile" data-force="25">
 				<div class="tile__name" id="where_possible">Where possible</div>
 				<div class="tile__list" id="trainingNiceID">
 				</div>
-				<button id="addniceID">Add</button>
+				<button id="addtrainingNiceID">Add</button>
 			</div>
 			
 			<div class="layer tile" data-force="30">
 				<div class="tile__name" id="Not_required">Not required</div>
 				<div class="tile__list" id="trainingNotID">
 				</div>
-				<button id="addnotID">Add</button>
+				<button id="addtrainingNotID">Add</button>
 			</div>
 
 		</div>
 		<br/>
-	</div>
+		
+		</li><li>
 	
-	<div align="center">
-	<button id="submit" onClick="processForm('myForm');">Submit</button>
+		<div align="center">
+		<button id="submit" onClick="processForm('myForm');">Submit</button>
+		</div>
+		</li></ul>
 	</div>
-
-
+	<button id="prev" class="navbutton">&lt;</button>
+	<button id="next" class="navbutton">&gt;</button>
+	
 	<script src="js/Sortable.js"></script>
 	<script src="js/Ply.min.js"></script>
 	<script src="js/angular.min.js"></script>
@@ -154,6 +145,18 @@
 
 	<script src="js/survey.js"></script>
 	<script src="js/app.js"></script>
+	<script type="text/javascript">
+	jQuery('.container').jCarouselLite({
+	        auto: false,
+	        visible: 1,
+	        hoverPause: true,
+	        swipe: false,
+	        speed: 1000,
+	        btnNext: "#next",
+	        btnPrev: "#prev",
+	});
+</script>
+
 
 </body>
 </html>
