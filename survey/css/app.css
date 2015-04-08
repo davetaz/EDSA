@@ -8,7 +8,7 @@ html, body {
 	position: relative;
 	color: #d2d8ee;
 	min-height: 100%;
-	font-size: 20px;
+	font-size: 17px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
@@ -25,6 +25,33 @@ h1 {
 	text-align: center;
 }
 
+progress {
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    position: relative;
+    left: 780px;
+    top: 30px;
+
+}
+
+/* IE10 */
+progress {
+    color: #730100;
+}
+
+/* Firefox */
+progress::-moz-progress-bar { 
+    background: #730100;  
+}
+
+/* Chrome */
+progress::-webkit-progress-value {
+    background: #730100;
+}
+
 button {
 	width: 150px;
 	padding: 10px;
@@ -32,7 +59,7 @@ button {
 	background-color: #730100;
 	border: none;
 	color: white;
-	font-size: 20px;
+	font-size: 17px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
@@ -69,11 +96,14 @@ ul {
 }
 
 .container {
-	width: 1200px;
+	width: 1000px;
 	margin: auto;
-	min-width: 1100px;
-	max-width: 1300px;
+	min-width: 1000px;
+	max-width: 1200px;
 	position: relative;
+}
+.wrapper {
+	text-align: center;
 }
 
 @media (min-width: 750px) and (max-width: 970px){
@@ -119,13 +149,13 @@ img {
 
 .tile {
 	width: 22%;
-	min-width: 245px;
+	min-width: 210px;
 	color: #730100;
-	padding: 10px 30px;
+	padding: 10px 20px;
 	text-align: center;
 	margin-top: 15px;
 	margin-left: 5px;
-	margin-right: 30px;
+	margin-right: 10px;
 	background-color: #fff;
 	display: inline-block;
 	vertical-align: top;
@@ -162,11 +192,11 @@ img {
 
 #exp_manager{
 	position: relative;
-	left: -240px;
+	left: -190px;
 }
 #exp_everyday {
 	position: relative;
-	left: 240px;
+	left: 190px;
 }
 
 .block {
@@ -260,7 +290,7 @@ img {
 		cursor: pointer;
 		background: #5F9EDF;
 		padding: 10px 0;
-		font-size: 20px;
+		font-size: 17px;
 	}
 		#filter button:hover {
 			opacity: 1;

@@ -24,13 +24,26 @@
 	<a name="m"></a>
 	<div class="container">
 		<ul class="invisibleList">
+		<li>
+			<progress max=6 value=0>0/6</progress>
+			<div><div data-force="5" class="layer title title_xl">Welcome</div></div>
+			<div class="wrapper">
+			<div class="layer tile" style="width: 83%;">
+				<br/><br/><br/><br/>Thank-you for agreeing to contribute data to this survey.<br/><br/>This short survey should take no more than 15 minutes to complete.<br/><br/>To get started please press the next arrow to the right.<br/><br/><br/></br>
+			</div>
+			</div>
+		
+		</li>
 		<li>	
 		<div id="sector" style="margin-left: 30px">
+			<progress max=6 value=1>1/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Select your sector</div></div>
 
+			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				<div class="tile__list list2" id="sectorsel">
 				</div>
+			</div>
 			</div>
 		</div>
 		<br/>
@@ -38,8 +51,10 @@
 		</li><li>
 
 		<div id="ability" style="margin-left: 30px">
+			<progress max=6 value=2>2/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Data science experience</div></div>
 		
+			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				<input id="involvement" type="range" min="0" max="100" style="width: 100%;"/>
 				<label id="exp_manager">Requirements only</label>
@@ -48,14 +63,17 @@
 				<label id="exp_upper"></label>
 				<label id="exp_everyday">Practice daily</label>
 			</div>
+			</div>
 		</div>
 		<br/>
 
 		</li><li>
 
 		<div id="multi" style="margin-left: 30px">
+			<progress max=6 value=3>3/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Rate the importance (drag and drop)</div></div>
 
+			<div class="wrapper">
 			<div class="layer tile" data-force="20">
 				<div class="tile__name" id="essential">Essential</div>
 				<div class="tile__list" id="essentialID">
@@ -76,6 +94,7 @@
 				</div>
 				<button id="addnotID">Add</button>
 			</div>
+			</div>
 
 		</div>
 		<br/>
@@ -83,8 +102,10 @@
 		</li><li>
 
 		<div id="capouter" style="margin-left: 30px">
+			<progress max=6 value=4>4/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Capability and capacity</div></div>
 			
+			<div class="wrapper">
 			<div id="capcap" class="layer tile" style="width: 83%;">
 				<div id="capcap_essentialID" style="width: 100%;">
 					<h2>Essential Skills</h2>
@@ -96,14 +117,17 @@
 					<h2>Not required</h2>
 				</div>
 			</div>
+			</div>
 		</div>
 		<br/>
 		
 		</li><li>
 
 		<div id="multi2" style="margin-left: 30px">
-			<div><div data-force="5" class="layer title title_xl">Training requirements (drag and drop)</div></div>
+			<progress max=6 value=5>5/6</progress>
+			<div><div data-force="5" class="layer title title_xl">Training requirements</div></div>
 
+			<div class="wrapper">
 			<div class="layer tile" data-force="20">
 				<div class="tile__name" id="essential">Essential</div>
 				<div class="tile__list" id="trainingEssentialID">
@@ -124,15 +148,21 @@
 				</div>
 				<button id="addtrainingNotID">Add</button>
 			</div>
+			</div>
 
 		</div>
 		<br/>
 		
 		</li><li>
+			<progress max=6 value=6>6/6</progress>
+			<div><div data-force="5" class="layer title title_xl">Thanks!</div></div>
+			<div class="wrapper">
+			<div class="layer tile" style="width: 83%;">
+				<br/><br/><br/><br/>Thank-you!<br/><br/>Please feel free to check your answers and then press submit when done.<br/><br/>
+				<button id="submit" onClick="processForm('myForm');">Submit</button>
+				<br/><br/><br/></br>
+			</div>
 	
-		<div align="center">
-		<button id="submit" onClick="processForm('myForm');">Submit</button>
-		</div>
 		</li></ul>
 	</div>
 	<button id="prev" class="navbutton">&lt;</button>
@@ -148,6 +178,7 @@
 	<script type="text/javascript">
 	jQuery('.container').jCarouselLite({
 	        auto: false,
+		wrap: null,
 	        visible: 1,
 	        hoverPause: true,
 	        swipe: false,
