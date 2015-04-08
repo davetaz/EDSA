@@ -99,3 +99,11 @@ function getValues(d,keys) {
 	}
 	return data;
 }
+function showSurvey(ISO2,name) {
+        $("#surveyFrame").attr('src','survey/index.html?ISO2='+ISO2+'&name='+name);
+        $("#surveyBox").fadeIn();
+}
+function hideSurvey() {
+        $("#surveyBox").fadeOut();
+}
+

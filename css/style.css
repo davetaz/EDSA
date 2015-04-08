@@ -1,10 +1,11 @@
-body {
+body, a {
   background-color: #404040;
   color: #eee;
   font-family: 'FreeUniversal', sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.6em;
+  min-height: 800px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,11 +19,15 @@ h2 {
 footer {
 	width: 1024px;
 	position: absolute;
-	top: 700px;
+	top: 710px;
+}
+#takeSurvey {
+	position: relative;
+	top: -30px;
 }
 #edsa-bit {
 	position: absolute;
-	left: 870px;
+	left: 830px;
 	top: 0px;
 }
 #edsa-logo {
@@ -77,6 +82,24 @@ footer {
 }
 #help {
 	display: inline;
+}
+#surveyBox {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 98%;
+        height: 680px;
+        background-color: #d2d8ee;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        margin: 1em;
+        display: none;
+        overflow-x: none;
+        overflow-y: none;
+}
+#closeSurvey {
+	float: right;
+	padding: 2px;
 }
 #code {
 	display: inline;
