@@ -268,10 +268,13 @@ img {
 }
 .caplabel {
 	position: relative;
-	bottom: 7px;
 	display: inline-block;
 	min-width: 100px;
 }
 .capcaptable {
 	border-bottom: 1px dashed #730100;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	line-height: 1.8em;
 }
