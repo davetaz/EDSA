@@ -56,8 +56,11 @@ function drawMap(error, world, names, data, print) {
       })
       .on("click", function(d,i) {
         document.getElementById("country").innerHTML = d.name;
-	document.getElementById("takeSurvey").innerHTML = '<a href="#" onClick="showSurvey(\''+d.ISO2+'\',\''+d.name+'\');">Click here to contribute!</a>';
-        drawStatsObject(d.data);
+	document.getElementById("takeSurvey").innerHTML = '<button onClick="showSurvey(\''+d.ISO2+'\',\''+d.name+'\');" value="Click here to contribute!">Click here to contribute!</button>';
+	$('#skillsChart').html('<div id="noSkillData">No Data Available</div>');
+	$('#radar').html('');
+        
+	drawStatsObject(d.data);
 	skillsChart(d.ISO2,"general");
         zoomTo(d);
       })
