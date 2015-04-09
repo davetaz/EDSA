@@ -97,21 +97,46 @@ button {
 #help {
 	display: inline;
 }
-#surveyBox {
+.textNode {
+	color: #730100;
+}
+.title {
+	color: #fff;
+	padding: 3px 10px;
+	display: inline-block;
+	position: relative;
+	background-color: #730100;
+}
+.title_xl {
+	padding: 15px 15px;
+	font-size: 40px;
+	margin: 0px;
+}
+#miniHelp {
+        top: 60px;
+        left: 60px;
+        width: 70%;
+	min-width: 800px;
+        height: 400px;
+        overflow-y: auto;
+}
+#miniHelp, #surveyBox {
         position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 98%;
-        height: 680px;
         background-color: #d2d8ee;
         border-radius: 10px;
         border: 1px solid #ddd;
         margin: 1em;
         display: none;
         overflow-x: none;
+}
+#surveyBox {
+        top: 0px;
+        left: 0px;
+        width: 98%;
+        height: 680px;
         overflow-y: none;
 }
-#closeSurvey {
+#closeSurvey, #closeHelp {
 	float: right;
 	padding: 2px;
 }

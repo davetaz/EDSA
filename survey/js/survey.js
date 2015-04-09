@@ -159,7 +159,7 @@ function addToForm(id,item) {
 	if (prefix != "") {
 		itemID = prefix + "_" + itemID;
 	}
-	$('#'+id).append('<div id="'+itemID+'">'+item+'</div>');
+	$('#'+id).append('<div id="'+itemID+'">'+item+' <a href="#" onClick="showMiniHelp(\''+item+'\');">?</a></div>');
 }
 
 function processUpdate(inid) {

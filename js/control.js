@@ -106,4 +106,11 @@ function showSurvey(ISO2,name) {
 function hideSurvey() {
         $("#surveyBox").fadeOut();
 }
+function showMiniHelp(id) {
+        $("#miniHelpFrame").attr('src','help.html?id='+id);
+        $("#miniHelp").fadeIn();
+}
+function hideMiniHelp() {
+        $("#miniHelp").fadeOut();
+}
 

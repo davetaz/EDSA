@@ -125,6 +125,19 @@ var RadarChart = {
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 
+	axis.append("text")
+		.text("?")
+		.style("font-family", "sans-serif")
+		.on("click",function(d) { showMiniHelp(d) })
+	   	.style("fill", function(j, i){if (print) {return "black";} else {return "white";}})
+		.style("font-size", "11px")
+	 	.style("text-decoration","underline")
+		.style("cursor","pointer")
+		.attr("text-anchor", "right")
+		.attr("dy", "1.5em")
+		.attr("transform", function(d, i){return "translate(0, -10)"})
+		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total) + 5.5*(d.length/2);})
+		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
  
 	d.forEach(function(y, x){
 	  dataValues = [];
