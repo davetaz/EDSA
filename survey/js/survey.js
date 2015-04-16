@@ -230,3 +230,11 @@ function processForm(form) {
 	console.log(data);
 }
 
+function showMiniHelp(id) {
+        $("#miniHelpFrame").attr('src','../help.html?id='+id);
+        $("#miniHelp").fadeIn();
+}
+function hideMiniHelp() {
+        $("#miniHelp").fadeOut();
+}
+

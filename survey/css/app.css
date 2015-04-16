@@ -145,8 +145,10 @@ img {
 		font-size: 40px;
 	}
 
-
-
+a {
+	color: #730100;
+}
+ 
 .tile {
 	width: 22%;
 	min-width: 210px;
@@ -332,4 +334,23 @@ img {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	line-height: 1.8em;
+}
+#miniHelp {
+        top: 15%;
+        left: 50%;
+	margin-left: -400px;
+	margin-top: -100px;
+	width: 800px;
+        height: 400px;
+        overflow-y: auto;
+        position: absolute;
+        background-color: #d2d8ee;
+        border-radius: 10px;
+        border: 1px solid #730100;
+        display: none;
+        overflow-x: hidden;
+}
+#closeSurvey, #closeHelp {
+	float: right;
+	padding: 2px;
 }

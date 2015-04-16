@@ -115,10 +115,11 @@ button {
 	margin: 0px;
 }
 #miniHelp {
-        top: 60px;
-        left: 60px;
-        width: 70%;
-	min-width: 800px;
+        top: 25%;
+        left: 50%;
+	margin-left: -400px;
+	margin-top: -100px;
+	width: 800px;
         height: 400px;
         overflow-y: auto;
 }
@@ -127,16 +128,16 @@ button {
         background-color: #d2d8ee;
         border-radius: 10px;
         border: 1px solid #ddd;
-        margin: 1em;
         display: none;
-        overflow-x: none;
+        overflow-x: hidden;
 }
 #surveyBox {
         top: 0px;
         left: 0px;
         width: 98%;
         height: 680px;
-        overflow-y: none;
+        overflow-y: auto;
+	margin: 1em;
 }
 #closeSurvey, #closeHelp {
 	float: right;
