@@ -99,6 +99,8 @@ button {
 }
 .textNode {
 	color: #730100;
+	text-align: center;
+	font-size: 1.2em;
 }
 .title {
 	color: #fff;
@@ -170,4 +172,15 @@ button {
 .skill text {
   text-anchor: end;
   font-size: 10px;
+}
+.skills li {
+	list-style-type: none;
+	display: inline-block;
+	background: white;
+	color: #730100;
+	border: 1px solid #730100;
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin: 20px;
+
 }
