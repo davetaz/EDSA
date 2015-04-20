@@ -333,7 +333,6 @@ a {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
-	line-height: 1.8em;
 }
 #miniHelp {
         top: 15%;
@@ -353,4 +352,22 @@ a {
 #closeSurvey, #closeHelp {
 	float: right;
 	padding: 2px;
+}
+#countryName {
+	display: none;
+}
+#map {
+	display: inline-block;
+	right: 0px;
+	position: relative;
+	left: 10%;
+}
+#mapCName {
+	position: absolute;
+}
+.country {
+	fill: #ffffff;
+}
+.selected {
+	fill: #730100;
 }

@@ -30,10 +30,18 @@ var QueryString = function () {
 $( document ).ready(function() {
 	data["country"]["ISO2"] = QueryString.ISO2;
 	data["country"]["name"] = QueryString.name;
+	addMap();
 	populateForms();
 	updateForm();
 	addListeners();
 });
+
+function addMap() {
+	queue()
+	    .defer(d3.json, "../data/world-50m.json") 
+            .defer(d3.csv, "../data/eu-country-names.csv") 
+	    .await(drawMap);
+}
 
 function addListeners() {
 	$('div','#sectorsel').each(function(){
@@ -107,7 +115,11 @@ function updateForm() {
 	processUpdate('notID');
 }
 function populateForms() {
-	$('#countryName').html(decodeURIComponent(data["country"]["name"]));
+	if (data["country"]["name"]) {
+		$('#countryName').html("for " + decodeURIComponent(data["country"]["name"]));
+		$('#countryName').fadeIn();
+		$('#pickCountry').remove();		
+	}
 	addToForm('sectorsel','Media and Advertising');
 	addToForm('sectorsel','Data and Information Systems');
 	addToForm('sectorsel','Construction and engineering');
@@ -173,13 +185,27 @@ function processUpdate(inid) {
 	  $('#capcap_'+id).remove();
 	  addToCapCap(inid,id,value,capacity,capability);
         });
+	toggleSetup();
         $('#capcap').fadeIn();
     });
 	
 }
 
 function addToCapCap(inid,id,value,capacity,capability) {
-	var html = '<table id="capcap_'+id+'" class="capcaptable" width="100%"><tr><td width="20%">'+value+'</td><td width="80%"><label class="caplabel">Capability</label><input id="capability_'+id+'" type="range" min="0" max="100" style="width: 80%;" value="'+capability+'"/><br/><label class="caplabel">Capacity</label><input id="capacity_'+id+'" type="range" min="0" max="100" style="width: 80%;" value="'+capacity+'"/></td></tr></table>';
+	var html = '<table id="capcap_'+id+'" class="capcaptable" width="100%"><tr><td width="20%">'+value+'</td><td width="80%"><label class="caplabel">Capability</label>';
+	html += '<div class="toggle-btn-grp joint-toggle">';
+	for (i=0;i<5;i++) {
+		html += '<label class="toggle-btn"><input type="radio" name="capability_'+id+'" value="'+i+'"/>'+i+'</label>';	
+	}
+	html += '</div>';
+	html += '<br/>';
+	html += '<label class="caplabel">Capacity</label>';
+	html += '<div class="toggle-btn-grp joint-toggle">';
+	for (i=0;i<5;i++) {
+		html += '<label class="toggle-btn"><input type="radio" name="capacity_'+id+'" value="'+i+'"/>'+i+'</label>';	
+	}
+	html += '</div>';
+	html += '</td></tr></table>';
 	$('#capcap_'+inid).append(html);
 }
 
@@ -237,4 +263,13 @@ function showMiniHelp(id) {
 function hideMiniHelp() {
         $("#miniHelp").fadeOut();
 }
-
+function toggleSetup() {
+    $(".toggle-btn:not('.noscript') input[type=radio]").addClass("visuallyhidden");
+    $(".toggle-btn:not('.noscript') input[type=radio]").change(function() {
+    if( $(this).attr("name") ) {
+        $(this).parent().addClass("success").siblings().removeClass("success")
+    } else {
+        $(this).parent().toggleClass("success");
+    }
+});
+}

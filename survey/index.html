@@ -12,6 +12,7 @@
 	<link href="css/roboto.css" rel="stylesheet" type="text/css"/>
 
 	<link href="css/app.css" rel="stylesheet" type="text/css"/>
+	<link href="css/toggle.css" rel="stylesheet" type="text/css"/>
 	<link href="css/range.css" rel="stylesheet" type="text/css"/>
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.jcarousellite.js"></script>
@@ -29,10 +30,22 @@
 			<div><div data-force="5" class="layer title title_xl">Welcome</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				<br/><br/><br/><h2>Contribute data for <span id="countryName"></span></h2><br/>Thank-you for agreeing to contribute data to this survey.<br/><br/>This short survey should take no more than 15 minutes to complete.<br/><br/>To get started please press the next arrow to the right.<br/><br/><br/></br>
+				<br/><br/><br/><h2>Contribute data <span id="countryName">for </span></h2><br/>Thank-you for agreeing to contribute data to this survey.<br/><br/>This short survey should take no more than 15 minutes to complete.<br/><br/>To get started please press the next arrow to the right.<br/><br/><br/></br>
 			</div>
 			</div>
 		
+		</li>
+		<li id="pickCountry">
+			<progress max=6 value=0>0/6</progress>
+			<div><div data-force="5" class="layer title title_xl">Pick your country</div></div>
+			<div class="wrapper">
+			<div class="layer tile" style="width: 83%;">
+				In order to discover trends within Europe, please pick the country for which you will be contributing data on the map below.<br/><br/>
+				<h2 id="mapCName">&nbsp;</h2>
+				<div id="map"></div>
+			</div>
+			</div>
+					
 		</li>
 		<li>	
 		<div id="sector" style="margin-left: 30px">
@@ -179,8 +192,11 @@
 	
 	<script src="js/Sortable.js"></script>
 	<script src="js/Ply.min.js"></script>
-	<script src="js/angular.min.js"></script>
 	<script src="js/ng-sortable.js"></script>
+  	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/queue.v1.min.js"></script>
+	<script src="../js/topojson.js"></script>
+	<script src="js/map.js"></script>
 
 	<script src="js/survey.js"></script>
 	<script src="js/app.js"></script>
