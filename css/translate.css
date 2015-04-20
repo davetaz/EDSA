@@ -1,0 +1,15 @@
+#google_translate_element {
+	display: inline-block;
+	position: absolute;
+	left: 630px;
+	top: 15px;
+}
+.goog-te-gadget-simple {
+	background-color: transparent;
+}
+.goog-te-gadget {
+	color: white;
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+	color: white;
+}

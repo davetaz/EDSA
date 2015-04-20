@@ -118,7 +118,8 @@ function populateForms() {
 	if (data["country"]["name"]) {
 		$('#countryName').html("for " + decodeURIComponent(data["country"]["name"]));
 		$('#countryName').fadeIn();
-		$('#pickCountry').remove();		
+		$('#pickCountry').remove();
+		$('#google_translate_element').hide();	
 	}
 	addToForm('sectorsel','Media and Advertising');
 	addToForm('sectorsel','Data and Information Systems');

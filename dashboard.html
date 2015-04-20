@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="google-translate-customization" content="e15791a1a5b65153-5a6a2c1325d321a1-g6d775cae76b285d6-25"></meta>
 	<link rel="shortcut icon" href="img/odifavicon32.ico">
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
@@ -21,6 +22,7 @@
 <body>
   <div id="container">
     <h1>EDSA demand analysis dashboard</h1>
+    <div id="google_translate_element"></div>
     <section id="edsa-bit">
     <img id="edsa-logo" src="http://edsa-project.eu/edsa-data/themes/edsa/images/edsa-logo.png" alt="EDSA"></img>
     <h3 id="edsa-title">EUROPEAN<br/>DATA SCIENCE<br/>ACADEMY</h3>
@@ -69,6 +71,8 @@
   <script src="js/skillsChart.js"></script>
   <script src="js/map.js"></script>
   <script src="js/control.js"></script>
+  <script src="js/translate.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -77,7 +81,7 @@
 
   ga('create', 'UA-34573394-17', 'auto');
   ga('send', 'pageview');
-
-</script>
+  </script>
+  <link rel="stylesheet" href="css/translate.css" />
 </body>
 </html>
