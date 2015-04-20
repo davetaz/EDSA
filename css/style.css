@@ -185,3 +185,9 @@ button {
 	margin: 20px;
 
 }
+#shareThis {
+	display: inline-block;
+	position: relative;
+	bottom: 10px;
+	left: 8px;	
+}
