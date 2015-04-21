@@ -26,36 +26,45 @@
 	<div class="container">
 		<ul class="invisibleList">
 		<li>
-			<progress max=6 value=0>0/6</progress>
+			<progress max=8 value=0>0/6</progress>
 			<div><div data-force="5" class="layer title title_xl">INFO: Welcome</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
     				<div id="google_translate_element"></div>
 				<br/><br/><br/><h2>Contribute data <span id="countryName">for </span></h2><br/>Thank-you for agreeing to contribute data to this survey.<br/><br/>This short survey should take no more than 15 minutes to complete.<br/><br/>To get started please press the next arrow to the right.<br/><br/><br/></br>
+				<div align="right">
+					Click right to continue to the next question.
+				</div>
 			</div>
 			</div>
 		
 		</li>
 		<li id="pickCountry">
-			<progress max=6 value=0>0/6</progress>
+			<progress max=8 value=0>0/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Pick your country</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				In order to discover trends within Europe, please pick the country for which you will be contributing data on the map below.<br/><br/>
 				<h2 id="mapCName">&nbsp;</h2>
 				<div id="map"></div>
+				<div align="right">
+					Click right to continue to the next question.
+				</div>
 			</div>
 			</div>
 					
 		</li>
 		<li>	
 		<div id="sector" style="margin-left: 30px">
-			<progress max=6 value=1>1/6</progress>
+			<progress max=8 value=1>1/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Select your sector</div></div>
 
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				<div class="tile__list list2" id="sectorsel">
+				</div>
+				<div align="right">
+					Click right to continue to the next question.
 				</div>
 			</div>
 			</div>
@@ -65,7 +74,7 @@
 		</li><li>
 
 		<div id="ability" style="margin-left: 30px">
-			<progress max=6 value=2>2/6</progress>
+			<progress max=8 value=2>2/6</progress>
 			<div><div data-force="5" class="layer title title_xl">INFO: Data science experience</div></div>
 		
 			<div class="wrapper">
@@ -95,13 +104,16 @@
 		</li><li>
 		
 		<div id="ability2" style="margin-left: 30px">
-			<progress max=6 value=2>2/6</progress>
+			<progress max=8 value=2>2/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Data science experience</div></div>
 		
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				<p><b>Select the box which best represents your relation to data science</b></p>
 				<div class="tile__list list2" id="involvement">
+				</div>
+				<div align="right">
+					Click right to continue to the next question.
 				</div>
 			</div>
 			</div>
@@ -111,7 +123,7 @@
 		</li><li>
 
 		<div id="multi" style="margin-left: 30px">
-			<progress max=6 value=3>3/6</progress>
+			<progress max=8 value=3>3/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Required skills?</div></div>
 			
 			<div class="wrapper">
@@ -148,7 +160,7 @@
 		</li><li>
 
 		<div id="capouter" style="margin-left: 30px">
-			<progress max=6 value=4>4/6</progress>
+			<progress max=8 value=4>4/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Capability and capacity</div></div>	
 			<div class="wrapper">
 			<div id="capcap" class="layer tile" style="width: 83%;">
@@ -184,6 +196,9 @@
 				<div id="capcap_notID" style="width: 100%;">
 					<h2>Not required</h2>
 				</div>
+				<div align="right">
+					Click right to continue to the next question.
+				</div>
 			</div>
 			</div>
 		</div>
@@ -192,7 +207,7 @@
 		</li><li>
 
 		<div id="multi2" style="margin-left: 30px">
-			<progress max=6 value=5>5/6</progress>
+			<progress max=8 value=5>5/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Training requirements</div></div>
 
 			<div class="wrapper">
@@ -225,12 +240,40 @@
 		<br/>
 		
 		</li><li>
-			<progress max=6 value=6>6/6</progress>
+			<progress max=8 value=6>6/6</progress>
+			<div><div data-force="5" class="layer title title_xl">Q: Comments</div></div>
+			<div class="wrapper">
+			<div class="layer tile" style="width: 83%;">
+				<p>If you have any other comments relating to data science skills and requirements in your organisaiton and sector please feel free to include these below.
+				<textarea id="comments" name="comments"></textarea>
+				<div align="right">
+					Click right to continue to the next question.
+				</div>
+			</div>	
+		</li><li>
+			<progress max=8 value=7>6/6</progress>
+			<div><div data-force="5" class="layer title title_xl">Q: Be Involved</div></div>
+			<div class="wrapper">
+			<div class="layer tile" style="width: 83%;">
+				<p>Leave your name and email if you would like to be involved further about this research:</p>
+				<label for="name">Name</label><input type="text" name="fullname" id="fullname"></input><br/><br/>
+				<label for="email">Email</label><input type="email" name="email" id="email"></input><br/>
+				<br/></br>
+				<input type="checkbox" id="contact_research"></input>Happy to be contacted about further research.<br/><br/>
+				<input type="checkbox" id="contact_results"></input>Please contact me about results of this research.<br/><br/>
+				<div align="right">
+					Click right to continue to the next question.
+				</div>
+			</div>	
+		</li><li>
+			<progress max=8 value=8>6/6</progress>
 			<div><div data-force="5" class="layer title title_xl">Thanks!</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				<br/><br/><br/><br/>Thank-you!<br/><br/>Please feel free to check your answers and then press submit when done.<br/><br/>
+				<section id="doneSection">
 				<button id="submit" onClick="processForm('myForm');">Submit</button>
+				</section>
 				<br/><br/><br/></br>
 			</div>
 	

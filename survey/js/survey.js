@@ -1,7 +1,14 @@
 var data = {};
-data["skills"] = new Array();
-data["training"] = new Array();
-data["country"] = new Array();
+data["skills"] = {};
+data["training"] = {};
+data["country"] = {};
+data["skills"]["not_required"] = {};
+data["skills"]["nice_to_have"] = {};
+data["skills"]["essential"] = {};
+data["skills"]["capcap"] = {};
+data["training"]["not_required"] = {};
+data["training"]["nice_to_have"] = {};
+data["training"]["essential"] = {};
 
 var QueryString = function () {
   // This function is anonymous, is executed immediately and 
@@ -215,25 +222,28 @@ function addToCapCap(inid,id,value,capacity,capability) {
 	var html = '<table id="capcap_'+id+'" class="capcaptable" width="100%"><tr><td width="20%">'+value+'</td><td width="80%"><label class="caplabel">Capability</label>';
 	html += '<div class="toggle-btn-grp joint-toggle">';
 	for (i=0;i<5;i++) {
-		html += '<label class="toggle-btn"><input type="radio" name="capability_'+id+'" value="'+i+'"/>'+i+'</label>';	
+		html += '<label class="toggle-btn"><input type="radio" id="capability_'+id+'" name="capability_'+id+'" value="'+i+'" onClick="processCapIn(\'capability\',\''+id+'\','+i+');"/>'+i+'</label>';	
 	}
 	html += '</div>';
 	html += '<br/>';
 	html += '<label class="caplabel">Capacity</label>';
 	html += '<div class="toggle-btn-grp joint-toggle">';
 	for (i=0;i<5;i++) {
-		html += '<label class="toggle-btn"><input type="radio" name="capacity_'+id+'" value="'+i+'"/>'+i+'</label>';	
+		html += '<label class="toggle-btn"><input type="radio" id="capacity_'+id+'" name="capacity_'+id+'" value="'+i+'" onClick="processCapIn(\'capacity\',\''+id+'\','+i+');"/>'+i+'</label>';	
 	}
 	html += '</div>';
 	html += '</td></tr></table>';
 	$('#capcap_'+inid).append(html);
 }
 
+function processCapIn(type,id,value) {	
+	data["skills"]["capcap"][type + "_" + id] = value;
+}
+
 function processForm(form) {
 	data["skills"]["not_required"] = new Array();
 	data["skills"]["nice_to_have"] = new Array();
 	data["skills"]["essential"] = new Array();
-	data["skills"]["capcap"] = new Array();
 	data["training"]["not_required"] = new Array();
 	data["training"]["nice_to_have"] = new Array();
 	data["training"]["essential"] = new Array();
@@ -242,26 +252,15 @@ function processForm(form) {
 		localid = $(this).attr('id');
 		console.log(localid);
 		data["skills"]["not_required"].push(localid);
-		data["skills"]["capcap"][localid] = new Array();
-		data["skills"]["capcap"][localid]["capacity"] = $('#capacity_' + localid).val();
-		data["skills"]["capcap"][localid]["capability"] = $('#capability_' + localid).val();
 	});	
 	$('div','#niceID').each(function(){
 		localid = $(this).attr('id');
 		data["skills"]["nice_to_have"].push(localid);
-		data["skills"]["capcap"][localid] = new Array();
-		data["skills"]["capcap"][localid]["capacity"] = $('#capacity_' + localid).val();
-		data["skills"]["capcap"][localid]["capability"] = $('#capability_' + localid).val();
 	});	
 	$('div','#essentialID').each(function(){
 		localid = $(this).attr('id');
 		data["skills"]["essential"].push(localid);
-		data["skills"]["capcap"][localid] = new Array();
-		data["skills"]["capcap"][localid]["capacity"] = $('#capacity_' + localid).val();
-		data["skills"]["capcap"][localid]["capability"] = $('#capability_' + localid).val();
 	});
-
-	data["Involvement"] = $('#involvement').val();	
 
 	$('div','#trainingNotID').each(function(){
 		data["training"]["not_required"].push($(this).attr('id')); 
@@ -272,8 +271,29 @@ function processForm(form) {
 	$('div','#trainingEssentialID').each(function(){
 		data["training"]["essential"].push($(this).attr('id')); 
 	});
-
+	data["comments"] = $('#comments').val();
+	data["contact"] = {};
+	data["contact"]["name"] = $('#fullname').val();
+	data["contact"]["email"] = $('#email').val();
+	data["contact"]["research"] = $('#contact_research').prop("checked");
+	data["contact"]["results"] = $('#contact_results').prop("checked");
 	console.log(data);
+
+	var tmp = JSON.stringify(data);
+	// tmp value: [{"id":21,"children":[{"id":196},{"id":195},{"id":49},{"id":194}]},{"id":29,"children":[{"id":184},{"id":152}]},...]
+	console.log(tmp);
+	$.ajax({
+		type: 'POST',
+		url: 'http://odinprac.theodi.org/EDSA/',
+		data: {'data': tmp},
+		success: function(msg) {
+			$('#doneSection').html("Your data has been submitted successfully");
+			console.log("success posted");
+		},
+		fail: function(msg) {
+			$('#doneSection').html('There was an error, please <a href="mailto:training@theodi.org?&subject=EDSA%20Result&body='+encodeURIComponent(tmp)+'">click here</a> to email your result to us.');
+		}
+	});
 }
 
 function showMiniHelp(id) {
