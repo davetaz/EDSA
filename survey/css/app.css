@@ -12,6 +12,12 @@ html, body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
+.clickExplore {
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #730100;
+}
 
 hr {
 	border: 1px dashed #730100;
@@ -194,11 +200,11 @@ a {
 
 #exp_manager{
 	position: relative;
-	left: -190px;
+	left: -100px;
 }
 #exp_everyday {
 	position: relative;
-	left: 190px;
+	left: 130px;
 }
 
 .block {
@@ -370,4 +376,35 @@ a {
 }
 .selected {
 	fill: #730100;
+}
+#venn {
+	display: inline-block;
+	width: 310px;
+	margin-left: -70px;
+	vertical-align: top;
+}
+.venn_text_small {
+	font-size: 14px;
+}
+.venn_text_ds {
+	font-weight: bold;
+	font-size: 14px;
+}
+#intro {
+	display: inline-block;
+	width: 450px;
+	padding-left: 45px;
+	font-weight: bold;
+}
+#intro item {
+	border: 1px dashed #730100;
+	display: block;
+	border-radius: 5px;
+	margin: 20px;
+	padding: 10px;
+}
+nli {
+	display: list-item;
+	text-align: left;
+	padding: 2px 0px;
 }

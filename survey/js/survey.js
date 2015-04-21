@@ -49,6 +49,11 @@ function addListeners() {
 			processSector($(this).attr('id'));
 		});
 	});
+	$('div','#involvement').each(function(){
+		$(this).click(function() {
+			processInvolvement($(this).attr('id'));
+		});
+	});
 	$('#addnotID').click(function() {
 		addElement($(this).attr('id'));
 	});
@@ -107,6 +112,13 @@ function processSector(sector) {
 	$("#" + sector).addClass("selected");	
 	data["Sector"] = sector;
 }
+function processInvolvement(sector) {
+	$('div','#involvement').each(function(){
+		$(this).removeClass("selected");
+	});
+	$("#" + sector).addClass("selected");	
+	data["Involvement"] = sector;
+}
 
 
 function updateForm() {
@@ -138,6 +150,13 @@ function populateForms() {
 	addToForm('sectorsel','Automative industry');
 	addToForm('sectorsel','Manufacturing');
 	addToForm('sectorsel','Mining');	
+	
+	addToForm('involvement','No involvement');
+	addToForm('involvement','I work with data scientists but am not one myself');
+	addToForm('involvement','I manage data scientists');
+	addToForm('involvement','My primary role is not data science by I practice occasionally');
+	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)');
+	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas');
 
 	addToForm('essentialID','Scientific method');
 	addToForm('essentialID','Open Culture');

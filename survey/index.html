@@ -27,7 +27,7 @@
 		<ul class="invisibleList">
 		<li>
 			<progress max=6 value=0>0/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Welcome</div></div>
+			<div><div data-force="5" class="layer title title_xl">INFO: Welcome</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
     				<div id="google_translate_element"></div>
@@ -38,7 +38,7 @@
 		</li>
 		<li id="pickCountry">
 			<progress max=6 value=0>0/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Pick your country</div></div>
+			<div><div data-force="5" class="layer title title_xl">Q: Pick your country</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				In order to discover trends within Europe, please pick the country for which you will be contributing data on the map below.<br/><br/>
@@ -51,7 +51,7 @@
 		<li>	
 		<div id="sector" style="margin-left: 30px">
 			<progress max=6 value=1>1/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Select your sector</div></div>
+			<div><div data-force="5" class="layer title title_xl">Q: Select your sector</div></div>
 
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
@@ -66,16 +66,43 @@
 
 		<div id="ability" style="margin-left: 30px">
 			<progress max=6 value=2>2/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Data science experience</div></div>
+			<div><div data-force="5" class="layer title title_xl">INFO: Data science experience</div></div>
 		
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				<input id="involvement" type="range" min="0" max="100" style="width: 100%;"/>
-				<label id="exp_manager">Requirements only</label>
-				<label id="exp_some"></label>
-				<label id="exp_middle">Confident with many areas</label>
-				<label id="exp_upper"></label>
-				<label id="exp_everyday">Practice daily</label>
+				<p>A data scientist is defined but their capability to combine a multitude of skills, not simply be an expert in one particular area. <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Drew Conway's Data Science venn diagram</a> (below) is currently the most widely adopted visualisation of what a data scientist is.</p>
+				<section>
+					<div id="venn"></div>
+					<!--<img id="venn" src="img/Data_Science_VD.png" alt="Data science venn diagram"/></img>-->
+					<section id="intro">
+						<p>Studies[][] have revealed a skills gap in data scientists globally.</p>
+						<p><em>The aim of this suvey is to:</em></p>
+						<ul>
+							<item>Identify data science capability (skills) and capacity (ability to use those skills) in Europe</item>
+							<item>Identify key skills gaps</item>
+							<item>Identify areas for new development of training</item>
+						</ul>
+					</section>
+				</section>
+				<div align="right">
+					Click right to continue to the next question.
+				</div>
+			</div>
+			</div>
+		</div>
+		<br/>
+
+		</li><li>
+		
+		<div id="ability2" style="margin-left: 30px">
+			<progress max=6 value=2>2/6</progress>
+			<div><div data-force="5" class="layer title title_xl">Q: Data science experience</div></div>
+		
+			<div class="wrapper">
+			<div class="layer tile" style="width: 83%;">
+				<p><b>Select the box which best represents your relation to data science</b></p>
+				<div class="tile__list list2" id="involvement">
+				</div>
 			</div>
 			</div>
 		</div>
@@ -85,11 +112,13 @@
 
 		<div id="multi" style="margin-left: 30px">
 			<progress max=6 value=3>3/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Required skills?</div></div>
+			<div><div data-force="5" class="layer title title_xl">Q: Required skills?</div></div>
 			
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%">
-			In the table below are listed a number of core capabilities required for data science. This is based upon an extrapolation of a couple of interesting studies presented by <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" target="_blank">Drew Conway</a> and <a href="http://www.exploringdatascience.com/the-data-science-clock/" target="_blank">Jamie Whitehorn</a>.<br/><br/><b>Drag</b> the elements to rate their importance in your sector (either <b>essential</b>, <b>some knowledge required</b> or <b>not required</b>). You can also <b>add</b> to each category. Please add skills in <b>all</b> categories, this help build a much better picture.<br/>
+				<p><b>Rank the skills below by importance for data scientists.</b></p>
+				<p><b>Drag</b> the elements to rate their importance in your sector (either <b>essential</b>, <b>some knowledge required</b> or <b>not required</b>). You can also <b>add</b> to each category. Please add skills in <b>all</b> categories, this help build a much better picture.</p>
+				<p>These skills come from the work of <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" target="_blank">Drew Conway</a> and <a href="http://www.exploringdatascience.com/the-data-science-clock/" target="_blank">Jamie Whitehorn</a>.</p>
 			</div>
 			<div class="layer tile" data-force="20">
 				<div class="tile__name" id="essential">Essential</div>
@@ -120,10 +149,32 @@
 
 		<div id="capouter" style="margin-left: 30px">
 			<progress max=6 value=4>4/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Capability and capacity</div></div>
-			
+			<div><div data-force="5" class="layer title title_xl">Q: Capability and capacity</div></div>	
 			<div class="wrapper">
 			<div id="capcap" class="layer tile" style="width: 83%;">
+			<p>In the table below please rate your capability and capacity with releation to each of the skills listed.</p>
+			<table width="100%" style="text-align: center;">
+				<tr><th style="width: 50%;">Capability</th><th style="width: 50%;">Capacity</th></tr>
+				<tr><td>Your skill in this area:</td><td>Your capacity to use this skill professionally:</td></tr>
+				<tr><td>
+					<ol start="0">
+						<nli>No practical knowledge</nli>
+						<nli>Enough knowledge to get by</nli>
+						<nli>A solid practical knowledge</nli>
+						<nli>Extensive, up to date and complete knowledge</nli>
+						<nli>Leading expert</nli>
+					</ol>
+				</td><td>
+					<ol start="0">
+						<nli>Not used</nli>
+						<nli>Limited use</nli>
+						<nli>Solid use</nli>
+						<nli>Extensive use</nli>
+						<nli>I write the books for a living</nli>
+					</ol>
+				</td></tr></table>
+			</table>
+
 				<div id="capcap_essentialID" style="width: 100%;">
 					<h2>Essential Skills</h2>
 				</div>
@@ -142,9 +193,12 @@
 
 		<div id="multi2" style="margin-left: 30px">
 			<progress max=6 value=5>5/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Training requirements</div></div>
+			<div><div data-force="5" class="layer title title_xl">Q: Training requirements</div></div>
 
 			<div class="wrapper">
+			<div class="layer tile" style="width: 83%">
+				<p><b>To help us develop the best training for you, please select your priorities from the lists below (drag and drop)</b></p> 
+			</div>
 			<div class="layer tile" data-force="20">
 				<div class="tile__name" id="essential">Essential</div>
 				<div class="tile__list" id="trainingEssentialID">
@@ -201,6 +255,7 @@
 
 	<script src="js/survey.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/data_science.js"></script>
   
         <script src="../js/translate.js"></script>
 	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

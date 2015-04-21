@@ -61,6 +61,13 @@ skills["Machine learning"].push("Social network analysis");
 skills["Machine learning"].push("Inference and reasoning");
 skills["Machine learning"].push("Process mining");
 skills["Machine learning"].push("Artificial intelligence");
+    
+defs["hacking skills"] = "Hacking Skills: Data is a commodity traded electronically, therefore, in order to be in this market you need to speak hacker. Far from 'black hat' activities, data hackers must be able to manipulate text files at the command-line, thinking algorithmically, and be interested in learning new tools.";
+defs["math stats"] = "Math & Statistics Knowledge: Once you have acquired and cleaned the data, the next step is to actually extract insight from it. You need to apply appropriate math and statistics methods, which requires at least a baseline familiarity with these tools.";
+defs["substantive expertise"] = "Substantive Expertise: Science is about discovery and building knowledge, which requires some motivating questions about the world and hypotheses that can be brought to data and tested with statistical methods. Questions first, then data.";
+defs["machine learning"] = "Machine Learning: Data plus math is machine learning, which is fantastic if that is what you if that is what you are interested in, but not if you are doing data science.";
+defs["traditional research"] = "Traditional Research: Substantive expertise plus math and statistics knowledge is where most traditional researcher falls. Doctoral level researchers spend most of their time acquiring expertise in these areas, but very little time learning about technology.",
+defs["danger zone"] = "Danger Zone!: This is where I place people who, 'know enough to be dangerous,' and is the most problematic area of the diagram. It is from this part of the diagram that the phrase 'lies, damned lies, and statistics' emanates, because either through ignorance or malice this overlap of skills gives people the ability to create what appears to be a legitimate analysis without any understanding of how they got there or what they have created.";
 
 var QueryString = function () {
   // This function is anonymous, is executed immediately and 
@@ -92,11 +99,15 @@ $( document ).ready(function() {
 	if (id != "") {
 		id = decodeURIComponent(id);
 		id = id.replace(/_/g,' ');
+		console.log(id);
+		console.log(defs[id]);
 //		processWikiText(id);
 		$('#helpTitle').html(id);
 		$('#helpContent').html(defs[id]);
 		$(skills[id]).each(function(skill) {
 			$('#skillsIncludeList').append("<li>" + skills[id][skill] + "</li>");
+			$('#skillsTitle').fadeIn();
+
 		});
 	}
 });
