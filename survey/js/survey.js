@@ -33,7 +33,6 @@ var QueryString = function () {
     return query_string;
 } ();
 
-
 $( document ).ready(function() {
 	data["country"]["ISO2"] = QueryString.ISO2;
 	data["country"]["name"] = QueryString.name;
