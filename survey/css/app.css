@@ -175,6 +175,7 @@ a {
 	}
 
 	.tile__list {
+		min-height: 40px;
 		margin-top: 10px;
 	}
 		.tile__list:last-child {
