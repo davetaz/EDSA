@@ -287,11 +287,11 @@ function processForm(form) {
 		url: 'http://odinprac.theodi.org/EDSA/',
 		data: {'data': tmp},
 		success: function(msg) {
-			$('#doneSection').html("Your data has been submitted successfully");
+			$('[id=doneSection]').html('Your data has been submitted successfully');
 			console.log("success posted");
 		},
 		fail: function(msg) {
-			$('#doneSection').html('There was an error, please <a href="mailto:training@theodi.org?&subject=EDSA%20Result&body='+encodeURIComponent(tmp)+'">click here</a> to email your result to us.');
+			$('[id=doneSection]').html('There was an error, please <a href="mailto:training@theodi.org?&subject=EDSA%20Result&body='+encodeURIComponent(tmp)+'">click here</a> to email your result to us.');
 		}
 	});
 }
