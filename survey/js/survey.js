@@ -241,6 +241,8 @@ function processCapIn(type,id,value) {
 }
 
 function processForm(form) {
+	$('[id=submit]').attr("disabled",true);
+	$('[id=submit]').html("Processing");
 	data["skills"]["not_required"] = new Array();
 	data["skills"]["nice_to_have"] = new Array();
 	data["skills"]["essential"] = new Array();
