@@ -285,7 +285,7 @@
 
         vertical: false,            // Set to "true" to make the carousel scroll vertically
         circular: false,            // Set to "true" to make it an infinite carousel
-        visible: 3,                 // Set to a numeric value to specify the number of visible elements at a time
+        visible: 1,                 // Set to a numeric value to specify the number of visible elements at a time
         start: 0,                   // Set to a numeric value to specify which item to start from
         scroll: 1,                  // Set to a numeric value to specify how many items to scroll for one scroll event
 
