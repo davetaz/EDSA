@@ -79,6 +79,9 @@ function addListeners() {
 	$('#addtrainingEssentialID').click(function() {
 		addElement($(this).attr('id'));
 	});
+	$('#addsectorsel').click(function() {
+		addElement($(this).attr('id'));
+	});
 }
 
 function mremove(id) {
@@ -108,6 +111,7 @@ function addElement(id) {
 		document.getElementById(id).appendChild(el);
 		//addToCapCap("capcap_"+id,outid,ui.data.name,50,50);
 		updateForm();
+		addListeners();
 	});
 }
 
