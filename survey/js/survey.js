@@ -188,6 +188,10 @@ function populateForms() {
 
 
 function addToForm(id,item) {
+	help = false;
+	if (id == "essentialID" || id == "niceID" || id == "notID") {
+		help = true;
+	}
 	prefix = "";
 	if (id == 'sectorsel') {
 		prefix = "";
@@ -198,7 +202,11 @@ function addToForm(id,item) {
 	if (prefix != "") {
 		itemID = prefix + "_" + itemID;
 	}
-	$('#'+id).append('<div id="'+itemID+'">'+item+' <a href="#" onClick="showMiniHelp(\''+item+'\');">?</a></div>');
+	if (help) {
+		$('#'+id).append('<div id="'+itemID+'">'+item+' <a href="#" onClick="showMiniHelp(\''+item+'\');">?</a></div>');	
+	} else {
+		$('#'+id).append('<div id="'+itemID+'">'+item+'</div>');	
+	}
 }
 
 function processUpdate(inid) {
