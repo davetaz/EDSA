@@ -1,9 +1,9 @@
-gb
-data visualisation
-infographics
-interaction
-data mapping
-data stories
-data journalism
-d3js
-tableau
+gb,de,fr
+"data visualisation",Datenvisualisierung,"visualisation de données"
+infographics,Infografiken,infographies
+interaction,Zusammenspiel,interaction
+"data mapping",Datenmapping,"la cartographie des données"
+"data stories","Daten Geschichten","histoires de données"
+"data journalism",Datenjournalismus,"le journalisme de données"
+d3js,d3js,d3js
+tableau,Gemälde,tableau

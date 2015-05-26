@@ -1,9 +1,9 @@
-gb
-databases
-data management
-data engineering
-data mining
-data formats
-linked data
-information extraction
-stream processing
+gb,de,fr
+databases,Datenbanken,"bases de données"
+"data management",Datenmanagement,"gestion des données"
+"data engineering",Datentechnik,"ingénierie de données"
+"data mining",Data-Mining,"exploration de données"
+"data formats",Datenformate,"formats de données"
+"linked data","Linked Data","données lié"
+"information extraction",Informationsextraktion,"l&#39;extraction de l&#39;information"
+"stream processing",Stromverarbeitung,"traitement de flux"

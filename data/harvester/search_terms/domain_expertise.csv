@@ -1,9 +1,9 @@
-gb
-enterprise process
-business intelligence
-data anonymisation
-semantics
-schema
-data licensing
-data quality
-data governance
+gb,de,fr
+"enterprise process",Unternehmensprozess,"processus de l&#39;entreprise"
+"business intelligence","Business Intelligence","business intelligence"
+"data anonymisation",Datenanonymisierungs,"anonymisation de données"
+semantics,Semantik,sémantique
+schema,Schema,schéma
+"data licensing","Daten Lizenzierung","octroi de licences de données"
+"data quality",Datenqualität,"la qualité des données"
+"data governance","Data Governance","la gouvernance des données"

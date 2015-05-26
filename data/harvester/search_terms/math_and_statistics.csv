@@ -1,9 +1,9 @@
-gb
-Linear algebra
-Calculus
-Mathematics
-Statistics
-Probability
-RStudio
-Data analytics
-Data analysis
+gb,de,fr
+"Linear algebra","Lineare Algebra","Algèbre linéaire"
+Calculus,Infinitesimalrechnung,Calcul
+Mathematics,Mathematik,Mathématiques
+Statistics,Statistik,Statistiques
+Probability,Wahrscheinlichkeit,Probabilité
+RStudio,RStudio,Rstudio
+"Data analytics",Datenanalyse,"L&#39;analyse des données"
+"Data analysis",Datenanalyse,"L&#39;analyse des données"
