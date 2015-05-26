@@ -69,7 +69,14 @@ button {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
-
+.helpIcon {
+	background-color: #730100;
+	border-radius: 30px;
+	width: 20px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
 .navbutton { 
 	width: 50px;
 	height: 60px;

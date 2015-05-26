@@ -207,7 +207,7 @@ function addToForm(id,item) {
 		itemID = prefix + "_" + itemID;
 	}
 	if (help) {
-		$('#'+id).append('<div id="'+itemID+'">'+item+' <a href="#" onClick="showMiniHelp(\''+item+'\');">?</a></div>');	
+		$('#'+id).append('<div id="'+itemID+'">'+item+' <a class="helpIcon" href="#" onClick="showMiniHelp(\''+item+'\');">?</a></div>');	
 	} else {
 		$('#'+id).append('<div id="'+itemID+'">'+item+'</div>');	
 	}
