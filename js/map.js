@@ -59,7 +59,7 @@ function drawMap(error, world, names, data, print) {
 	document.getElementById("takeSurvey").innerHTML = '<button onClick="showSurvey(\''+d.ISO2+'\',\''+d.name+'\');" value="Click here to contribute!">Click here to contribute!</button>';
 	$('#skillsChart').html('<div id="noSkillData">No Data Available</div>');
 	$('#radar').html('');
-        
+       	 
 	drawStatsObject(d.data);
 	skillsChart(d.ISO2,"general");
         zoomTo(d);
@@ -82,7 +82,8 @@ function getColor(d,i){
 	overlayValMin = 0.22,
 	overlayValMax = 0.23;
 
-	if (d.data["Capability"] === undefined) {
+	
+	if (d.data["Capability"] === undefined || d.data["Capability"]["Rank_Scaled"] == 0) {
 		return d3.rgb(255,255,255);
 	} else {
 		console.log(d);

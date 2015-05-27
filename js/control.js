@@ -16,7 +16,7 @@ $(document).ready(function() {
 	queue()
 	    .defer(d3.json, "data/world-50m.json") 
             .defer(d3.csv, "data/eu-country-names.csv") 
-	    .defer(d3.csv, "data/test-data.csv")
+	    .defer(d3.csv, "data/capcap.csv")
 	    .await(drawMap);
 });
 

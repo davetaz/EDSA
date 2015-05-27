@@ -1,5 +1,7 @@
 Country,ISO2,Type,Rank_Scaled,Machine_learning,Domain_expertise,Data_skills,Advanced_computing,Visualisation,Scientific_method,Open_culture,Math_and_statistics
 United Kingdom,GB,Capability,100,3,3,3,3,2,4,1,3
 United Kingdom,GB,Capacity,100,2,3,3,2,2,2,1,3
-Norway,NO,Capability,10,2,1,2,3,4,2,2,3
-Norway,NO,Capacity,10,1,1,1,3,3,1,0,2
+Norway,NO,Capability,0,0,0,0,0,0,0,0,0
+Norway,NO,Capacity,0,0,0,0,0,0,0,0,0
+France,FR,Capability,0,0,0,0,0,0,0,0,0
+France,FR,Capacity,0,0,0,0,0,0,0,0,0
