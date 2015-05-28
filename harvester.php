@@ -3,20 +3,81 @@
 #$data = getLinkedIn("Machine learning","gb");
 #processLinkedIn($data);
 error_reporting(E_ALL ^ E_NOTICE);
+//loadCountries();
 init();
 
+function loadCountries() {
+	$input_file = "data/eu-country-languages.csv";
+	$handle = fopen($input_file,"r");
+	$headings = fgetcsv($handle);
+	$j=0;
+	while ($data = fgetcsv($handle)) {
+		for($i=0;$i<count($data);$i++) {
+			$countries[$j][$headings[$i]] = $data[$i];
+		}
+		$j++;
+	}
+	return $countries;
+}
 
 function init() {
+	$countries = loadCountries();
+	for ($i=0;$i<count($countries);$i++) {
+		getDataForCountry($countries[$i]);
+	}
+}
+
+function getDataForCountry($country) {
+	$country_code = strtolower($country["ISO2"]);
+	$language = strtolower($country["Language"]);
 	$input_dir = "data/harvester/search_terms/";
 	$output_dir = "data/harvester/search_results/linkedin/";
 	$files = scandir($input_dir);
 	for ($i=2;$i<count($files);$i++) {
 		$file = $input_dir . $files[$i];
 		$output_prefix = $output_dir . substr($files[$i],0,-4);
-		processFile($file,$output_prefix);
+		$terms = getTerms($file,$language);
+		if ($terms) {
+			$output = processTerms($terms,$country_code);
+			writeOutput($output_prefix,$output);
+		} else {
+			echo "No translation for " . $language . "\n";
+		}
 	}
 }
 
+function getTerms($file,$language){
+	$terms = [];
+	$handle = fopen($file,"r");
+	$headings = fgetcsv($handle);
+	$search = false;
+	for($i=0;$i<count($headings);$i++) {
+		if ($headings[$i] == $language) {
+			$search = $i;
+		}
+	}
+	if (!$search) {
+		return false;
+	}
+	while ($data = fgetcsv($handle)) {
+		$terms[] = $data[$search];
+	}
+	return $terms;
+}
+
+function processTerms($terms,$country_code) {
+	for ($i=0;$i<count($terms);$i++) {
+		$term = $terms[$i];
+		echo "Fetching data for " . $term . " (" . $country_code . ")\n";
+		$output_data = getLinkedIn($term,$country_code);
+		$languages[$country_code][$term] = $output_data;
+		$delay = rand(6,15);
+		echo "Sleeping " . $delay . "\n";
+		sleep($delay);
+	}
+	return $languages;
+}
+/*
 function processFile($file,$output_prefix) {
 	echo $file . "\n";
 	//echo $output_prefix . "\n";
@@ -39,8 +100,9 @@ function processFile($file,$output_prefix) {
 	writeOutput($output_prefix,$languages);
 	//exit();
 }
-
+*/
 function writeOutput($output_prefix,$data) {
+	echo "writing output for " . $output_prefix . "\n";
 	//$s = serialize($data);
 	//$handle = fopen("output.data","w");
 	//fwrite($handle,$s);

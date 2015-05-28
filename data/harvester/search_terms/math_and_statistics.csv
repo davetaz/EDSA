@@ -1,9 +1,9 @@
-gb,de,fr
-"Linear algebra","Lineare Algebra","Algèbre linéaire"
-Calculus,Infinitesimalrechnung,Calcul
-Mathematics,Mathematik,Mathématiques
-Statistics,Statistik,Statistiques
-Probability,Wahrscheinlichkeit,Probabilité
-RStudio,RStudio,Rstudio
-"Data analytics",Datenanalyse,"L&#39;analyse des données"
-"Data analysis",Datenanalyse,"L&#39;analyse des données"
+be,bg,ca,cs,da,de,el,es,et,fi,fr,gb,hr,hu,is,it,la,lt,lv,mk,mt,no,pl,pt,ro,sk,sl,sq,sr,sv,uk
+"Лінейная алгебра","Линейна алгебра","Àlgebra lineal","Lineární algebra","Lineær algebra","Lineare Algebra","Γραμμική άλγεβρα","Álgebra lineal",Lineaaralgebra,Lineaarialgebra,"Algèbre linéaire","Linear algebra","Linearna algebra","Lineáris algebra","Línuleg algebra","Algebra lineare","Linear algebra","Tiesinė algebra","Lineārā algebra","Линеарна алгебра","Alġebra lineari","Lineær algebra","Algebra liniowa","Álgebra Linear","Algebra liniara","Lineárne algebra","Linearna algebra","Algjebër lineare","Линеарна алгебра","Linjär algebra","Лінійна алгебра"
+Падлік,Смятане,Càlcul,Počet,Calculus,Infinitesimalrechnung,Λογισμός,Cálculo,Kivi,Laskenta,Calcul,Calculus,Račun,Számítás,Stærðfræðigreining,Calcolo,Calculus,Skaičiavimas,Rēķini,Калкулус,Kalkulu,Kalkulus,"Rachunek różniczkowy",Cálculo,Calcul,Počet,Calculus,Gur,Рачун,Analys,Обчислення
+Матэматыка,Математика,Matemàtiques,Matematika,Matematik,Mathematik,Μαθηματικά,Matemáticas,Matemaatika,Matematiikka,Mathématiques,Mathematics,Matematika,Matematika,Stærðfræði,Matematica,Mathematica,Matematika,Matemātika,Математика,Matematika,Matematikk,Matematyka,Matemática,Matematică,Matematika,Matematika,Matematikë,Математика,Matematiska,Математика
+Статыстыка,Статистика,Estadística,Statistika,Statistik,Statistik,Στατιστική,Estadística,Statistika,Tilasto,Statistiques,Statistics,Statistika,Statisztika,Tölfræði,Statistica,Statistics,Statistika,Statistika,Статистика,Istatistika,Statistikk,Statystyka,Estatística,Statistică,Štatistika,Statistika,Statistikë,Статистика,Statistik,Статистика
+Верагоднасць,Вероятност,Probabilitat,Pravděpodobnost,Sandsynlighed,Wahrscheinlichkeit,Πιθανότητα,Probabilidad,Tõenäosus,Todennäköisyys,Probabilité,Probability,Vjerojatnost,Valószínűség,Líkindi,Probabilità,Probabiliter,Tikimybė,Varbūtība,Веројатност,Probabbiltà,Sannsynlighet,Prawdopodobieństwo,Probabilidade,Probabilitate,Pravdepodobnosť,Verjetnost,Probabilitet,Вероватноћа,Sannolikhet,Імовірність
+RStudio,RStudio,RStudio,RStudio,RStudio,RStudio,RStudio,RStudio,RStudio,RStudio,Rstudio,RStudio,RStudio,RStudio,RStudio,Rstudio,RStudio,RStudio,RStudio,RStudio,RStudio,RStudio,RStudio,Rstudio,RStudio,RStudio,RStudio,RStudio,Рстудио,RStudio,RStudio
+"Аналітыка дадзеных","Анализ на данни","Anàlisi de dades","Analytických údajů","Data analytics",Datenanalyse,"Ανάλυση δεδομένων","Análisis de datos","Andmed Analytics",Data-analytiikka,"L&#39;analyse des données","Data analytics","Podaci analitika",Adatelemzés,"Gögn greinandi","Analisi dei dati","Data analytics","Duomenų analizė","Datu analytics","Анализа на податоци","Analytics data",Dataanalyse,"Analizy danych","Análise de dados","Analytics date","Analytických údajov","Podatkovni analytics","Analytics dhënave","Аналитичке податке","Data analytics","Аналітика даних"
+"Аналіз дадзеных","Анализ на данни","Anàlisi de les dades","Analýza dat",Dataanalyse,Datenanalyse,"ΑΝΑΛΥΣΗ ΔΕΔΟΜΕΝΩΝ","Análisis de los datos","Andmete analüüs",Data-analyysi,"L&#39;analyse des données","Data analysis","Analiza podataka",Adatelemzés,Gagnagreining,"Analisi dei dati","Notitia analysis","Duomenų analizė","Datu analīze","Анализа на податоци","Analiżi tad-data",Dataanalyse,"Analiza danych","Análise de dados","Analiza datelor","Analýza dát","Analiza podatkov","Analiza e të dhënave","Анализа података",Dataanalys,"Аналіз даних"

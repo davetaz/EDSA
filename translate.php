@@ -1,48 +1,86 @@
 <?php
+error_reporting(E_ALL ^ E_NOTICE);
 
 include "key.php";
- 
 
-$input_dir = "data/harvester/search_terms/";
-$files = scandir($input_dir);
-$output_lang = $argv[1];
-echo $output_lang;
-echo "\n\n";
+init();
 
-for ($i=2;$i<count($files);$i++) {
-	$file = $input_dir . $files[$i];
-	$output_prefix = $output_dir . substr($files[$i],0,-4);
-	processFile($file,$output_prefix);
+function init() {
+	$countries = loadCountries();
+	$languages = getLanguagesInOrder($countries);
+	// GOT HERE, NEED TO REWRITE THE TRANSLATOR TO READ FILE FOR WHAT EXISTS (into array) 
+	// AND ADD TO THE ARRAY WHAT DOESN'T. 
+	// THEN ENSURE THE LANGUAGES ARE IN ORDER AND WRITE THE WHOLE LOT BACK TO THE FILE. 
+	processFiles($languages);
 }
 
-function processFile($file) {
-	global $output_lang;
+function loadCountries() {
+	$input_file = "data/eu-country-languages.csv";
+	$handle = fopen($input_file,"r");
+	$headings = fgetcsv($handle);
+	$j=0;
+	while ($data = fgetcsv($handle)) {
+		for($i=0;$i<count($data);$i++) {
+			$countries[$j][$headings[$i]] = $data[$i];
+		}
+		$j++;
+	}
+	return $countries;
+}
+
+function getLanguagesInOrder($countries) {
+	for ($i=0;$i<count($countries);$i++) {
+		$lang[] = $countries[$i]["Language"];
+	}
+	asort($lang);
+	foreach($lang as $key => $val) {
+		if (!in_array($val,$out)) {
+			$out[] = $val;	
+		} 
+	}
+	return $out;
+}
+
+function processFiles($languages) {
+	$input_dir = "data/harvester/search_terms/";
+	$files = scandir($input_dir);
+	
+	for ($i=2;$i<count($files);$i++) {
+		$file = $input_dir . $files[$i];
+		processFile($file,$languages);
+	}
+}
+
+function processFile($file,$languages) {
 	echo $file . "\n";
-	$new_file = $file . "_" . $output_lang;
-        //echo $output_prefix . "\n";
-        $handle = fopen($file,"r");
-	$whandle = fopen($new_file,"w");
-        $headings = fgetcsv($handle);
-	$headings[] = $output_lang;
-	fputcsv($whandle,$headings);
-        //writeOutput($output_prefix,$languages);
-        //exit();
-        while ($data = fgetcsv($handle)) {
-                for ($i=0;$i<count($data);$i++) {
-                        $language = $headings[$i];
-                        $term = $data[$i];
-			if ($language == "gb") {
-                        	//echo "Fetching data for " . $term . " (" . $language . ") in $output_lang\n";
-				$data[] =  Translate($term,$output_lang);
-				fputcsv($whandle,$data);
-			}
-                }
-        }
-	fclose($handle);
-	fclose($whandle);
-	rename($new_file,$file);
+	$handle = fopen($file,"r");
+	$headings = fgetcsv($handle);
+	while ($data = fgetcsv($handle)) {
+		for ($i=0;$i<count($data);$i++) {
+            $language = $headings[$i];
+            $term = $data[$i];
+            $output[$language][] = $term;
+		}
+    }
+    for($i=0;$i<count($languages);$i++) {
+    	$lang = $languages[$i];
+    	if (!$output[$lang]) {
+    		echo "need to get " . $lang . " for " . $file . "\n";
+    		$output = getLanguage($output,$lang);
+    	}
+    }
+    ksort($output);
+    writeOutput($output,$file);
 }
 
+function getLanguage($output,$lang) {
+	$gb = $output["gb"];
+	for ($i=0;$i<count($gb);$i++) {
+//		$output[$lang][] = "test_" . $gb[$i];
+		$output[$lang][] = Translate($gb[$i],$lang);
+	}
+	return $output;
+}
 
 function Translate($word,$to = 'fr')
 {
@@ -54,6 +92,22 @@ function Translate($word,$to = 'fr')
 	$trans = json_decode($name_en,true);
 	$item = $trans["data"]["translations"][0]["translatedText"];
 	return $item;
+}
+
+function writeOutput($output,$file) {
+	foreach ($output as $key => $values) {
+		$headings[] = $key;
+		for ($i=0;$i<count($values);$i++) {
+			$row[$i][] = $values[$i];
+		}
+	}
+	$file = $file . ".outtest";
+	$handle = fopen($file,"w");
+	fputcsv($handle,$headings);
+	for($i=0;$i<count($row);$i++) {
+		fputcsv($handle,$row[$i]);
+	}
+	fclose($handle);
 }
 
 ?>
