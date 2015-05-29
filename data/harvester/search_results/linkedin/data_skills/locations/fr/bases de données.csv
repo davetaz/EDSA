@@ -1,5 +1,6 @@
-date,Paris,Lyon,Toulouse,Lille,Marseille,Nice,Rennes,Dijon,Montpellier,Rouen,Limoges,"Perpignan (Perpinyà)",Grenoble,Bordeaux,"See More",Orléans,"La Rochelle"
-2015-05-27,355,20,20,20,15,10,11,,7,9,9,8,8,,7,7,7
-2015-05-27,357,20,20,20,15,10,11,,9,9,9,8,8,,7,7,7
-2015-05-28,353,21,20,19,16,11,11,,10,9,9,8,8,7,7,7,
-2015-05-28,356,21,21,20,15,11,11,10,10,10,9,9,8,7,7,,
+date,Paris,Toulouse,Lille,Lyon,Marseille,Nice,Montpellier,Rennes,Dijon,Rouen,Grenoble,Limoges,Bordeaux,Nantes,"See More","Perpignan (Perpinyà)",Orléans,"La Rochelle"
+2015-05-27,355,20,20,20,15,10,7,11,,9,8,9,,,7,8,7,7
+2015-05-27,357,20,20,20,15,10,9,11,,9,8,9,,,7,8,7,7
+2015-05-28,353,20,19,21,16,11,10,11,,9,8,9,7,,7,8,7,
+2015-05-28,356,21,20,21,15,11,10,11,10,10,8,9,7,,7,9,,
+2015-05-29,364,21,18,18,17,13,11,11,10,10,9,8,7,7,7,,,

@@ -1,5 +1,6 @@
-date,Munich,Berlin,Cologne,"Frankfurt Am Main",Hamburg,Stuttgart,Karlsruhe,Nürnberg,Leipzig,Dresden,Erfurt,Mannheim,Hannover,Kassel,"See More"
-2015-05-27,180,117,98,97,65,44,12,12,10,10,8,8,6,5,5
-2015-05-27,173,115,97,98,65,47,12,12,9,8,8,8,6,5,5
-2015-05-28,175,117,95,93,72,46,12,12,11,8,8,7,5,5,5
-2015-05-28,175,119,95,91,73,46,12,12,11,8,8,7,6,5,5
+date,Munich,Berlin,"Frankfurt Am Main",Cologne,Hamburg,Stuttgart,Karlsruhe,Nürnberg,Leipzig,Hannover,Dresden,Erfurt,Mannheim,Kassel,"See More"
+2015-05-27,180,117,97,98,65,44,12,12,10,6,10,8,8,5,5
+2015-05-27,173,115,98,97,65,47,12,12,9,6,8,8,8,5,5
+2015-05-28,175,117,93,95,72,46,12,12,11,5,8,8,7,5,5
+2015-05-28,175,119,91,95,73,46,12,12,11,6,8,8,7,5,5
+2015-05-29,189,117,102,79,73,52,12,12,11,9,8,8,8,5,5

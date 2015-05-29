@@ -1,5 +1,6 @@
-date,Berlin,Munich,"Frankfurt Am Main",Stuttgart,Cologne,Hamburg,Freiburg,Nürnberg,"See More",Bielefeld
+date,Berlin,Munich,"Frankfurt Am Main",Stuttgart,Cologne,Hamburg,Nürnberg,Bielefeld,Freiburg,"See More"
 2015-05-27,96,51,25,26,16,10,5,5,5,5
-2015-05-27,93,49,25,25,16,10,5,5,5,
-2015-05-28,93,49,26,25,16,10,5,5,5,
-2015-05-28,97,49,27,25,16,10,5,5,5,
+2015-05-27,93,49,25,25,16,10,5,,5,5
+2015-05-28,93,49,26,25,16,10,5,,5,5
+2015-05-28,97,49,27,25,16,10,5,,5,5
+2015-05-29,97,45,29,27,16,10,6,5,5,5
