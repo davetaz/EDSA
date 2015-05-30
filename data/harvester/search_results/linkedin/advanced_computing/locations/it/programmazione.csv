@@ -1,3 +1,4 @@
-date,Milan,Rome,Potenza,Padova,Florence,Bologna,Verona,Turin,Treviso,Perugia,Pisa,Varese,Vicenza,Teramo,"See More"
-2015-05-28,132,91,65,65,42,41,37,34,30,27,26,21,18,17,17
-2015-05-29,128,91,65,62,42,40,37,33,30,27,26,21,19,17,17
+date,Milan,Rome,Florence,Bologna,Turin,Treviso,Varese,Vicenza,Brescia,Bergamo,Modena,Cuneo,Rimini,Gorizia,"See More",Potenza,Padova,Verona,Perugia,Pisa,Teramo
+2015-05-28,132,91,42,41,34,30,21,18,,,,,,,17,65,65,37,27,26,17
+2015-05-29,128,91,42,40,33,30,21,19,,,,,,,17,65,62,37,27,26,17
+2015-05-30,124,87,42,39,35,29,23,19,14,13,11,10,6,5,5,,,,,,

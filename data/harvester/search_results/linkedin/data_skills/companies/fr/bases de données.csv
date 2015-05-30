@@ -1,6 +1,7 @@
-date,"Confidential Company - Undisclosed","Crédit Agricole","Société Générale","BNP Paribas","Dassault Systèmes","Airbus Group",Deloitte,"Schneider Electric","Crédit Foncier","Veolia Energy","EADS Defence &amp; Security","Alstom Group",Thales,"Johnson &amp; Johnson","Sopra Steria","See More",HSBC
-2015-05-27,111,33,33,27,16,19,17,10,6,,7,10,5,7,6,5,6
-2015-05-27,111,33,33,27,16,19,17,9,6,,7,10,5,7,6,5,6
-2015-05-28,110,33,32,27,21,19,17,9,,8,7,10,7,7,6,6,6
-2015-05-28,110,35,32,27,21,19,16,9,10,8,10,10,7,7,,6,6
-2015-05-29,116,36,29,27,21,19,17,10,10,10,10,9,8,7,6,6,
+date,"Confidential Company - Undisclosed","BNP Paribas","Société Générale","Dassault Systèmes","Airbus Group",Deloitte,"Veolia Energy","Crédit Foncier","Alstom Group","EADS Defence &amp; Security",Thales,"Schneider Electric","Johnson &amp; Johnson","Sopra Steria","Cap Fi Groupe","See More","Crédit Agricole",HSBC
+2015-05-27,111,27,33,16,19,17,,6,10,7,5,10,7,6,,5,33,6
+2015-05-27,111,27,33,16,19,17,,6,10,7,5,9,7,6,,5,33,6
+2015-05-28,110,27,32,21,19,17,8,,10,7,7,9,7,6,,6,33,6
+2015-05-28,110,27,32,21,19,16,8,10,10,10,7,9,7,,,6,35,6
+2015-05-29,116,27,29,21,19,17,10,10,9,10,8,10,7,6,,6,36,
+2015-05-30,130,26,26,21,19,17,11,10,10,10,8,8,7,6,5,5,,

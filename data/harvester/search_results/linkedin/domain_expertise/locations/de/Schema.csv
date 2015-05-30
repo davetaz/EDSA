@@ -1,6 +1,7 @@
-date,Munich,Berlin,Cologne,"Frankfurt Am Main",Hannover,Stuttgart,Hamburg,Kiel,"Kreisfreie Stadt Aachen","See More",Freiburg,Nürnberg
-2015-05-27,30,34,12,15,11,8,6,6,5,5,5,5
-2015-05-27,30,34,13,15,11,8,5,6,5,5,5,5
-2015-05-28,30,34,12,14,11,8,5,6,5,5,5,5
-2015-05-28,30,33,13,14,11,8,5,6,5,5,5,5
-2015-05-29,35,27,15,15,11,8,6,6,5,5,,
+date,Munich,Berlin,Cologne,"Frankfurt Am Main",Hannover,Hamburg,Stuttgart,Kiel,Freiburg,"Kreisfreie Stadt Aachen","See More",Nürnberg
+2015-05-27,30,34,12,15,11,6,8,6,5,5,5,5
+2015-05-27,30,34,13,15,11,5,8,6,5,5,5,5
+2015-05-28,30,34,12,14,11,5,8,6,5,5,5,5
+2015-05-28,30,33,13,14,11,5,8,6,5,5,5,5
+2015-05-29,35,27,15,15,11,6,8,6,,5,5,
+2015-05-30,36,23,15,15,11,10,9,6,5,5,5,

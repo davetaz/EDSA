@@ -1,6 +1,7 @@
-date,"Confidential Company - Undisclosed",Deloitte,"Crédit Agricole","Veolia Energy","Schneider Electric","Alstom Group","See More"
-2015-05-27,41,10,7,,5,5,
-2015-05-27,41,10,7,,5,5,
-2015-05-28,41,10,7,5,5,5,5
-2015-05-28,41,10,7,5,5,5,5
-2015-05-29,43,10,7,6,5,5,5
+date,"Confidential Company - Undisclosed",Deloitte,"Veolia Energy","Schneider Electric","Alstom Group","Crédit Agricole","See More"
+2015-05-27,41,10,,5,5,7,
+2015-05-27,41,10,,5,5,7,
+2015-05-28,41,10,5,5,5,7,5
+2015-05-28,41,10,5,5,5,7,5
+2015-05-29,43,10,6,5,5,7,5
+2015-05-30,55,10,6,5,5,,
