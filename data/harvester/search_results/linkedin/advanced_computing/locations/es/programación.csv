@@ -1,4 +1,5 @@
-date,Madrid,Barcelona,Murcia,Sevilla,"A Coruña",Bilbao,Valencia,Zaragoza,Málaga,Vigo,Palma,Gijón,Granada,Reus,"See More"
-2015-05-28,482,211,19,21,19,21,20,18,15,12,10,9,8,6,6
-2015-05-29,489,223,18,23,21,24,20,16,17,12,10,10,8,6,6
-2015-05-30,490,213,20,20,18,18,18,14,12,12,9,8,6,6,6
+date,Madrid,Barcelona,Sevilla,Valencia,"A Coruña",Zaragoza,Vigo,Valladolid,Pamplona,"See More",Murcia,Bilbao,Málaga,Palma,Gijón,Granada,Reus
+2015-05-28,482,211,21,20,19,18,12,,,6,19,21,15,10,9,8,6
+2015-05-29,489,223,23,20,21,16,12,,,6,18,24,17,10,10,8,6
+2015-05-30,490,213,20,18,18,14,12,,,6,20,18,12,9,8,6,6
+2015-05-31,467,194,22,18,17,16,13,7,5,5,,,,,,,

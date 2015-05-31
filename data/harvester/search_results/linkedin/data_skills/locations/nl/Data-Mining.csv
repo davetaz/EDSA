@@ -1,5 +1,6 @@
-date,Amsterdam,Rotterdam,"The Hague",Utrecht,Apeldoorn,Eindhoven,Nijmegen,Groningen,"See More",Tilburg
-2015-05-28,115,23,20,15,7,12,8,,5,5
-2015-05-28,117,24,20,15,8,12,7,,5,5
-2015-05-29,115,26,20,18,13,12,8,5,5,5
-2015-05-30,114,26,20,16,13,12,8,5,5,
+date,Amsterdam,Rotterdam,Utrecht,"The Hague",Apeldoorn,Eindhoven,Nijmegen,Groningen,"See More",Tilburg
+2015-05-28,115,23,15,20,7,12,8,,5,5
+2015-05-28,117,24,15,20,8,12,7,,5,5
+2015-05-29,115,26,18,20,13,12,8,5,5,5
+2015-05-30,114,26,16,20,13,12,8,5,5,
+2015-05-31,112,26,20,19,13,12,8,5,5,

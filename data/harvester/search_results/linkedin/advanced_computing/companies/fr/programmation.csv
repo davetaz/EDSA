@@ -1,7 +1,8 @@
-date,"Confidential Company - Undisclosed","Dassault Systèmes",Thales,"Société Générale","Sopra Steria","Alstom Group","Airbus Group",Deloitte,"BNP Paribas","Veolia Energy","EADS Defence &amp; Security","Schneider Electric","SEGULA Technologies","ikomobi - Agence Mobile Native","See More","Crédit Agricole",F2I
-2015-05-27,240,42,22,20,17,16,13,11,8,,6,10,7,7,6,18,6
-2015-05-27,240,42,24,20,17,16,13,11,9,,6,10,7,7,6,18,6
-2015-05-28,232,47,22,18,17,16,13,11,9,6,6,10,6,7,6,18,
-2015-05-28,232,47,22,18,17,16,13,11,9,6,8,10,6,7,6,18,
-2015-05-29,272,47,24,18,17,15,15,11,11,7,7,10,6,7,6,18,
-2015-05-30,311,47,23,17,17,17,16,11,11,8,8,7,7,7,7,,
+date,"Confidential Company - Undisclosed","Dassault Systèmes",Thales,"Société Générale","Sopra Steria","Alstom Group","Airbus Group",Deloitte,"Veolia Energy","BNP Paribas","EADS Defence &amp; Security","Schneider Electric","SEGULA Technologies","ikomobi - Agence Mobile Native",F2I,"See More","Crédit Agricole"
+2015-05-27,240,42,22,20,17,16,13,11,,8,6,10,7,7,6,6,18
+2015-05-27,240,42,24,20,17,16,13,11,,9,6,10,7,7,6,6,18
+2015-05-28,232,47,22,18,17,16,13,11,6,9,6,10,6,7,,6,18
+2015-05-28,232,47,22,18,17,16,13,11,6,9,8,10,6,7,,6,18
+2015-05-29,272,47,24,18,17,15,15,11,7,11,7,10,6,7,,6,18
+2015-05-30,311,47,23,17,17,17,16,11,8,11,8,7,7,7,,7,
+2015-05-31,325,47,23,19,17,17,16,11,10,9,8,7,7,7,6,6,

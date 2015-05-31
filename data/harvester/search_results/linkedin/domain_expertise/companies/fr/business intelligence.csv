@@ -1,7 +1,8 @@
-date,"Rocket Internet SE",Criteo,"Confidential Company - Undisclosed","Johnson &amp; Johnson",Ysance,"Sword France","Tableau Software","BIME Analytics","MCNEXT Groupe","See More",Keyrus,Micropole,IBM
-2015-05-27,11,7,,7,,7,6,5,,5,10,5,5
-2015-05-27,11,7,,7,,7,6,5,,5,10,5,
-2015-05-28,9,7,,7,,7,6,5,,5,10,6,
-2015-05-28,9,7,,7,,7,6,5,,5,9,6,
-2015-05-29,8,7,,7,5,7,6,5,5,5,9,,
-2015-05-30,10,8,8,7,7,7,6,5,5,5,,,
+date,Ysance,"Sword France","Tableau Software","BIME Analytics","Rocket Internet SE",Criteo,"Confidential Company - Undisclosed","Johnson &amp; Johnson","MCNEXT Groupe","See More",Keyrus,Micropole,IBM
+2015-05-27,,7,6,5,11,7,,7,,5,10,5,5
+2015-05-27,,7,6,5,11,7,,7,,5,10,5,
+2015-05-28,,7,6,5,9,7,,7,,5,10,6,
+2015-05-28,,7,6,5,9,7,,7,,5,9,6,
+2015-05-29,5,7,6,5,8,7,,7,5,5,9,,
+2015-05-30,7,7,6,5,10,8,8,7,5,5,,,
+2015-05-31,7,7,6,5,,,,,,,,,
