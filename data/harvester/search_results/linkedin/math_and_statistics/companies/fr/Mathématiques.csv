@@ -1,8 +1,9 @@
-date,Thales,Deloitte,Inria,"Dassault Systèmes","Confidential Company - Undisclosed","BNP Paribas","Société Générale","Airbus Group","EADS Defence &amp; Security","See More",HSBC
-2015-05-27,9,6,6,,121,24,13,6,,5,5
-2015-05-27,9,6,6,,121,26,13,6,,5,5
-2015-05-28,8,6,6,6,152,26,13,6,,5,5
-2015-05-28,8,6,6,6,152,26,13,6,5,5,5
-2015-05-29,8,6,6,6,249,26,14,6,5,5,
-2015-05-30,8,6,6,6,861,26,14,6,6,6,
-2015-05-31,8,6,6,6,,,,,,,
+date,"Confidential Company - Undisclosed","BNP Paribas","Société Générale",Thales,"Dassault Systèmes",Deloitte,"Airbus Group",Inria,"Veolia Energy","EADS Defence &amp; Security","See More",HSBC
+2015-05-27,121,24,13,9,,6,6,6,,,5,5
+2015-05-27,121,26,13,9,,6,6,6,,,5,5
+2015-05-28,152,26,13,8,6,6,6,6,,,5,5
+2015-05-28,152,26,13,8,6,6,6,6,,5,5,5
+2015-05-29,249,26,14,8,6,6,6,6,,5,5,
+2015-05-30,861,26,14,8,6,6,6,6,,6,6,
+2015-05-31,,,,8,6,6,,6,,,,
+2015-06-01,646,25,15,9,7,6,6,6,5,5,5,

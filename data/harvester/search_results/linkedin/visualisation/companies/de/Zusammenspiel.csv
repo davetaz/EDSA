@@ -1,8 +1,9 @@
-date,"Sopra Steria Consulting",PwC,"Camelot Management Consultants",Bosch,"Daimler AG","Deutsche Bahn","BMW Group",Microsoft,"AUDI AG","ProSiebenSat.1 Media AG","See More","Berner &amp; Mattner Systemtechnik GmbH"
-2015-05-27,90,18,18,11,11,9,8,7,7,8,5,5
-2015-05-27,88,18,18,11,10,9,8,7,7,8,7,
-2015-05-28,88,18,18,11,10,9,8,7,7,8,7,
-2015-05-28,91,18,18,11,10,9,8,7,7,8,7,
-2015-05-29,91,18,15,12,11,9,8,7,7,8,7,
-2015-05-30,91,18,15,12,11,9,8,7,7,7,7,
-2015-05-31,92,18,15,12,11,9,8,7,7,7,7,
+date,Microsoft,"Deutsche Bahn","Sopra Steria Consulting",PwC,"Camelot Management Consultants",Bosch,"Daimler AG","BMW Group","AUDI AG","ProSiebenSat.1 Media AG","See More","Berner &amp; Mattner Systemtechnik GmbH"
+2015-05-27,7,9,90,18,18,11,11,8,7,8,5,5
+2015-05-27,7,9,88,18,18,11,10,8,7,8,7,
+2015-05-28,7,9,88,18,18,11,10,8,7,8,7,
+2015-05-28,7,9,91,18,18,11,10,8,7,8,7,
+2015-05-29,7,9,91,18,15,12,11,8,7,8,7,
+2015-05-30,7,9,91,18,15,12,11,8,7,7,7,
+2015-05-31,7,9,92,18,15,12,11,8,7,7,7,
+2015-06-01,7,5,,,,,,,,,,

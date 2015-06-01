@@ -1,8 +1,9 @@
-date,"Confidential Company - Undisclosed",Criteo,"Dassault Systèmes",Thales,Deloitte,"Airbus Group",ARM,Splunk,Kpler,"EADS Defence &amp; Security","See More","Société Générale","IC Resources"
-2015-05-27,13,10,7,8,8,7,5,6,,,5,5,5
-2015-05-27,13,10,7,8,8,7,6,6,5,,5,5,5
-2015-05-28,13,10,10,7,8,6,6,6,5,,5,,5
-2015-05-28,13,10,10,7,8,6,6,6,5,,5,,
-2015-05-29,16,11,10,9,8,7,6,6,5,,5,5,5
-2015-05-30,15,11,10,9,8,7,6,6,5,5,5,5,5
-2015-05-31,13,11,10,9,8,7,6,6,5,5,5,,
+date,Criteo,"Dassault Systèmes",Thales,Deloitte,"Confidential Company - Undisclosed","Airbus Group",ARM,Splunk,Kpler,"See More","EADS Defence &amp; Security","Société Générale","IC Resources"
+2015-05-27,10,7,8,8,13,7,5,6,,5,,5,5
+2015-05-27,10,7,8,8,13,7,6,6,5,5,,5,5
+2015-05-28,10,10,7,8,13,6,6,6,5,5,,,5
+2015-05-28,10,10,7,8,13,6,6,6,5,5,,,
+2015-05-29,11,10,9,8,16,7,6,6,5,5,,5,5
+2015-05-30,11,10,9,8,15,7,6,6,5,5,5,5,5
+2015-05-31,11,10,9,8,13,7,6,6,5,5,5,,
+2015-06-01,11,10,9,8,8,7,6,6,5,5,,,
