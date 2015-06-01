@@ -78,6 +78,14 @@ function skillsChart(iso2,type) {
 				})
 			};
 		}));
+		var boundary = 0;
+		for (num in skills) {
+			skill = skills[num];
+			values = skill.values;
+			end = values.length - 1;
+			boundary += values[end].y;
+		}
+		boundary = boundary / 10;
 
 		x.domain(d3.extent(data, function(d) { return d.date; }));
 		y.domain([0,d3.max(skills, function(c) {
@@ -100,7 +108,7 @@ function skillsChart(iso2,type) {
 			.attr("x", -6)
 			.attr("dy", ".35em")
 			.style("fill","white")
-			.text(function(d) { if (d.value.y > 100) return d.name; });
+			.text(function(d) { if (d.value.y > boundary)  return d.name; });
 	
 		svg.append("g")
 			.attr("class", "x axis")
