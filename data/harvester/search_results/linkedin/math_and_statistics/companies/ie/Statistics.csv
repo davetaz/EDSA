@@ -1,6 +1,7 @@
-date,Google,Abbott,"Novartis Consumer Health",Mylan,Dell,IBM,"Intel Corporation",Amazon,"Amazon UK",Novartis,Stryker,Facebook,Apple,Deloitte,"Johnson &amp; Johnson","See More"
-2015-05-28,16,18,15,11,11,10,11,8,6,6,6,6,8,5,6,5
-2015-05-29,12,16,16,12,12,10,10,7,6,6,6,6,7,5,5,5
-2015-05-30,12,15,14,12,12,10,10,7,7,6,6,6,7,5,5,5
-2015-05-31,12,15,14,12,12,10,10,7,7,6,6,6,7,5,5,5
-2015-06-01,15,15,14,12,11,10,10,7,7,6,6,6,6,5,5,5
+date,Abbott,"Novartis Consumer Health",Google,Mylan,Dell,IBM,"Intel Corporation",Apple,Oracle,Amazon,"Amazon UK",Novartis,Stryker,Facebook,Deloitte,"See More","Johnson &amp; Johnson"
+2015-05-28,18,15,16,11,11,10,11,8,,8,6,6,6,6,5,5,6
+2015-05-29,16,16,12,12,12,10,10,7,,7,6,6,6,6,5,5,5
+2015-05-30,15,14,12,12,12,10,10,7,,7,7,6,6,6,5,5,5
+2015-05-31,15,14,12,12,12,10,10,7,,7,7,6,6,6,5,5,5
+2015-06-01,15,14,15,12,11,10,10,6,,7,7,6,6,6,5,5,5
+2015-06-02,15,14,13,12,11,10,10,9,8,7,7,6,6,6,5,5,
