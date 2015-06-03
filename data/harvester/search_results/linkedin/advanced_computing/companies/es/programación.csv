@@ -1,7 +1,8 @@
-date,Indra,Tecnocom,Deloitte,Ciber,"GRUPO SOLUTIO","CMV Consultores","Grupo Innovati","Confidential Company - Undisclosed","ALTEN SPAIN Consultoría en Ingeniería y Tecnología de la Información",ADICIONA,"Adecco España",Ibermática,"Grupo Arelance",SERMICRO,"Zemsania Tech Services &amp; Solutions",everis,"See More",ArayoWeb,"General Software","Digital Training Company","Indra Software Labs"
-2015-05-28,15,,,,87,60,40,27,18,12,,11,13,9,14,10,9,,9,9,9
-2015-05-29,15,9,9,,87,62,42,26,18,13,11,11,12,,12,,9,33,9,,
-2015-05-30,15,10,9,,85,62,44,26,19,14,13,11,11,10,10,9,9,,,,
-2015-05-31,12,9,7,7,,,,,,,,,,,,,,,,,
-2015-06-01,12,9,7,,,,,,,,,,,,,,,,,,
-2015-06-02,12,9,8,7,,,,,,,,,,,,,,,,,
+date,"GRUPO SOLUTIO","CMV Consultores","Grupo Innovati","Confidential Company - Undisclosed","ALTEN SPAIN Consultoría en Ingeniería y Tecnología de la Información",Indra,ADICIONA,"Adecco España",Ibermática,"Zemsania Tech Services &amp; Solutions","Grupo Arelance",Deloitte,Tecnocom,SERMICRO,everis,"See More",Ciber,ArayoWeb,"General Software","Digital Training Company","Indra Software Labs"
+2015-05-28,87,60,40,27,18,15,12,,11,14,13,,,9,10,9,,,9,9,9
+2015-05-29,87,62,42,26,18,15,13,11,11,12,12,9,9,,,9,,33,9,,
+2015-05-30,85,62,44,26,19,15,14,13,11,10,11,9,10,10,9,9,,,,,
+2015-05-31,,,,,,12,,,,,,7,9,,,,7,,,,
+2015-06-01,,,,,,12,,,,,,7,9,,,,,,,,
+2015-06-02,,,,,,12,,,,,,8,9,,,,7,,,,
+2015-06-03,85,57,39,27,19,15,15,14,12,11,11,10,10,10,9,9,,,,,

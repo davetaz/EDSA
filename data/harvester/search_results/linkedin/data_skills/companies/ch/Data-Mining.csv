@@ -1,8 +1,9 @@
-date,Cisco,"Novartis Consumer Health",Teradata,"Takeda Pharmaceutical Company Ltd","Credit Suisse"
+date,Cisco,"Novartis Consumer Health",Teradata,"Credit Suisse","Takeda Pharmaceutical Company Ltd"
 2015-05-28,11,5,6,5,5
 2015-05-28,11,5,6,5,5
-2015-05-29,11,5,6,5,
-2015-05-30,11,6,6,5,
-2015-05-31,11,6,6,5,
-2015-06-01,11,6,6,5,
-2015-06-02,11,6,6,5,
+2015-05-29,11,5,6,,5
+2015-05-30,11,6,6,,5
+2015-05-31,11,6,6,,5
+2015-06-01,11,6,6,,5
+2015-06-02,11,6,6,,5
+2015-06-03,11,7,6,5,5
