@@ -1,8 +1,9 @@
-date,Accenture,"DIGIT Game Studios",Google,"arvato Financial Solutions","Novartis Consumer Health",Tyco,"See More","Intel Corporation",LinkedIn,Amazon,"Amazon UK"
-2015-05-28,,,10,7,6,,5,,5,6,6
-2015-05-29,,7,7,8,6,,5,5,5,6,6
-2015-05-30,,8,7,8,6,,5,5,5,5,
-2015-05-31,,8,7,8,6,,5,5,5,,
-2015-06-01,,8,8,8,6,,,,,,
-2015-06-02,8,8,8,8,6,,,,,,
-2015-06-03,11,9,8,8,6,5,5,,,,
+date,"DIGIT Game Studios",Accenture,Google,"arvato Financial Solutions","Novartis Consumer Health",Tyco,Apple,"See More","Intel Corporation",LinkedIn,Amazon,"Amazon UK"
+2015-05-28,,,10,7,6,,,5,,5,6,6
+2015-05-29,7,,7,8,6,,,5,5,5,6,6
+2015-05-30,8,,7,8,6,,,5,5,5,5,
+2015-05-31,8,,7,8,6,,,5,5,5,,
+2015-06-01,8,,8,8,6,,,,,,,
+2015-06-02,8,8,8,8,6,,,,,,,
+2015-06-03,9,11,8,8,6,5,,5,,,,
+2015-06-04,9,8,8,8,6,5,5,5,,,,
