@@ -1,4 +1,4 @@
-date,dbg,Deloitte,EY,Badoo,Aviva,"Confidential Company - Undisclosed","TNS UK","Xpat Jobs.com",Acrotrend
+date,dbg,Deloitte,Badoo,EY,Aviva,"Confidential Company - Undisclosed","TNS UK","Xpat Jobs.com",Acrotrend
 2015-03-11,10,,,,,,,,
 2015-03-12,10,5,,,,,,,5
 2015-03-16,10,8,,,,,,,5
@@ -79,8 +79,9 @@ date,dbg,Deloitte,EY,Badoo,Aviva,"Confidential Company - Undisclosed","TNS UK","
 2015-05-29,13,7,,,,,,,
 2015-05-30,9,7,,,,,,,
 2015-05-31,9,7,,,,,,,
-2015-06-01,9,,5,,,,,,
-2015-06-02,9,,5,,,,,,
-2015-06-03,9,7,5,,,,,,
-2015-06-04,9,7,5,,,,,,
+2015-06-01,9,,,5,,,,,
+2015-06-02,9,,,5,,,,,
+2015-06-03,9,7,,5,,,,,
+2015-06-04,9,7,,5,,,,,
 2015-06-05,9,6,5,5,,,,,
+2015-06-06,9,6,6,5,,,,,
