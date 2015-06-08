@@ -1,12 +1,13 @@
-date,"Experis Italia","Adecco Italia","Modis Italia","Randstad Italia","A.O.R. San Carlo di Potenza","Azienda Unita&#39; Sanitaria Locale Umbria 1","Ministero delle Infrastrutture e Trasporti","AZIENDA U.L.S.S. 15 ALTA PADOVANA","Autorità di Bacino del Fiume Arno","University of Florence","Westhouse Group",Deloitte,Avanade,"Consiglio Nazionale delle Ricerche","COMUNE DI LIVORNO","Banca Profilo","Regione Toscana","Comune di Bologna","See More",IRPET,"ItAli Airlines S.p.A."
-2015-05-28,,,,96,61,56,43,42,16,10,11,11,,10,10,17,7,7,7,,11
-2015-05-29,,,,93,60,56,44,39,16,10,11,11,,10,10,16,7,7,7,,11
-2015-05-30,7,,6,,,,,,,,,11,,,,,,,,,
-2015-05-31,,,,95,60,56,44,42,16,11,11,11,,9,10,17,7,7,7,,10
-2015-06-01,7,,6,,,,,,,,,11,,,,,,,,,
-2015-06-02,7,,,93,59,55,44,43,16,11,11,11,,9,10,13,7,7,7,,
-2015-06-03,,,,89,60,55,45,42,16,11,11,11,10,10,10,12,7,,7,7,
-2015-06-04,6,6,7,,,,,,,,,,,,,,,,,,
-2015-06-05,,,,77,59,55,44,40,17,11,11,10,10,10,10,9,7,7,7,,
-2015-06-06,7,6,6,,,,,,,,,,,,,,,,,,
-2015-06-07,7,6,6,,,,,,,,,,,,,,,,,,
+date,Deloitte,"Experis Italia","Adecco Italia","Modis Italia","Randstad Italia","A.O.R. San Carlo di Potenza","Azienda Unita&#39; Sanitaria Locale Umbria 1","Ministero delle Infrastrutture e Trasporti","AZIENDA U.L.S.S. 15 ALTA PADOVANA","Autorità di Bacino del Fiume Arno","University of Florence","Westhouse Group",Avanade,"Consiglio Nazionale delle Ricerche","COMUNE DI LIVORNO","Banca Profilo","Regione Toscana","Comune di Bologna","See More",IRPET,"ItAli Airlines S.p.A."
+2015-05-28,11,,,,96,61,56,43,42,16,10,11,,10,10,17,7,7,7,,11
+2015-05-29,11,,,,93,60,56,44,39,16,10,11,,10,10,16,7,7,7,,11
+2015-05-30,11,7,,6,,,,,,,,,,,,,,,,,
+2015-05-31,11,,,,95,60,56,44,42,16,11,11,,9,10,17,7,7,7,,10
+2015-06-01,11,7,,6,,,,,,,,,,,,,,,,,
+2015-06-02,11,7,,,93,59,55,44,43,16,11,11,,9,10,13,7,7,7,,
+2015-06-03,11,,,,89,60,55,45,42,16,11,11,10,10,10,12,7,,7,7,
+2015-06-04,,6,6,7,,,,,,,,,,,,,,,,,
+2015-06-05,10,,,,77,59,55,44,40,17,11,11,10,10,10,9,7,7,7,,
+2015-06-06,,7,6,6,,,,,,,,,,,,,,,,,
+2015-06-07,,7,6,6,,,,,,,,,,,,,,,,,
+2015-06-08,14,9,6,6,,,,,,,,,,,,,,,,,
