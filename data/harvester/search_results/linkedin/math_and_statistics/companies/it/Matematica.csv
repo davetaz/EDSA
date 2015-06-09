@@ -1,13 +1,14 @@
-date,"Scuola Normale Superiore","Università degli Studi Roma Tre","Catholic University of Milan","University of Calabria","SEVERI SRL",Deloitte,"University of Pisa","Politecnico di Bari","Randstad Italia","University of Florence","University of Turin","Università di Genova","University of Messina","CNR - Istituto per le Applicazioni del Calcolo &quot;M. Picone&quot;","See More",IBM
-2015-05-28,43,34,31,26,25,21,15,,7,5,6,5,5,,5,5
-2015-05-29,43,34,33,27,25,21,14,,8,5,6,6,5,5,5,5
+date,"Scuola Normale Superiore","Catholic University of Milan","Università degli Studi Roma Tre","University of Calabria","SEVERI SRL",Deloitte,"University of Pisa","Randstad Italia","University of Turin","Politecnico di Bari","Università di Genova","University of Florence","CNR - Istituto per le Applicazioni del Calcolo &quot;M. Picone&quot;","See More","University of Messina",IBM
+2015-05-28,43,31,34,26,25,21,15,7,6,,5,5,,5,5,5
+2015-05-29,43,33,34,27,25,21,14,8,6,,6,5,5,5,5,5
 2015-05-30,,,,,,21,,,,,,,,,,
-2015-05-31,42,32,34,26,27,21,16,7,8,5,6,5,5,5,5,5
-2015-06-01,42,32,34,26,26,19,15,7,7,5,6,5,5,5,5,5
-2015-06-02,42,32,34,26,26,19,15,7,7,5,6,5,5,5,5,5
-2015-06-03,43,33,34,26,28,19,15,7,7,6,6,6,5,5,5,5
-2015-06-04,45,36,36,28,28,5,18,7,7,6,6,7,5,5,5,5
+2015-05-31,42,34,32,26,27,21,16,8,6,7,5,5,5,5,5,5
+2015-06-01,42,34,32,26,26,19,15,7,6,7,5,5,5,5,5,5
+2015-06-02,42,34,32,26,26,19,15,7,6,7,5,5,5,5,5,5
+2015-06-03,43,34,33,26,28,19,15,7,6,7,6,6,5,5,5,5
+2015-06-04,45,36,36,28,28,5,18,7,6,7,7,6,5,5,5,5
 2015-06-05,,,,,,19,,,,,,,,,,
-2015-06-06,43,35,33,27,23,19,13,8,7,6,6,6,5,5,5,
-2015-06-07,44,35,34,27,25,19,15,8,7,6,6,6,5,5,5,
-2015-06-08,41,34,33,26,25,22,15,8,7,6,6,6,5,5,5,
+2015-06-06,43,33,35,27,23,19,13,7,6,8,6,6,5,5,5,
+2015-06-07,44,34,35,27,25,19,15,7,6,8,6,6,5,5,5,
+2015-06-08,41,33,34,26,25,22,15,7,6,8,6,6,5,5,5,
+2015-06-09,42,33,32,27,23,22,16,7,6,6,6,5,5,5,,
