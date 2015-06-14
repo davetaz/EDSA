@@ -1,4 +1,4 @@
-date,Hays,"JPMorgan Chase &amp; Co.",CEB,Sky,EY,"The MathWorks","Royal Bank of Scotland","Goldman Sachs","Lloyds Banking Group","Transport for London",Capco,"Unique Digital","Morgan Stanley",dunnhumby,"See More","Kantar Media",Deloitte,"Amazon UK",Amazon,"Confidential Company - Undisclosed","Aimia Inc",UCB,"QA Apprenticeships",Citi,Jaywing,"Erin Associates Ltd",GSK,"Experis IT","Financial Times",Fidessa,"Quotient Clinical Ltd",aboutyourecruitment,QIAGEN,"Johnson &amp; Johnson","Credit Suisse",QinetiQ,"Allianz Group",IBM,"Go IT Recruitment Limited","Ashfield Healthcare UK","Xpat Jobs.com",CareerBuilder.com,Adzuna,"Job Board Enterprises BV",Jobs.co.uk,"SG Recruitment Services Ltd.","Southern Water",IHS,Schroders,"ODF Technologies, Inc.",PAREXEL,Google,"Wellcome Trust Sanger Institute"
+date,Hays,"JPMorgan Chase &amp; Co.",CEB,Sky,EY,"The MathWorks","Royal Bank of Scotland","Goldman Sachs","Transport for London","Lloyds Banking Group",Capco,"Unique Digital","Morgan Stanley",dunnhumby,"See More","Kantar Media",Deloitte,"Amazon UK",Amazon,"Confidential Company - Undisclosed","Aimia Inc",UCB,"QA Apprenticeships",Citi,Jaywing,"Erin Associates Ltd",GSK,"Experis IT","Financial Times",Fidessa,"Quotient Clinical Ltd",aboutyourecruitment,QIAGEN,"Johnson &amp; Johnson","Credit Suisse",QinetiQ,"Allianz Group",IBM,"Go IT Recruitment Limited","Ashfield Healthcare UK","Xpat Jobs.com",CareerBuilder.com,Adzuna,"Job Board Enterprises BV",Jobs.co.uk,"SG Recruitment Services Ltd.","Southern Water",IHS,Schroders,"ODF Technologies, Inc.",PAREXEL,Google,"Wellcome Trust Sanger Institute"
 2015-03-11,16,30,16,9,11,15,,,,,,,,,8,,,29,,,,,9,,,10,,,,10,,,12,,,,,,,,,,,,,,,,11,,56,8,8
 2015-03-12,16,31,13,9,11,15,,,,,,,,,9,,43,29,,,22,,9,,,10,,,,10,,,12,,,,,,,,,,,,,,,,10,,57,,
 2015-03-16,13,38,13,9,12,15,,,,,,,,,9,,44,27,,,24,,9,,,,,,,11,,,13,,,,11,,,,,,,,,,,,9,9,,,
@@ -88,7 +88,8 @@ date,Hays,"JPMorgan Chase &amp; Co.",CEB,Sky,EY,"The MathWorks","Royal Bank of S
 2015-06-07,28,12,13,11,12,13,12,,,,,,,,11,,36,37,34,31,19,12,12,11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-08,28,12,13,11,12,13,13,10,,,,,,,10,,36,37,34,31,19,13,12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-09,29,13,13,11,12,13,13,10,,,,,,,10,,39,39,36,25,21,14,12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-10,28,14,13,11,13,11,13,10,8,9,6,5,6,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-11,28,17,13,11,12,11,10,10,8,9,6,5,6,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-10,28,14,13,11,13,11,13,10,9,8,6,5,6,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-11,28,17,13,11,12,11,10,10,9,8,6,5,6,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-12,30,14,13,13,12,12,12,10,8,8,6,5,5,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-13,30,14,13,13,12,12,12,10,8,8,6,5,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-14,30,14,13,13,12,12,12,10,8,6,6,5,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
