@@ -74,7 +74,6 @@ function redraw() {
 }
 
 function getColor(d,i){
-//	console.log("IN HERE");
 	var overlayHueMin = 0.52,
 	overlayHueMax = 0.53,
 	overlaySatMin = 0.8,
@@ -82,7 +81,7 @@ function getColor(d,i){
 	overlayValMin = 0.22,
 	overlayValMax = 0.23;
 
-	
+
 	if (d.data["Capability"] === undefined || d.data["Capability"]["Rank_Scaled"] == 0) {
 		return d3.rgb(255,255,255);
 	} else {
