@@ -1,4 +1,5 @@
-date,Stuttgart,Cologne,Hamburg,Berlin,"Frankfurt Am Main",Munich,Erfurt,"See More"
-2015-06-03,10,10,9,10,6,7,5,5
-2015-06-04,6,7,7,,,,,
-2015-06-07,8,7,7,6,5,,,
+date,Stuttgart,Munich,Berlin,Cologne,Hamburg,"Frankfurt Am Main",Erfurt,"See More"
+2015-06-03,10,7,10,10,9,6,5,5
+2015-06-04,6,,,7,7,,,
+2015-06-07,8,,6,7,7,5,,
+2015-06-16,7,6,5,5,,,,
