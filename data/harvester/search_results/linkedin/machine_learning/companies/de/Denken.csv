@@ -1,4 +1,4 @@
-date,EY,Accenture,"Deloitte Deutschland","Haufe Group",Siemens,"Dassault Systèmes",Coloplast,Dell,Teradata,"Capgemini Consulting",Eaton,"See More","Amadeus FiRe AG – Zeitarbeit, Personalvermittlung, Interim Management","REWE Group",PwC,"Deutsche Bahn","LOGISTIC PEOPLE (Deutschland) GmbH",Bosch,"Daimler AG","BENTELER Group","Sopra Steria Consulting","Computer Futures, ein Geschäftszweig der SThree GmbH",Deloitte,"ProSiebenSat.1 Media AG",Thalia.de,"adidas Group","Michael Page","Orizon GmbH","Fourteenone White GmbH","ORANGE Engineering Gmbh",Sanofi,"home of jobs Hamburg GmbH","BENTELER Automotive","Rasant Personal-Leasing GmbH","adesso AG","BSH Home Appliances Group",IBM
+date,EY,Accenture,"Deloitte Deutschland","Haufe Group",Siemens,"Dassault Systèmes",Coloplast,Teradata,Dell,"Capgemini Consulting",Eaton,"See More","Amadeus FiRe AG – Zeitarbeit, Personalvermittlung, Interim Management","REWE Group",PwC,"Deutsche Bahn","LOGISTIC PEOPLE (Deutschland) GmbH",Bosch,"Daimler AG","BENTELER Group","Sopra Steria Consulting","Computer Futures, ein Geschäftszweig der SThree GmbH",Deloitte,"ProSiebenSat.1 Media AG",Thalia.de,"adidas Group","Michael Page","Orizon GmbH","Fourteenone White GmbH","ORANGE Engineering Gmbh",Sanofi,"home of jobs Hamburg GmbH","BENTELER Automotive","Rasant Personal-Leasing GmbH","adesso AG","BSH Home Appliances Group",IBM
 2015-05-27,56,,61,,,,,,,,,56,417,251,185,,176,131,76,96,86,,77,,77,,,63,,,,68,90,,,,
 2015-05-27,56,,61,,,,,,,,,56,406,245,185,,176,131,113,93,84,,77,,77,,,59,,,,64,90,,,,
 2015-05-28,56,,61,,,,,,,,,56,405,245,185,,176,131,113,93,84,,82,,77,,,59,,,,64,90,,,,
@@ -7,7 +7,7 @@ date,EY,Accenture,"Deloitte Deutschland","Haufe Group",Siemens,"Dassault Systèm
 2015-05-30,,,61,,,,,,,,,61,404,234,193,,168,139,137,83,87,,73,,76,,,,146,,,74,87,,66,,
 2015-05-31,,,61,,,,,,,,,61,429,235,195,,166,142,137,88,87,,72,,76,,,,143,,,74,86,,65,,
 2015-06-01,,,,,,,,,,,,64,424,234,199,,167,141,138,88,90,64,75,,76,,,,139,,,65,86,,69,,
-2015-06-02,59,,60,43,12,15,11,11,10,6,,5,,,,,,,,,,,,,,,5,,,,5,,,,,11,7
+2015-06-02,59,,60,43,12,15,11,10,11,6,,5,,,,,,,,,,,,,,,5,,,,5,,,,,11,7
 2015-06-03,,,,,,,,,,,,65,423,227,200,,179,140,145,94,83,72,80,,76,,,,355,132,,,84,,65,,
 2015-06-04,,,,,,,,,,,,68,428,235,200,,176,139,145,94,,73,86,,76,,,,355,132,,69,83,68,,,
 2015-06-05,,,,,,,,,,,,67,361,234,200,,174,136,150,93,,68,75,,75,67,,,355,132,,,80,68,,,
@@ -15,10 +15,11 @@ date,EY,Accenture,"Deloitte Deutschland","Haufe Group",Siemens,"Dassault Systèm
 2015-06-07,,,,,,,,,,,,70,403,241,204,71,163,121,149,84,,77,81,,75,,,,356,140,,72,70,,,,
 2015-06-08,,,,,,,,,,,,70,408,244,203,71,162,119,113,80,,75,78,,74,,,,356,140,,71,70,,,,
 2015-06-09,,,,,,,,,,,,70,403,245,204,70,162,119,98,76,77,73,73,,74,,,,355,137,,70,,,,,
-2015-06-10,58,49,60,43,15,11,12,9,10,7,,5,,,,,,,,,,,,,,,7,,,,5,,,,,,
+2015-06-10,58,49,60,43,15,11,12,10,9,7,,5,,,,,,,,,,,,,,,7,,,,5,,,,,,
 2015-06-11,,,96,,,,,,,,,73,478,183,200,189,149,146,123,109,77,75,73,73,,,,,355,154,,,,,,,
-2015-06-12,58,,96,43,15,9,13,9,10,7,,5,,,,,,,,,,,,,,,5,,,,,,,,,,
+2015-06-12,58,,96,43,15,9,13,10,9,7,,5,,,,,,,,,,,,,,,5,,,,,,,,,,
 2015-06-13,,,99,,,,,,,,,70,465,228,197,187,138,140,124,101,77,72,75,71,70,,,72,,,,,,,,,
-2015-06-14,58,,101,43,18,9,13,9,10,7,,5,,,,,,,,,,,,,,,5,,,,,,,,,,
+2015-06-14,58,,101,43,18,9,13,10,9,7,,5,,,,,,,,,,,,,,,5,,,,,,,,,,
 2015-06-15,,,98,,,,,,,,,66,474,235,198,188,170,140,130,97,77,75,74,72,70,66,,,,,,,,,,,
 2015-06-16,58,55,48,43,19,13,13,9,9,8,6,6,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-17,58,54,48,43,19,14,13,10,9,8,6,6,,,,,,,,,,,,,,,,,,,,,,,,,
