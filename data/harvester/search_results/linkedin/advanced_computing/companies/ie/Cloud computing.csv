@@ -1,4 +1,4 @@
-date,VMware,EMC,"Amazon UK",Amazon,IBM,Salesforce,VCE,Google,"New Relic, Inc.","Trend Micro",Verizon,"Intel Corporation",Alcatel-Lucent,Workday,"See More",Oracle
+date,VMware,EMC,"Amazon UK",Amazon,IBM,Salesforce,VCE,Google,"New Relic, Inc.","Trend Micro",Verizon,"Intel Corporation",Alcatel-Lucent,"See More",Workday,Oracle
 2015-05-28,50,35,43,32,16,25,25,12,8,6,,,,5,5,
 2015-05-29,52,49,45,33,16,26,25,11,7,7,,,,5,5,
 2015-05-30,52,46,45,33,16,26,25,11,7,6,,,,5,5,
@@ -26,3 +26,4 @@ date,VMware,EMC,"Amazon UK",Amazon,IBM,Salesforce,VCE,Google,"New Relic, Inc.","
 2015-06-21,65,44,41,33,26,26,21,10,7,7,6,,5,5,5,
 2015-06-22,64,44,41,33,26,24,21,10,7,7,6,,5,5,5,
 2015-06-23,66,45,41,33,26,26,20,10,8,7,6,5,5,5,5,
+2015-06-24,68,49,41,33,25,18,18,10,8,7,6,5,5,5,,
