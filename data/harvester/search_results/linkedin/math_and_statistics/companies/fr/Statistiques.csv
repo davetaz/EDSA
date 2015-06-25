@@ -1,4 +1,4 @@
-date,Accenture,"Sopra Steria","CMA CGM",Deloitte,"Confidential Company - Undisclosed","BNP Paribas","Société Générale","CA Indosuez Private Banking","Allianz Group",HSBC,"Airbus Group","EADS Defence &amp; Security",SFR,"Johnson &amp; Johnson","Crédit Foncier","Malakoff Médéric","See More",CACEIS,Hays,"Schneider Electric","Crédit Agricole"
+date,"Sopra Steria","CMA CGM",Accenture,Deloitte,"Confidential Company - Undisclosed","BNP Paribas","Société Générale","CA Indosuez Private Banking","Allianz Group",HSBC,"Airbus Group","EADS Defence &amp; Security",SFR,"Johnson &amp; Johnson","Crédit Foncier","Malakoff Médéric","See More",CACEIS,Hays,"Schneider Electric","Crédit Agricole"
 2015-05-27,,,,7,73,33,38,,,8,13,6,,6,5,,5,,,5,36
 2015-05-27,,,,7,73,35,38,,,8,13,6,,6,5,,5,,,5,36
 2015-05-28,,,,7,73,35,39,,,8,13,6,,6,5,,5,,,5,36
@@ -21,12 +21,13 @@ date,Accenture,"Sopra Steria","CMA CGM",Deloitte,"Confidential Company - Undiscl
 2015-06-13,,,,7,59,36,34,,,12,14,,,6,,,5,,,5,
 2015-06-14,,,,7,,,,,,,,,,,,,,,,,
 2015-06-15,,,,7,,,,,,,,,,,,,,,5,,
-2015-06-16,,,5,7,,,,,,,,,,,,,,,5,,
-2015-06-17,,,5,7,,,,,,,,,,,,,,,5,,
-2015-06-18,,,5,7,55,32,32,17,16,13,12,8,,6,5,5,5,16,,,
-2015-06-19,,,5,7,60,32,32,17,16,12,12,8,6,5,5,5,5,,,,
-2015-06-20,,,5,7,,,,,,,,,,,,,,,,,
-2015-06-21,,,5,7,,,,,,,,,,,,,,,,,
-2015-06-22,,5,5,,,,,,,,,,,,,,,,,,
-2015-06-23,,5,5,,,,,,,,,,,,,,,,,,
+2015-06-16,,5,,7,,,,,,,,,,,,,,,5,,
+2015-06-17,,5,,7,,,,,,,,,,,,,,,5,,
+2015-06-18,,5,,7,55,32,32,17,16,13,12,8,,6,5,5,5,16,,,
+2015-06-19,,5,,7,60,32,32,17,16,12,12,8,6,5,5,5,5,,,,
+2015-06-20,,5,,7,,,,,,,,,,,,,,,,,
+2015-06-21,,5,,7,,,,,,,,,,,,,,,,,
+2015-06-22,5,5,,,,,,,,,,,,,,,,,,,
+2015-06-23,5,5,,,,,,,,,,,,,,,,,,,
 2015-06-24,5,5,5,,,,,,,,,,,,,,,,,,
+2015-06-25,5,5,,,,,,,,,,,,,,,,,,,
