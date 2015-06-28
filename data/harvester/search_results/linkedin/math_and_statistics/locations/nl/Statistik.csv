@@ -1,4 +1,4 @@
-date,Amsterdam,Utrecht,Rotterdam,"The Hague",Eindhoven,Nijmegen,Zwolle,"Almere Stad",Tilburg,Apeldoorn,Enschede,"See More"
+date,Amsterdam,Utrecht,Rotterdam,"The Hague",Eindhoven,Nijmegen,Zwolle,Tilburg,"Almere Stad",Apeldoorn,Enschede,"See More"
 2015-05-28,56,,6,6,7,7,,,,,,
 2015-05-28,57,,6,6,7,5,,,,,,
 2015-05-29,58,,7,8,7,6,,,,,,
@@ -29,5 +29,6 @@ date,Amsterdam,Utrecht,Rotterdam,"The Hague",Eindhoven,Nijmegen,Zwolle,"Almere S
 2015-06-23,53,5,6,,10,,,,,,,
 2015-06-24,50,6,5,,11,7,,,,,,
 2015-06-25,51,7,,,12,8,,,,,,
-2015-06-26,54,12,6,10,10,10,6,,5,,,5
-2015-06-27,67,30,23,19,16,12,11,8,7,5,5,5
+2015-06-26,54,12,6,10,10,10,6,5,,,,5
+2015-06-27,67,30,23,19,16,12,11,7,8,5,5,5
+2015-06-28,71,33,24,22,15,12,11,9,8,6,5,5
