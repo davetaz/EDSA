@@ -1,4 +1,4 @@
-date,Amsterdam,Rotterdam,Eindhoven,Utrecht,"The Hague",Apeldoorn,Groningen,Nijmegen,Tilburg,Enschede,Breda,"Almere Stad",Zwolle,Maastricht,"See More"
+date,Amsterdam,Rotterdam,Eindhoven,Utrecht,"The Hague",Apeldoorn,Groningen,Nijmegen,Tilburg,Enschede,Breda,Zwolle,"Almere Stad",Maastricht,"See More"
 2015-05-28,81,10,44,13,16,,,6,,,5,,,,5
 2015-05-28,80,10,45,13,16,,,5,,,5,,,,5
 2015-05-29,82,8,46,21,16,,,6,,,5,,,,5
@@ -28,7 +28,8 @@ date,Amsterdam,Rotterdam,Eindhoven,Utrecht,"The Hague",Apeldoorn,Groningen,Nijme
 2015-06-22,80,11,38,28,19,,,,,,,,,,
 2015-06-23,84,10,39,27,19,,,,,,,,,,
 2015-06-24,89,10,40,27,18,,,,,,,,,,
-2015-06-25,88,11,41,28,19,,,,,,,5,,,5
-2015-06-26,96,36,45,32,21,11,13,6,6,12,,8,,,6
-2015-06-27,139,72,64,51,45,35,26,21,15,19,17,15,12,5,5
-2015-06-28,143,78,66,51,46,39,30,22,21,20,17,15,14,5,5
+2015-06-25,88,11,41,28,19,,,,,,,,5,,5
+2015-06-26,96,36,45,32,21,11,13,6,6,12,,,8,,6
+2015-06-27,139,72,64,51,45,35,26,21,15,19,17,12,15,5,5
+2015-06-28,143,78,66,51,46,39,30,22,21,20,17,14,15,5,5
+2015-06-29,151,92,78,62,49,44,36,29,29,23,20,17,15,6,6

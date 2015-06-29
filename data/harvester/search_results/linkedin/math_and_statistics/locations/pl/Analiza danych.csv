@@ -1,3 +1,4 @@
-date,Warsaw,"Lower Silesian District",Wroclaw,"Pomeranian District","Poland District",Cracow,"Silesian District","See More"
-2015-06-27,21,8,,,,5,5,
-2015-06-28,37,8,7,6,6,6,5,5
+date,Warsaw,Wroclaw,"Lower Silesian District",Cracow,"Silesian District",Lodz,"Pomeranian District","Poland District","See More"
+2015-06-27,21,,8,5,5,,,,
+2015-06-28,37,7,8,6,5,,6,6,5
+2015-06-29,48,11,9,8,6,6,6,6,6

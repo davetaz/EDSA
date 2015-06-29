@@ -1,4 +1,4 @@
-date,Prague,"District Brno-City","District Pardubice","District Kladno","District Ostrava-City","District Plzen-City","District Prague-East","District Usti nad Orlici","District Opava","District Olomouc","District Mlada Boleslav","See More"
+date,Prague,"District Brno-City","District Pardubice","District Kladno","District Ostrava-City","District Plzen-City","District Prague-East","District Olomouc","District Usti nad Orlici","District Opava","District Mlada Boleslav","See More"
 2015-05-28,7,,,,,,,,,,,
 2015-05-29,6,,,,,,,,,,,
 2015-05-30,6,,,,,,,,,,,
@@ -29,5 +29,6 @@ date,Prague,"District Brno-City","District Pardubice","District Kladno","Distric
 2015-06-24,7,,,,,,,,,,,
 2015-06-25,7,,,,,,,,,,,
 2015-06-26,44,37,8,7,,5,5,,,,,5
-2015-06-27,77,83,16,13,7,6,7,,,5,,5
-2015-06-28,124,81,24,16,13,12,11,7,6,6,5,5
+2015-06-27,77,83,16,13,7,6,7,5,,,,5
+2015-06-28,124,81,24,16,13,12,11,6,7,6,5,5
+2015-06-29,124,81,24,16,15,12,11,8,7,6,5,5
