@@ -1,4 +1,4 @@
-date,"Kuyavian-Pomeranian District",Wroclaw,Warsaw,Cracow,"Pomeranian District",Gdansk,Lodz,"Swietokrzyskie District","Silesian District",Rzeszow,"See More",Bialystok,Poznan
+date,"Kuyavian-Pomeranian District",Wroclaw,Warsaw,Cracow,"Pomeranian District",Gdansk,Bialystok,Lodz,"Swietokrzyskie District","Silesian District",Rzeszow,"See More",Poznan
 2015-05-28,,5,13,31,,,,,,,,,5
 2015-05-29,,5,13,32,,,,,,,,,5
 2015-05-30,,5,12,32,,,,,,,,,5
@@ -29,6 +29,7 @@ date,"Kuyavian-Pomeranian District",Wroclaw,Warsaw,Cracow,"Pomeranian District",
 2015-06-24,,,12,33,,,,,,,,,
 2015-06-25,,,12,33,,,,,,,,,
 2015-06-26,,5,28,33,,,,,,,,,
-2015-06-27,145,75,65,49,10,13,,,,,6,,6
-2015-06-28,143,97,82,79,19,14,6,,5,5,5,6,6
-2015-06-29,145,94,81,76,20,15,6,6,5,5,5,,
+2015-06-27,145,75,65,49,10,13,,,,,,6,6
+2015-06-28,143,97,82,79,19,14,6,6,,5,5,5,6
+2015-06-29,145,94,81,76,20,15,,6,6,5,5,5,
+2015-06-30,145,95,87,77,20,19,7,7,7,5,5,5,
