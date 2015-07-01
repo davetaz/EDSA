@@ -1,4 +1,4 @@
-date,Warsaw,Wroclaw,Cracow,Lodz,"Pomeranian District",Wloclawek,"Silesian District",Lublin,Poznan,Rzeszow,"Poland District","Lower Silesian District","West Pomeranian District",Katowice,"See More",Sosnowiec
+date,Warsaw,Wroclaw,Cracow,Lodz,"Pomeranian District",Wloclawek,"Silesian District",Lublin,Rzeszow,"Poland District","Lower Silesian District",Poznan,"West Pomeranian District",Katowice,"See More",Sosnowiec
 2015-05-28,,6,,,,,,,,,,,,,,
 2015-05-29,,6,,,,,,,,,,,,,,
 2015-05-30,,6,,,,,,,,,,,,,,
@@ -17,7 +17,8 @@ date,Warsaw,Wroclaw,Cracow,Lodz,"Pomeranian District",Wloclawek,"Silesian Distri
 2015-06-12,,6,,,,,,,,,,,,,,
 2015-06-13,,6,,,,,,,,,,,,,,
 2015-06-26,16,18,7,,,,,,,,,,,,,
-2015-06-27,70,90,57,36,7,28,15,10,65,,10,13,6,13,6,7
-2015-06-28,102,106,82,53,30,32,25,25,66,23,20,13,,13,7,7
-2015-06-29,121,66,63,50,8,34,32,31,30,26,19,13,,,7,7
-2015-06-30,129,70,65,49,36,34,33,31,30,29,19,13,11,8,8,
+2015-06-27,70,90,57,36,7,28,15,10,,10,13,65,6,13,6,7
+2015-06-28,102,106,82,53,30,32,25,25,23,20,13,66,,13,7,7
+2015-06-29,121,66,63,50,8,34,32,31,26,19,13,30,,,7,7
+2015-06-30,129,70,65,49,36,34,33,31,29,19,13,30,11,8,8,
+2015-07-01,128,53,50,42,37,36,33,30,27,22,13,11,10,8,8,
