@@ -1,7 +1,8 @@
-date,Warsaw,"Poland District",Cracow,Wroclaw,Poznan,Lodz,Rzeszow,"Silesian District","Pomeranian District",Myslowice,Wloclawek,"Lodz District",Lublin,Sosnowiec,"See More",Katowice,Bydgoszcz,Gdynia,Olsztyn,Gliwice
-2015-06-26,30,10,,9,,8,,,5,,,,,,,,,,,
-2015-06-27,238,58,85,66,90,39,26,14,17,,23,,,,9,19,,10,10,9
-2015-06-28,290,68,104,83,91,66,34,32,28,13,23,17,,,13,20,14,,,
-2015-06-29,325,77,92,73,96,65,35,35,30,18,24,18,,14,14,19,,,,
-2015-06-30,348,100,102,76,100,70,35,35,29,26,23,19,,16,16,20,,,,
-2015-07-01,334,106,100,81,71,69,34,33,29,24,24,19,17,16,16,,,,,
+date,Warsaw,Poznan,Wroclaw,"Poland District",Cracow,Lodz,Rzeszow,"Silesian District","Pomeranian District",Myslowice,Wloclawek,"Lodz District",Lublin,Sosnowiec,"See More",Katowice,Bydgoszcz,Gdynia,Olsztyn,Gliwice
+2015-06-26,30,,9,10,,8,,,5,,,,,,,,,,,
+2015-06-27,238,90,66,58,85,39,26,14,17,,23,,,,9,19,,10,10,9
+2015-06-28,290,91,83,68,104,66,34,32,28,13,23,17,,,13,20,14,,,
+2015-06-29,325,96,73,77,92,65,35,35,30,18,24,18,,14,14,19,,,,
+2015-06-30,348,100,76,100,102,70,35,35,29,26,23,19,,16,16,20,,,,
+2015-07-01,334,71,81,106,100,69,34,33,29,24,24,19,17,16,16,,,,,
+2015-07-02,317,70,70,,,,,,,,,,,,,,,,,

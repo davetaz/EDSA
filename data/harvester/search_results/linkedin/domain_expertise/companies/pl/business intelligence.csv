@@ -1,4 +1,4 @@
-date,"Sabre Corporation","TeamQuest Sp z o.o.",Dahliamatic,Capgemini,SAS,"Credit Suisse","NBC Sp. z o.o.",IBM,Atos,Billennium,"The Coca-Cola Company","Casus Finanse Sp. z o.o.","Dyna Consulting",Inwebit,"HICRON Sp. z o.o.","See More","Sii Sp. z. o. o.",UBS,"JCommerce SA",AIUT,Cognity,Pentacomp
+date,"Sabre Corporation",Capgemini,IBM,"The Coca-Cola Company","TeamQuest Sp z o.o.",Dahliamatic,SAS,"Credit Suisse","NBC Sp. z o.o.",Atos,Billennium,"Casus Finanse Sp. z o.o.","Dyna Consulting",Inwebit,"HICRON Sp. z o.o.","See More","Sii Sp. z. o. o.",UBS,"JCommerce SA",AIUT,Cognity,Pentacomp
 2015-05-28,14,,,,,,,,,,,,,,,,,,,,,
 2015-05-29,15,,,,,,,,,,,,,,,,,,,,,
 2015-05-30,15,,,,,,,,,,,,,,,,,,,,,
@@ -28,9 +28,10 @@ date,"Sabre Corporation","TeamQuest Sp z o.o.",Dahliamatic,Capgemini,SAS,"Credit
 2015-06-23,23,,,,,,,,,,,,,,,,,,,,,
 2015-06-24,24,,,,,,,,,,,,,,,,,,,,,
 2015-06-25,23,,,,,,,,,,,,,,,,,,,,,
-2015-06-26,25,,,8,,,,,,,6,,,6,,,,,,,,5
-2015-06-27,25,27,22,9,,8,5,7,7,,6,12,,6,,5,,,12,8,,5
-2015-06-28,25,29,22,11,,8,7,7,7,7,6,13,,,,6,,6,12,8,6,
-2015-06-29,25,21,18,11,,7,7,7,7,7,6,14,6,6,,5,6,5,,,,
-2015-06-30,25,22,19,12,11,8,8,7,7,7,6,14,6,6,,6,7,,,,,
-2015-07-01,26,19,18,12,11,8,8,7,7,7,6,6,6,6,5,5,,,,,,
+2015-06-26,25,8,,6,,,,,,,,,,6,,,,,,,,5
+2015-06-27,25,9,7,6,27,22,,8,5,7,,12,,6,,5,,,12,8,,5
+2015-06-28,25,11,7,6,29,22,,8,7,7,7,13,,,,6,,6,12,8,6,
+2015-06-29,25,11,7,6,21,18,,7,7,7,7,14,6,6,,5,6,5,,,,
+2015-06-30,25,12,7,6,22,19,11,8,8,7,7,14,6,6,,6,7,,,,,
+2015-07-01,26,12,7,6,19,18,11,8,8,7,7,6,6,6,5,5,,,,,,
+2015-07-02,25,12,7,6,,,,,,,,,,,,,,,,,,

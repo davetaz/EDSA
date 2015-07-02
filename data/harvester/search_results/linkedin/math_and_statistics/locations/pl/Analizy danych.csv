@@ -1,7 +1,8 @@
-date,Warsaw,"Poland District","Silesian District",Lodz,"Pomeranian District",Wroclaw,"See More"
-2015-06-26,7,,,,,,
-2015-06-27,21,5,,,,,
-2015-06-28,30,6,5,,,,
-2015-06-29,36,7,6,,5,5,
-2015-06-30,37,8,6,6,5,5,5
-2015-07-01,38,9,7,6,5,,
+date,"Poland District",Lodz,Warsaw,"Silesian District","Pomeranian District",Wroclaw,"See More"
+2015-06-26,,,7,,,,
+2015-06-27,5,,21,,,,
+2015-06-28,6,,30,5,,,
+2015-06-29,7,,36,6,5,5,
+2015-06-30,8,6,37,6,5,5,5
+2015-07-01,9,6,38,7,5,,
+2015-07-02,9,6,,,,,
