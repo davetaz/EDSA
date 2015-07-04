@@ -1,6 +1,6 @@
-date,Hays,"Do-it Trust",Sky,Sainsbury&#39;s,Oracle,ServiceSource,"Dow Jones","Global Nomadic","Goldman Sachs",Google,"Send Resourcing Ltd","Morgan Stanley",Elsevier,BBC,Siemens,"See More",Boeing,EY,"Herbert Smith Freehills",idibu,TalentSpa,"Randstad UK","QA Apprenticeships","Computer Futures","Confidential Company - Undisclosed","Recruitment Genius","Thomson Reuters","New Horizons","Nigel Frank International",Amazon,"The SmartList","JPMorgan Chase &amp; Co.",Thales,"Transport for London","Amazon UK","Baltic Training Services","Dawson and Walsh",comparethemarket.com,IHS,"Tableau Software",dbg,Citi,"J.P. Morgan","Royal Bank of Scotland","NHS Institute for Innovation and Improvement","Experis IT",Dell,JobsInEssex.com,"AWD online - Low Cost Flat Fee Recruitment &amp; Job Board Advertising Solutions",CGI,Fortinet,"Xpat Jobs.com",CareerBuilder.com,Adzuna,"Job Board Enterprises BV","GETMYFIRSTJOB.CO.UK LIMITED","Paramount Recruitment Pty Limited",Testronic,"Pole To Win Europe Ltd.","Johnson &amp; Johnson","Provide Group Europe","Pinnacle Recruitment and Selection"
+date,Hays,"Do-it Trust",Sky,Sainsbury&#39;s,Oracle,ServiceSource,"Dow Jones","Global Nomadic","Goldman Sachs",Google,"Send Resourcing Ltd","Morgan Stanley",BBC,Elsevier,Siemens,"See More",Boeing,EY,"Herbert Smith Freehills",idibu,TalentSpa,"Randstad UK","QA Apprenticeships","Computer Futures","Confidential Company - Undisclosed","Recruitment Genius","Thomson Reuters","New Horizons","Nigel Frank International",Amazon,"The SmartList","JPMorgan Chase &amp; Co.",Thales,"Transport for London","Amazon UK","Baltic Training Services","Dawson and Walsh",comparethemarket.com,IHS,"Tableau Software",dbg,Citi,"J.P. Morgan","Royal Bank of Scotland","NHS Institute for Innovation and Improvement","Experis IT",Dell,JobsInEssex.com,"AWD online - Low Cost Flat Fee Recruitment &amp; Job Board Advertising Solutions",CGI,Fortinet,"Xpat Jobs.com",CareerBuilder.com,Adzuna,"Job Board Enterprises BV","GETMYFIRSTJOB.CO.UK LIMITED","Paramount Recruitment Pty Limited",Testronic,"Pole To Win Europe Ltd.","Johnson &amp; Johnson","Provide Group Europe","Pinnacle Recruitment and Selection"
 2015-03-11,27,120,33,16,,,19,,,,,,,,,16,,22,,886,896,,51,,,,36,,,,,31,,,35,,,,,,,,,,,,21,,,,18,,,,,,,18,,,,
-2015-03-12,17,63,32,,,,20,,,,,,15,,,15,,21,,1331,1045,,51,,,,36,,,,,28,,,32,,,,,,,,,,,,,,,,19,,,,,,,18,,,,17
+2015-03-12,17,63,32,,,,20,,,,,,,15,,15,,21,,1331,1045,,51,,,,36,,,,,28,,,32,,,,,,,,,,,,,,,,19,,,,,,,18,,,,17
 2015-03-16,23,113,31,,,,,,,,,,,,,14,,19,,1293,948,,51,,,,32,,,,,33,14,,30,,,,,,,,,,,,,,,,20,,,,,,,18,16,,,16
 2015-03-18,26,124,34,15,,,,,,,,,,,,15,,19,,902,890,,52,,,,34,,,,,39,,,32,,,,,,,,,15,,,18,,,,18,,,,,,,,,,15,
 2015-03-18,26,124,34,15,,,,,,,,,,,,15,,19,,826,904,,52,,,,34,,,,,39,,,32,,,,,,,,,15,,,18,,,,18,,,,,,,,,,15,
@@ -95,14 +95,14 @@ date,Hays,"Do-it Trust",Sky,Sainsbury&#39;s,Oracle,ServiceSource,"Dow Jones","Gl
 2015-06-14,68,133,27,15,,,22,14,10,,,12,,,,6,,21,,,,,,,,,,,,,,6,11,14,,,,,8,10,6,,,,,,,,,,,,,,,,,,,,,
 2015-06-15,66,135,26,26,22,,21,,,,,,,,,20,,,,861,533,,67,,27,,41,34,,24,,,,,27,20,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-16,58,133,33,15,21,16,20,14,11,,,12,,,,5,,17,,,,,,,,,,,,,,5,,13,,,,7,7,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-17,60,133,33,24,20,16,19,14,11,,,12,7,,,7,,18,,,,,,,,,,,,,,,10,13,,,,7,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-17,60,133,33,24,20,16,19,14,11,,,12,,7,,7,,18,,,,,,,,,,,,,,,10,13,,,,7,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-18,73,135,33,26,20,,,,,,,,,,,19,,19,,864,556,,67,,25,,42,34,,27,,,,,27,20,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-19,72,133,31,24,21,17,11,14,11,,,11,7,,,6,,19,,,,,,,,,,,,,,6,9,12,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-20,72,133,35,24,31,17,11,14,11,,,11,7,,,6,,19,,,,,,,,,,,,,,6,13,13,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-21,71,133,35,23,31,17,12,14,11,,,11,7,,,6,,19,,,,,,,,,,,,,,6,13,12,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-19,72,133,31,24,21,17,11,14,11,,,11,,7,,6,,19,,,,,,,,,,,,,,6,9,12,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-20,72,133,35,24,31,17,11,14,11,,,11,,7,,6,,19,,,,,,,,,,,,,,6,13,13,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-21,71,133,35,23,31,17,12,14,11,,,11,,7,,6,,19,,,,,,,,,,,,,,6,13,12,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-22,75,135,37,25,27,,,,,,,,,,,18,,19,,834,549,,68,,,,42,34,,26,,,,,27,22,18,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-23,70,133,35,23,25,17,12,14,12,,,10,8,,,7,,18,,,,,,,,,,,,,,7,13,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-06-24,71,133,30,23,34,17,12,14,12,,,10,12,,,10,,20,,,,,,,,,,,,,,10,13,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-23,70,133,35,23,25,17,12,14,12,,,10,,8,,7,,18,,,,,,,,,,,,,,7,13,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-06-24,71,133,30,23,34,17,12,14,12,,,10,,12,,10,,20,,,,,,,,,,,,,,10,13,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-25,74,124,32,25,33,,,,,,,,,,,20,,20,,819,659,,69,,,,40,34,,26,23,,,,25,21,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-26,78,123,35,25,30,,,,,,,,,,,21,,,,816,732,,69,,49,,39,34,,27,28,,,,24,21,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-27,75,121,39,26,29,17,12,14,12,,,10,,,7,7,,20,,,,,,,,,,,,,,10,10,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -110,5 +110,6 @@ date,Hays,"Do-it Trust",Sky,Sainsbury&#39;s,Oracle,ServiceSource,"Dow Jones","Gl
 2015-06-29,74,67,36,26,,,,,,,,,,,,26,,,,836,431,83,69,,39,38,37,34,31,28,27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-06-30,80,67,34,26,,,,,,,,,,,,26,,,,836,431,83,69,60,39,38,37,34,31,28,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 2015-07-01,80,62,33,22,19,17,12,14,12,11,11,10,,,6,5,,19,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-07-02,80,62,30,22,18,17,13,14,12,11,11,11,11,7,,7,9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-2015-07-03,79,57,30,22,20,17,14,14,12,11,11,10,8,7,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-07-02,80,62,30,22,18,17,13,14,12,11,11,11,7,11,,7,9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-07-03,79,57,30,22,20,17,14,14,12,11,11,10,7,8,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2015-07-04,79,55,30,22,20,20,15,14,12,11,11,10,8,8,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
