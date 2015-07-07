@@ -23,7 +23,7 @@ body {
 
 </style>
 <body>
-<script src="js/d3.v3.min.js"></script>
+<script src="../js/d3.v3.min.js"></script>
 <script>
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -57,7 +57,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("data/online_survey_data/Skills_core.csv", function(error, data) {
+d3.csv("../data/online_survey_data/Skills_core.csv", function(error, data) {
   var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Skills"; });
 
   data.forEach(function(d) {
