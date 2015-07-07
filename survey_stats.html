@@ -23,7 +23,7 @@ body {
 
 </style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/d3.v3.min.js"></script>
 <script>
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -39,7 +39,7 @@ var y = d3.scale.linear()
     .range([height, 0]);
 
 var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+    .range(["#730100", "#1f77b4", "#506c6f"]);
 
 var xAxis = d3.svg.axis()
     .scale(x0)
@@ -57,14 +57,14 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("data.csv", function(error, data) {
-  var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Theme"; });
+d3.csv("data/online_survey_data/Skills_core.csv", function(error, data) {
+  var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "Skills"; });
 
   data.forEach(function(d) {
     d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
   });
 
-  x0.domain(data.map(function(d) { return d.Theme; }));
+  x0.domain(data.map(function(d) { return d.Skills; }));
   x1.domain(ageNames).rangeRoundBands([0, x0.rangeBand()]);
   y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
 
@@ -81,13 +81,13 @@ d3.csv("data.csv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Level");
+      .text("Number");
 
-  var theme = svg.selectAll(".theme")
+  var theme = svg.selectAll(".skills")
       .data(data)
     .enter().append("g")
       .attr("class", "g")
-      .attr("transform", function(d) { return "translate(" + x0(d.Theme) + ",0)"; });
+      .attr("transform", function(d) { return "translate(" + x0(d.Skills) + ",0)"; });
 
   theme.selectAll("rect")
       .data(function(d) { return d.ages; })
