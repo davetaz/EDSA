@@ -1,13 +1,13 @@
-Skills,not_required,essential,nice_to_have
-"Math and statistics",3,6,5
-"Machine learning",5,4,5
-"Domain expertise",6,4,4
-"Data skills",,7,7
-"Advanced computing",2,6,6
-"Data visualisation",,7,7
-"Scientific method",,12,2
-"Open Culture",4,5,5
-"Cobol programming",1,,
-"Watterfall project planning",1,,
-"Telling Data Stories",,,1
-"Team work",,1,
+Skills,essential,nice_to_have,not_required
+"Math and statistics",6,5,3
+"Machine learning",4,5,5
+"Domain expertise",4,4,6
+"Data skills",7,7,
+"Advanced computing",6,6,2
+"Data visualisation",7,7,
+"Scientific method",12,2,
+"Open Culture",5,5,4
+"Cobol programming",,,1
+"Watterfall project planning",,,1
+"Telling Data Stories",,1,
+"Team work",1,,
