@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/d3.v3.min.js"></script>
+  <script src="../js/queue.v1.min.js"></script>
+  <script src="js/radarChart.js"></script>
+</head>
+<body>
+  <div id="legend">
+	<span id="Capability" style="color: #730100;">Capability ---<span><br/>
+        <span id="Capacity" style="color: #506c6f;">Capacity ---</span>
+  </div>
+  <div id="radar"></div>
+  <script>
+	$(document).ready(function() {
+        queue()
+            .defer(d3.csv, "../data/online_survey_data/CapCap.csv")
+            .await(processRadar);
+        });
+	function processRadar(error, data) {
+		var top = []; 
+		for(i=0;i<data.length;i++) {
+			row = data[i];
+			type = row["Type"];
+			delete row.Type;
+			var keys = Object.keys(row).reverse();
+			top.push(getValues(row,keys));	
+		}
+		RadarChart.draw("#radar", top, "", 0, true);
+	}
+	function getValues(d,keys) {
+	        var data = [];
+	        for (j=0;j<keys.length;j++){
+	                var obj = {};
+	                key = keys[j].replace(/_/g," ");
+	                obj.axis = key;
+	                obj.value = d[keys[j]] / 4;
+	                data.push(obj);
+	        }
+	        return data;
+	}
+  </script>
+</body>
+</html>
