@@ -1,8 +1,9 @@
 ![The European Data Science Academy (EDSA)][1] 
 #The European Data Science Academy (EDSA)
 
+*Infographic of EU demand for jobs in area of data science.*
 
-  [1]: http://i.stack.imgur.com/TqR4S.png
+
 
 
 
@@ -18,3 +19,7 @@ gb
 Then run it through the translator to add all of the other required languages.
 
 Once done you can add the new line to the bottom of an existing file, the lnaguages are sorted alphabetically, so they will line up.
+
+
+
+  [1]: http://i.stack.imgur.com/TqR4S.png
