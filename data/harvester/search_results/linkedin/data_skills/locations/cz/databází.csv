@@ -1,11 +1,20 @@
-date,Prague,"District Plzen-City","District Opava","District Brno-City","District Pardubice","District Olomouc","District Hradec Kralove","District Uherske Hradiste","District Chrudim","District Prerov","District Jicin","District Prague-East","District Novy Jicin","District Zlin","District Jihlava","See More","District Kladno"
-2015-06-26,19,,,22,,,,,,,,,,,,,
-2015-06-27,30,,,51,10,15,6,16,6,10,,,,6,,6,
-2015-06-28,84,8,,46,81,16,18,17,11,15,8,5,,6,,5,7
-2015-06-29,83,8,,46,81,16,18,17,11,15,8,6,,6,,6,7
-2015-06-30,83,9,,50,83,19,16,17,11,16,8,6,5,7,,5,7
-2015-07-01,56,5,,49,38,19,15,14,13,12,8,7,7,7,7,5,
-2015-07-02,80,,,,,,,,,,,,,,,,
-2015-07-03,79,7,,,,,,,,,,,,,,,
-2015-07-04,64,7,,,,,,,,,,,,,,,
-2015-07-05,63,9,5,,,,,,,,,,,,,,
+date,Prague,"District Plzen-City","District Vsetin","District Opava","District Brno-City","District Pardubice","District Olomouc","District Hradec Kralove","District Uherske Hradiste","District Chrudim","District Prerov","District Jicin","District Prague-East","District Novy Jicin","District Zlin","District Jihlava","See More","District Kladno"
+2015-06-26,19,,,,22,,,,,,,,,,,,,
+2015-06-27,30,,,,51,10,15,6,16,6,10,,,,6,,6,
+2015-06-28,84,8,,,46,81,16,18,17,11,15,8,5,,6,,5,7
+2015-06-29,83,8,,,46,81,16,18,17,11,15,8,6,,6,,6,7
+2015-06-30,83,9,,,50,83,19,16,17,11,16,8,6,5,7,,5,7
+2015-07-01,56,5,,,49,38,19,15,14,13,12,8,7,7,7,7,5,
+2015-07-02,80,,,,,,,,,,,,,,,,,
+2015-07-03,79,7,,,,,,,,,,,,,,,,
+2015-07-04,64,7,,,,,,,,,,,,,,,,
+2015-07-05,63,9,,5,,,,,,,,,,,,,,
+2015-07-07,77,6,,5,,,,,,,,,,,,,,
+2015-07-08,56,8,,,,,,,,,,,,,,,,
+2015-07-09,55,8,,,,,,,,,,,,,,,,
+2015-07-10,57,8,,,,,,,,,,,,,,,,
+2015-07-11,55,8,,,,,,,,,,,,,,,,
+2015-07-12,66,8,,,,,,,,,,,,,,,,
+2015-07-13,63,9,,,,,,,,,,,,,,,,
+2015-07-14,66,9,,,,,,,,,,,,,,,,
+2015-07-15,68,7,5,,,,,,,,,,,,,,,
