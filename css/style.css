@@ -25,6 +25,12 @@ footer {
 	position: relative;
 	bottom: 10px;
 }
+.country {
+	stroke: #777;
+	stroke-width: 1px;
+	stroke-dasharray: 2,2;
+	stroke-linejoin: round;
+}
 button {
 	padding: 10px;
 	margin: 0px 10px 5px;
