@@ -31,6 +31,9 @@ footer {
 	stroke-dasharray: 2,2;
 	stroke-linejoin: round;
 }
+.helpimage {
+	max-width: 500px;
+}
 button {
 	padding: 10px;
 	margin: 0px 10px 5px;
