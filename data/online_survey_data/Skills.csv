@@ -1,13 +1,14 @@
 Skills,essential,nice_to_have,not_required
-"Domain expertise",5,9,6
-"Advanced computing",9,9,2
-"Open Culture",6,9,5
+"Machine learning",7,12,7
+"Data skills",15,11,
+"Scientific method",19,7,
+"Open Culture",7,11,8
+"Domain expertise",7,12,7
+"Business skills",1,,
+"Advanced computing",12,12,2
+"Data visualisation",16,10,
+"Math and statistics",14,9,3
 "Data realisation",,1,
-"Math and statistics",9,8,3
-"Data skills",12,8,
-"Data visualisation",13,7,
-"Machine learning",5,10,5
-"Scientific method",17,3,
 Communication,3,,
 "Cobol programming",,,1
 "Watterfall project planning",,,1
