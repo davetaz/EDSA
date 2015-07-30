@@ -97,8 +97,8 @@ button {
 	bottom: 60px;
 }
 #legend {
+	display: none;
 	position: absolute;
-	display: inline;
 	padding-top: 2em;
 	left: 370px;
 	top: 70px;
