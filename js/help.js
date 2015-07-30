@@ -69,6 +69,13 @@ defs["machine learning"] = "Machine Learning: Data plus math is machine learning
 defs["traditional research"] = "Traditional Research: Substantive expertise plus math and statistics knowledge is where most traditional researcher falls. Doctoral level researchers spend most of their time acquiring expertise in these areas, but very little time learning about technology.",
 defs["danger zone"] = "Danger Zone!: This is where I place people who, 'know enough to be dangerous,' and is the most problematic area of the diagram. It is from this part of the diagram that the phrase 'lies, damned lies, and statistics' emanates, because either through ignorance or malice this overlap of skills gives people the ability to create what appears to be a legitimate analysis without any understanding of how they got there or what they have created.";
 
+function showHelp() {
+        $("#helpBox").fadeIn();
+}
+function hideHelp() {
+        $("#helpBox").fadeOut();
+}
+
 var QueryString = function () {
   // This function is anonymous, is executed immediately and 
   // the return value is assigned to QueryString!

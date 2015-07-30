@@ -120,6 +120,14 @@ button {
 	font-size: 40px;
 	margin: 0px;
 }
+#helpBox {
+        top: 25%;
+        left: 50px;
+	margin-top: -100px;
+	width: 900px;
+        height: 600px;
+        overflow-y: auto;
+}
 #miniHelp {
         top: 25%;
         left: 50%;
@@ -129,7 +137,7 @@ button {
         height: 400px;
         overflow-y: auto;
 }
-#miniHelp, #surveyBox {
+#miniHelp, #surveyBox, #helpBox {
         position: absolute;
         background-color: #d2d8ee;
         border-radius: 10px;
