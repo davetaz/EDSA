@@ -5,6 +5,7 @@ var width  = 850,
 var color = d3.scale.category10();
 var data = {};
 var print = false;
+var showLegend = false;
 var current = {};
 
 $.ajaxSetup ({
@@ -39,6 +40,12 @@ $(document).keypress(function(e) {
 		$("#githubimg").attr("src","img/github-128_black.png");
 		$("#helpimg").attr("src","img/help_black.png");
 		drawStatsObject(current);
+	} else if (e.which == 99 && !showLegend) {
+		showLegend = true;
+		$("#legend").css('display','inline');
+	} else if (e.which == 99 && showLegend) {
+		showLegend = false;
+		$("#legend").css('display','none');
 	}
 });
 var legendVals = {};
@@ -47,11 +54,15 @@ function drawKey(d) {
 	$('#legend').html("");
 	keys = Object.keys(d);
 	if (legendVals["Capability"] === undefined) {
-		for (i=0;i<keys.length;i++) {
-			text = keys[i];
-			legendVals[text] = true;
-		}
+		legendVals["Capability"] = true;
+		legendVals["Capacity"] = false;
 	}
+//	if (legendVals["Capability"] === undefined) {
+//		for (i=0;i<keys.length;i++) {
+//			text = keys[i];
+//			legendVals[text] = true;
+//		}
+//	}
 	for (item in legendVals) {
 		if (legendVals[item]) {
 			var output = '<input type="checkbox" checked="'+legendVals[item]+'" id="' + item + '" onClick="toggle(\''+item+'\');"/>' + item + '<br/>';
