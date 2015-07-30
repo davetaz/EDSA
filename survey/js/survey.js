@@ -187,8 +187,46 @@ function populateForms() {
 	addToForm('trainingNotID','Coaching');
 	addToForm('trainingNotID','Assessed');
 	addToForm('trainingNotID','Internal assignments');	
+
+	addToLinkList('toolsListeg','AWS','toolsList');
+	addToLinkList('toolsListeg','Spark','toolsList');
+	addToLinkList('toolsListeg','Hadoop / MapReduce','toolsList');
+	addToLinkList('toolsListeg','MongoDB','toolsList');
+	addToLinkList('toolsListeg','Open Refine','toolsList');
+	addToLinkList('toolsListeg','QMiner','toolsList');
+	addToLinkList('toolsListeg','Apache Flink','toolsList');
+	addToLinkList('toolsListeg','Apache Storm','toolsList');
+	addToLinkList('toolsListeg','ProM or Disco','toolsList');
+	addToLinkList('toolsListeg','NoSQL / Cassandra','toolsList');
+	addToLinkList('toolsListeg','R','toolsList');
+	addToLinkList('toolsListeg','Python','toolsList');
+	addToLinkList('toolsListeg','Javascript / JQuery','toolsList');
+	addToLinkList('toolsListeg','D3 / nvD3','toolsList');
+	addToLinkList('toolsListeg','Java','toolsList');
+	addToLinkList('toolsListeg','z-scores','toolsList');
 }
 
+function addTool() {
+	if ($('#tool').val() != "") {
+		addToList('toolsList',$('#tool').val());
+		$('#tool').val("");
+	}
+}
+
+function addToList(id,item) {
+	itemID = item.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+	itemID = itemID.replace(/\s{2,}/g," ");
+	itemID = itemID.replace(/ /g,"_");
+	insert = '<tli id="' + itemID + '" name="'+item+'">' + item + ' (<remove onClick="$(this).parent().remove();">remove</remove>)</tli>';
+	$('#'+id).append(insert);
+}
+
+function addToLinkList(id,item,target) {
+	itemID = item.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+	itemID = itemID.replace(/\s{2,}/g," ");
+	itemID = itemID.replace(/ /g,"_");
+	$('#'+id).append('<tli id="' + itemID + '" onclick="addToList(\''+target+'\',\''+item+'\'); $(this).fadeOut();">' + item + '</tli>');
+}
 
 function addToForm(id,item) {
 	help = false;
@@ -260,6 +298,7 @@ function processForm(form) {
 	data["training"]["not_required"] = new Array();
 	data["training"]["nice_to_have"] = new Array();
 	data["training"]["essential"] = new Array();
+	data["tools"] = new Array();
 
 	$('div','#notID').each(function(){
 		localid = $(this).attr('id');
@@ -273,6 +312,10 @@ function processForm(form) {
 	$('div','#essentialID').each(function(){
 		localid = $(this).attr('id');
 		data["skills"]["essential"].push(localid);
+	});
+
+	$('#toolsList tli').each(function(i) { 
+		data["tools"].push($(this).attr('name')); 
 	});
 
 	$('div','#trainingNotID').each(function(){

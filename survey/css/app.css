@@ -428,6 +428,34 @@ nli {
 	text-align: left;
 	padding: 2px 0px;
 }
+#toolsListeg {
+	display: inline-block;
+	height: 80px;
+}
+#tool {
+	font-size: 2em;
+	width: 300px;
+}
+#toolsList {
+	padding: 20px;
+}
+#toolsListeg tli {
+	text-align: left;
+	text-decoration: underline;
+	padding: 10px;
+	cursor: pointer;
+}
+#toolsList tli {
+	display: list-item;
+	list-style-type: circle;
+	text-align: left;
+	padding: 2px 0px;
+}
+#toolsList tli remove{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 #comments {
 	display: block;
 	width: 80%;
