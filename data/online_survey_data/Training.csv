@@ -1,16 +1,13 @@
 Training,essential,nice_to_have,not_required
-Assessed,2,7,11
-"Internal assignments",2,4,14
-Accredited,4,10,6
-"Translated from English",1,10,9
-"Uses nonopen nonfree software",1,9,10
-Webinars,10,10,
-eLearning,13,5,2
-"Face to face training",17,1,2
-"Tailored to sector",3,11,6
-Coaching,5,6,9
-"Commercial element",1,,
-"Practical experience",1,,
+Coaching,3,5,6
+Assessed,,7,7
+"Internal assignments",1,4,9
+"Translated from English",1,9,4
+"Tailored to sector",2,9,3
+Accredited,3,8,3
+"Uses nonopen nonfree software",,8,6
+"Face to face training",12,1,1
+Webinars,7,7,
+eLearning,10,3,1
 "Use Open Source Software",,1,
 "Use English material",,1,
-"Interactive, hands on",1,,
