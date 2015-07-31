@@ -131,6 +131,7 @@ date,databases,"data management","data engineering","data mining","data formats"
 2015-07-21,5301,1321,83,310,20,6,0,3
 2015-07-22,5362,1294,78,303,17,7,0,2
 2015-07-23,5356,1337,80,307,19,7,0,2
+<<<<<<< HEAD
 2015-07-24,0,0,0,0,0,0,0,0
 2015-07-25,0,0,0,0,0,0,0,0
 2015-07-26,0,0,0,0,0,0,0,0
@@ -143,3 +144,5 @@ date,databases,"data management","data engineering","data mining","data formats"
 >>>>>>> parent of bc199ec... Auto updated data bot
 =======
 >>>>>>> parent of bc199ec... Auto updated data bot
+=======
+>>>>>>> aff82330271cd1f37a4861a30e26d9e19bb16a8f
