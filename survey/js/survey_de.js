@@ -40,7 +40,14 @@ $( document ).ready(function() {
 	populateForms();
 	updateForm();
 	addListeners();
+	wakeServer();
 });
+
+function wakeServer() {
+	$.get("http://odi-edsa-data.herokuapp.com/wake.php",function(data) {
+		console.log("server pinged");
+	});
+}
 
 function addMap() {
 	queue()
@@ -297,7 +304,7 @@ function processForm(form) {
 	console.log(tmp);
 	$.ajax({
 		type: 'POST',
-		url: 'http://odinprac.theodi.org/EDSA/',
+		url: 'http://odi-edsa-data.herokuapp.com/store.php',
 		data: {'data': tmp},
 		success: function(msg) {
 			$('[id=doneSection]').html('Your data has been submitted successfully');
