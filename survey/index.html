@@ -73,6 +73,25 @@
 		<br/>
 
 		</li><li>
+		
+		<div id="orgtype" style="margin-left: 30px">
+			<progress max=8 value=1>1/8</progress>
+			<div><div data-force="5" class="layer title title_xl">Q: Organisation type</div></div>
+
+			<div class="wrapper">
+			<div class="layer tile" style="width: 83%;">
+				<div class="tile__list list2" id="orgtypesel">
+				</div>
+				<button id="addorgtypesel">Other</button>
+				<div align="right">
+					Click right to continue to the next question.
+				</div>
+			</div>
+			</div>
+		</div>
+		<br/>
+
+		</li><li>
 
 		<div id="ability" style="margin-left: 30px">
 			<progress max=8 value=2>2/8</progress>
@@ -162,40 +181,32 @@
 
 		<div id="capouter" style="margin-left: 30px">
 			<progress max=8 value=4>4/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Q: Capability and capacity</div></div>	
+			<div><div data-force="5" class="layer title title_xl">Q: Your Strength</div></div>	
 			<div class="wrapper">
 			<div id="capcap" class="layer tile" style="width: 83%; overflow-y: scroll; max-height: 600px;">
-			<p>In the table below please rate your capability and capacity with releation to each of the skills listed.</p>
-			<table width="100%" style="text-align: center;">
-				<tr><th style="width: 50%;">Capability</th><th style="width: 50%;">Capacity</th></tr>
-				<tr><td>Your skill in this area:</td><td>Your capacity to use this skill professionally:</td></tr>
-				<tr><td>
-					<ol start="0">
-						<nli>No practical knowledge</nli>
-						<nli>Enough knowledge to get by</nli>
-						<nli>A solid practical knowledge</nli>
-						<nli>Extensive, up to date and complete knowledge</nli>
-						<nli>Leading expert</nli>
-					</ol>
-				</td><td>
-					<ol start="0">
-						<nli>Not used</nli>
-						<nli>Limited use</nli>
-						<nli>Solid use</nli>
-						<nli>Extensive use</nli>
-						<nli>I write the books for a living</nli>
-					</ol>
-				</td></tr></table>
-			</table>
-
-				<div id="capcap_essentialID" style="width: 100%;">
+			<p>In the table below please rate your strength in relation to each of the skills listed.</p>
+			<p>Please use the following scale:</p>
+			<ul>
+			<item><b>1</b> = Very weak: Little known about this skill.</item><br/>
+			<item><b>5</b> = Very strong: Leading expert in this skill.</item>
+			</ul>
+				<div id="capcap_essential" style="width: 100%;">
 					<h2>Essential Skills</h2>
+					<table id="capcap_essentialID" class="capcaptable" style="width: 100%;">
+					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very weak</span><span style="float: right; padding-right: 70px;">Very strong</span></td></tr>
+					</table>
 				</div>
-				<div id="capcap_niceID" style="width: 100%;">
+				<div id="capcap_nice" style="width: 100%;">
 					<h2>Some knowledge required</h2>
+					<table id="capcap_niceID" class="capcaptable" style="width: 100%;">
+					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very weak</span><span style="float: right; padding-right: 70px;">Very strong</span></td></tr>
+					</table>
 				</div>
-				<div id="capcap_notID" style="width: 100%;">
+				<div id="capcap_not" style="width: 100%;">
 					<h2>Not required</h2>
+					<table id="capcap_notID" class="capcaptable" style="width: 100%;">
+					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very weak</span><span style="float: right; padding-right: 70px;">Very strong</span></td></tr>
+					</table>
 				</div>
 				<div align="right">
 					Click right to continue to the next question.

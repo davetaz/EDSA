@@ -62,6 +62,11 @@ function addListeners() {
 			processSector($(this).attr('id'));
 		});
 	});
+	$('div','#orgtypesel').each(function(){
+		$(this).click(function() {
+			processOrgtype($(this).attr('id'));
+		});
+	});
 	$('div','#involvement').each(function(){
 		$(this).click(function() {
 			processInvolvement($(this).attr('id'));
@@ -86,6 +91,9 @@ function addListeners() {
 		addElement($(this).attr('id'));
 	});
 	$('#addsectorsel').click(function() {
+		addElement($(this).attr('id'));
+	});
+	$('#addorgtypesel').click(function() {
 		addElement($(this).attr('id'));
 	});
 }
@@ -129,6 +137,13 @@ function processSector(sector) {
 	$("#" + sector).addClass("selected");	
 	data["Sector"] = sector;
 }
+function processOrgtype(sector) {
+	$('div','#orgtypesel').each(function(){
+		$(this).removeClass("selected");
+	});
+	$("#" + sector).addClass("selected");	
+	data["OrgType"] = sector;
+}
 function processInvolvement(sector) {
 	$('div','#involvement').each(function(){
 		$(this).removeClass("selected");
@@ -168,6 +183,11 @@ function populateForms() {
 	addToForm('sectorsel','Manufacturing');
 	addToForm('sectorsel','Mining');	
 	
+	addToForm('orgtypesel','Individual');	
+	addToForm('orgtypesel','Startup');	
+	addToForm('orgtypesel','SME');	
+	addToForm('orgtypesel','Large corporation');
+	
 	addToForm('involvement','No involvement');
 	addToForm('involvement','I work with data scientists but am not one myself');
 	addToForm('involvement','I manage data scientists');
@@ -175,14 +195,14 @@ function populateForms() {
 	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)');
 	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas');
 
-	addToForm('essentialID','Scientific method');
-	addToForm('essentialID','Open Culture');
-	addToForm('niceID','Data skills');
-	addToForm('niceID','Advanced computing');
-	addToForm('niceID','Data visualisation');
+	addToForm('essentialID','Big data');
+	addToForm('essentialID','Open source tools and concepts');
+	addToForm('niceID','Data collection and analysis');
+	addToForm('niceID','Advanced computing and programming');
+	addToForm('niceID','Data interpretation and visualisation');
 	addToForm('notID','Math and statistics');
-	addToForm('notID','Machine learning');
-	addToForm('notID','Domain expertise');
+	addToForm('notID','Machine learning and prediction');
+	addToForm('notID','Business intelligence and domain expertise');
 	
 	addToForm('trainingEssentialID','Face to face training');
 	addToForm('trainingEssentialID','Webinars');
@@ -275,20 +295,24 @@ function processUpdate(inid) {
 }
 
 function addToCapCap(inid,id,value,capacity,capability) {
-	var html = '<table id="capcap_'+id+'" class="capcaptable" width="100%"><tr><td width="20%">'+value+'</td><td width="80%"><label class="caplabel">Capability</label>';
+	var html = '<tr id="capcap_'+id+'"><td width="20%">'+value+'</td><td width="80%">';
 	html += '<div class="toggle-btn-grp joint-toggle">';
 	for (i=0;i<5;i++) {
-		html += '<label class="toggle-btn"><input type="radio" id="capability_'+id+'" name="capability_'+id+'" value="'+i+'" onClick="processCapIn(\'capability\',\''+id+'\','+i+');"/>'+i+'</label>';	
+		j = i+1;
+		html += '<label class="toggle-btn"><input type="radio" id="capability_'+id+'" name="capability_'+id+'" value="'+i+'" onClick="processCapIn(\'capability\',\''+id+'\','+i+');"/>'+j+'</label>';	
 	}
 	html += '</div>';
+/*
 	html += '<br/>';
 	html += '<label class="caplabel">Capacity</label>';
 	html += '<div class="toggle-btn-grp joint-toggle">';
 	for (i=0;i<5;i++) {
-		html += '<label class="toggle-btn"><input type="radio" id="capacity_'+id+'" name="capacity_'+id+'" value="'+i+'" onClick="processCapIn(\'capacity\',\''+id+'\','+i+');"/>'+i+'</label>';	
+		j = i+1;
+		html += '<label class="toggle-btn"><input type="radio" id="capacity_'+id+'" name="capacity_'+id+'" value="'+i+'" onClick="processCapIn(\'capacity\',\''+id+'\','+i+');"/>'+j+'</label>';	
 	}
 	html += '</div>';
-	html += '</td></tr></table>';
+*/
+	html += '</td></tr>';
 	$('#capcap_'+inid).append(html);
 }
 

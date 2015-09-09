@@ -1,38 +1,38 @@
 var defs = {};
 var skills = {};
-defs["Domain expertise"] = "Having authoritative knowledge of a specific area or topic.";
-skills["Domain expertise"] = [];
-skills["Domain expertise"].push("Enterprise processes");
-skills["Domain expertise"].push("Business intelligence");
-skills["Domain expertise"].push("Data anonymisation");
-skills["Domain expertise"].push("Semantics and schemas");
-skills["Domain expertise"].push("Data Licensing");
+defs["Business intelligence and domain expertise"] = "Having authoritative knowledge of a specific area or topic.";
+skills["Business intelligence and domain expertise"] = [];
+skills["Business intelligence and domain expertise"].push("Enterprise processes");
+skills["Business intelligence and domain expertise"].push("Business intelligence");
+skills["Business intelligence and domain expertise"].push("Data anonymisation");
+skills["Business intelligence and domain expertise"].push("Semantics and schemas");
+skills["Business intelligence and domain expertise"].push("Data Licensing");
 
-defs["Data skills"] = "The ability to collect, store, manage, process, and clean data.";
-skills["Data skills"] = [];
-skills["Data skills"].push("Databases");
-skills["Data skills"].push("Data management (storage, preservation, security)");
-skills["Data skills"].push("Data mining");
-skills["Data skills"].push("Data formats and linked data");
-skills["Data skills"].push("Stream processing");
-skills["Data skills"].push("Large scale data processing");
+defs["Data collection and analysis"] = "The ability to collect, store, manage, process, and clean data.";
+skills["Data collection and analysis"] = [];
+skills["Data collection and analysis"].push("Databases");
+skills["Data collection and analysis"].push("Data management (storage, preservation, security)");
+skills["Data collection and analysis"].push("Data mining");
+skills["Data collection and analysis"].push("Data formats and linked data");
+skills["Data collection and analysis"].push("Stream processing");
+skills["Data collection and analysis"].push("Large scale data processing");
 
-defs["Advanced computing"] = "Selecting and using the right tools and techniques, including programming and computer systems, to work with and analyse data.";
-skills["Advanced computing"] = [];
-skills["Advanced computing"].push("Scripting (e.g. Crontab, bash, applescript)");
-skills["Advanced computing"].push("Programming (e.g. Python, R, HTML, Javascript)");
-skills["Advanced computing"].push("Computational systems");
-skills["Advanced computing"].push("Cloud scale computing");
+defs["Advanced computing and programming"] = "Selecting and using the right tools and techniques, including programming and computer systems, to work with and analyse data.";
+skills["Advanced computing and programming"] = [];
+skills["Advanced computing and programming"].push("Scripting (e.g. Crontab, bash, applescript)");
+skills["Advanced computing and programming"].push("Programming (e.g. Python, R, HTML, Javascript)");
+skills["Advanced computing and programming"].push("Computational systems");
+skills["Advanced computing and programming"].push("Cloud scale computing");
 
-defs["Visualisation"] = "The presentation of data in a visual format to help people understand it’s significance.";
-skills["Visualisation"] = [];
-skills["Visualisation"].push("Visualisation");
-skills["Visualisation"].push("Infographics");
-skills["Visualisation"].push("Interaction");
-skills["Visualisation"].push("Data mapping");
-skills["Visualisation"].push("Data stories");
-skills["Visualisation"].push("Data journalism");
-skills["Visualisation"].push("d3js, Tableau");
+defs["Data interpretation and visualisation"] = "The presentation of data in a visual format to help people understand it’s significance.";
+skills["Data interpretation and visualisation"] = [];
+skills["Data interpretation and visualisation"].push("Data interpretation and visualisation");
+skills["Data interpretation and visualisation"].push("Infographics");
+skills["Data interpretation and visualisation"].push("Interaction");
+skills["Data interpretation and visualisation"].push("Data mapping");
+skills["Data interpretation and visualisation"].push("Data stories");
+skills["Data interpretation and visualisation"].push("Data journalism");
+skills["Data interpretation and visualisation"].push("d3js, Tableau");
 
 defs["Scientific method"] = "Rigorous methods of research in which problems are identified, relevant data gathered, hypotheses are formulated from the data, and hypotheses are empirically tested.";
 skills["Scientific method"] = [];
@@ -41,11 +41,18 @@ skills["Scientific method"].push("Significance and reproducibility");
 skills["Scientific method"].push("Scientific publication");
 skills["Scientific method"].push("Process and data sharing techniques");
 
-defs["Open culture"] = "A culture or way of working which promotes the spread of knowledge by allowing anyone to (at an early stage) access, use, adapt and share data, information and knowledge, without restriction.";
-skills["Open culture"] = [];
-skills["Open culture"].push("Online collaboration platforms");
-skills["Open culture"].push("Open licensing");
-skills["Open culture"].push("Communications");
+defs["Big data"] = "The ability to deal with large volumes of constantly changing data, sometimes in near real time.";
+skills["Big data"] = [];
+skills["Big data"].push("Cloud and cluster computing");
+skills["Big data"].push("Streaming data");
+skills["Big data"].push("Map-reduce services");
+skills["Big data"].push("noSQL");
+
+defs["Open source tools and concepts"] = "A culture or way of working which promotes the spread of knowledge by allowing anyone to (at an early stage) access, use, adapt and share data, information and knowledge, without restriction.";
+skills["Open source tools and concepts"] = [];
+skills["Open source tools and concepts"].push("Online collaboration platforms");
+skills["Open source tools and concepts"].push("Open licensing");
+skills["Open source tools and concepts"].push("Communications");
 
 
 defs["Math and statistics"] = "The theory and methods used in collecting, analysing, interpreting, presenting and organising data in order to generate knowledge and insight.";
@@ -55,12 +62,12 @@ skills["Math and statistics"].push("Statistics and probability");
 skills["Math and statistics"].push("RStudio");
 skills["Math and statistics"].push("Data analytics");
 
-defs["Machine learning"] = "The construction and study of algorithms that enable computer systems to learn from data.";
-skills["Machine learning"] = [];
-skills["Machine learning"].push("Social network analysis");
-skills["Machine learning"].push("Inference and reasoning");
-skills["Machine learning"].push("Process mining");
-skills["Machine learning"].push("Artificial intelligence");
+defs["Machine learning and prediction"] = "The construction and study of algorithms that enable computer systems to learn from data.";
+skills["Machine learning and prediction"] = [];
+skills["Machine learning and prediction"].push("Social network analysis");
+skills["Machine learning and prediction"].push("Inference and reasoning");
+skills["Machine learning and prediction"].push("Process mining");
+skills["Machine learning and prediction"].push("Artificial intelligence");
     
 defs["hacking skills"] = "Hacking Skills: Data is a commodity traded electronically, therefore, in order to be in this market you need to speak hacker. Far from 'black hat' activities, data hackers must be able to manipulate text files at the command-line, thinking algorithmically, and be interested in learning new tools.";
 defs["math stats"] = "Math & Statistics Knowledge: Once you have acquired and cleaned the data, the next step is to actually extract insight from it. You need to apply appropriate math and statistics methods, which requires at least a baseline familiarity with these tools.";
