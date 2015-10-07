@@ -1,0 +1,58 @@
+body {
+	margin: 20px;
+	width: 1300px;
+}
+#sector-chart .x.axis text {
+ 	   text-anchor: end !important;
+	   transform: rotate(-45deg);
+}
+#involvement-chart {
+	position: absolute;
+	left: 1100px;
+}
+.multiBar {
+	width: 644px;
+	display: inline-block;
+	border: 1px solid black;
+	padding-left: 2px;
+}
+.multiBar svg {
+	position: relative;
+	top: -40px;
+}
+#skills title {
+	width: 80px;
+}
+#training title {
+	width: 64px;
+}
+title {
+	font-size: 10px;
+	color: black;
+	display: inherit;
+	height: 40px;
+	text-align: center;
+	position: relative;
+	top: 185px;
+}
+#require_section {
+	display: inline-block;
+	width: 644px;
+}
+#capability {
+	display: inline-block;
+	width: 500px;
+	vertical-align: top;
+}
+#capability title {
+	top: 130px;
+	width: 120px;
+}
+/*
+#skills .dc-chart {
+	font-size: 0;
+}
+#skills .dc-chart text {
+   display: none;
+}
+*/
