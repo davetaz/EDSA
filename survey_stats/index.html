@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title>EDSA Survey Results Dashboard</title>
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='https://dc-js.github.io/dc.js/css/dc.css'>
+    <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='css/dc.css'>
     <link rel='stylesheet prefetch' href='css/style.css'/> 
   </head>
 
   <body>
 
     <div id="map"></div>
+    <heading id='sector-role'>Sector and role of respondant</heading>
     <div id="sector-chart"></div>
     <div id="involvement-chart"></div>
     <div id="require_section">
     <section id="skills" class="multiBar">
+	<heading>Which skills are essential?</heading>
         <div id="skills-Advanced_computing-chart">
             <title>Advanced Computing</title>
         </div>
@@ -42,6 +44,7 @@
     </section>
 
     <section id="training" class="multiBar">
+	<heading>Essential aspects in training?</heading>
         <div id="training-Accredited-chart">
             <title>Accredited</title>
         </div>
@@ -74,39 +77,67 @@
         </div>
     </section>
     </div>
-    <section id="capability" class="multiBar">
-        <div id="capability-Advanced_computing-chart">
-            <title>Advanced Computing</title>
-        </div>
-        <div id="capability-Machine_learning-chart">
-            <title>Machine learning</title>
-        </div>
-        <div id="capability-Open_Culture-chart">
-            <title>Open Culture</title>
-        </div>
-        <div id="capability-Scientific_method-chart">
-            <title>Scientific method</title>
-        </div>
-        <div id="capability-Math_and_statistics-chart">
-            <title>Maths and statistics</title>
-        </div>
-        <div id="capability-Data_visualisation-chart">
-            <title>Data visulisation</title>
-        </div>
-        <div id="capability-Domain_expertise-chart">
-            <title>Domain expertise</title>
-        </div>
-        <div id="capability-Data_skills-chart">
-            <title>Data Skills</title>
-        </div>
-    </section>
+    <div id="sidebar">
+	    <section id="key_essential" class="legend">
+	    	<b>Requirements</b>
+		<div class="key_item">
+			<div class="box essential">&nbsp;</div>Essential 
+		</div>
+		<div class="key_item">
+			<div class="box desirable">&nbsp;</div>Desirable 
+		</div>
+		<div class="key_item">
+			<div class="box not_required">&nbsp;</div>Not Required 
+		</div>
+	    </section>
+	    <section id="key_capability" class="legend">
+	    	<b>Expertise</b>
+		<div class="capability_legend">
+			<div class="box2 skill0">&nbsp;</div>
+			<div class="box2 skill1">&nbsp;</div>
+			<div class="box2 skill2">&nbsp;</div>
+			<div class="box2 skill3">&nbsp;</div>
+			<div class="box2 skill4">&nbsp;</div>
+ 		</div>
+		<div class="capability_text">
+			<span id="beginner">Beginner</span>
+			<span id="expert">Expert</span>
+		</div>
+	   </section>
+	   <section id="capability" class="multiBar">
+	   	<heading>Expertise in key areas</heading>
+		   <div id="capability-Advanced_computing-chart">
+			   <title>Advanced Computing</title>
+		   </div>
+		   <div id="capability-Machine_learning-chart">
+			   <title>Machine learning</title>
+		   </div>
+		   <div id="capability-Open_Culture-chart">
+			   <title>Open Culture</title>
+		   </div>
+		   <div id="capability-Scientific_method-chart">
+			   <title>Scientific method</title>
+		   </div>
+		   <div id="capability-Math_and_statistics-chart">
+			   <title>Maths and statistics</title>
+		   </div>
+		   <div id="capability-Data_visualisation-chart">
+			   <title>Data visulisation</title>
+		   </div>
+		   <div id="capability-Domain_expertise-chart">
+			   <title>Domain expertise</title>
+		   </div>
+		   <div id="capability-Data_skills-chart">
+			   <title>Data Skills</title>
+		   </div>
+	   </section>
+    </div>
 
-
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
-    <script src='https://dc-js.github.io/dc.js/js/crossfilter.js'></script>
-    <script src='https://dc-js.github.io/dc.js/js/dc.js'></script>
-    <script src='https://dc-js.github.io/dc.js/js/colorbrewer.js'></script>
-    <script src="js/crossfilter.js"></script>
+    <script src='js/d3.min.js'></script>
+    <script src='js/crossfilter.js'></script>
+    <script src='js/dc.js'></script>
+    <script src='js/colorbrewer.js'></script>
+    <script src='js/edsa.js'></script>
 
   </body>
 </html>

@@ -2,18 +2,32 @@ body {
 	margin: 20px;
 	width: 1300px;
 }
+heading {
+	font-size: 20px;
+}
+#sector-role {
+	position: absolute;
+	left: 750px;
+	top: 60px;
+	width: 240px;
+        text-align: center;
+}
+.multiBar heading {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
 #sector-chart .x.axis text {
  	   text-anchor: end !important;
 	   transform: rotate(-45deg);
 }
 #involvement-chart {
 	position: absolute;
-	left: 1100px;
+	left: 1000px;
 }
 .multiBar {
 	width: 644px;
 	display: inline-block;
-	border: 1px solid black;
 	padding-left: 2px;
 }
 .multiBar svg {
@@ -38,11 +52,87 @@ title {
 #require_section {
 	display: inline-block;
 	width: 644px;
+	border-radius: 10px 0px 10px 10px;
+	background-color: lightgrey;
+}
+.legend {
+	display: inline-block;
+	width: 240px;
+	height: 147px;
+	padding: 10px;
+}
+#key_essential {
+	border-radius: 0px 10px 10px 0px;
+	left: -5px;
+	position: relative;
+    	height: 140px;
+	background-color: lightgrey;
+}
+.essential {
+	background: #3182bd;
+}
+.desirable {
+	background: #6baed6;
+}
+.not_required {
+	background: #9ecae1;
+}
+.key_item {
+	margin-left: 20px;
+	margin: 10px;
+}
+.box {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.skill0 {
+	background: Lavender;
+}
+.skill1 {
+	background: CadetBlue;
+}
+.skill2 {
+	background: BlueViolet;
+}
+.skill3 {
+	background: DarkBlue;
+}
+.skill4 {
+	background: DarkRed;
+}
+.box2 {
+	display: inline-block;
+	width: 31px;
+	height: 20px;
+}
+.capability_legend {
+	margin-top: 25px;
+	text-align: center;
+}
+#expert {
+	float: right;
+}
+#key_capability {
+	border-radius: 10px 10px 0px 0px;
+    	height: 140px;
+	margin-top: 5px;
+	position: relative;
+	float: right;
+	background-color: lightblue;
+}
+#sidebar {
+	display: inline-block;
+	width: 500px;
+	vertical-align: top;
 }
 #capability {
 	display: inline-block;
 	width: 500px;
 	vertical-align: top;
+	border-radius: 10px 0px 10px 10px;
+	background-color: lightblue;
 }
 #capability title {
 	top: 130px;
