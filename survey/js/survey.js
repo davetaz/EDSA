@@ -1,4 +1,5 @@
 var data = {};
+var api_url = "http://odi-edsa-data.herokuapp.com/";
 data["skills"] = {};
 data["training"] = {};
 data["country"] = {};
@@ -34,6 +35,8 @@ var QueryString = function () {
 } ();
 
 $( document ).ready(function() {
+	wakeServer();
+	setID();
 	$('#capcap-team').hide();
 	data["country"]["ISO2"] = QueryString.ISO2;
 	data["country"]["name"] = QueryString.name;
@@ -41,12 +44,11 @@ $( document ).ready(function() {
 	populateForms();
 	updateForm();
 	addListeners();
-	wakeServer();
 });
 
 function wakeServer() {
 	$.get("http://odi-edsa-data.herokuapp.com/wake.php",function(data) {
-		console.log("server pinged");
+		//console.log("server pinged");
 	});
 }
 
@@ -58,6 +60,9 @@ function addMap() {
 }
 
 function addListeners() {
+	$('#next').click(function() {
+		processForm();
+	});
 	$('div','#sectorsel').each(function(){
 		$(this).click(function() {
 			processSector($(this).attr('id'));
@@ -100,7 +105,6 @@ function addListeners() {
 }
 
 function mremove(id) {
-	console.log(id);
 	$("#"+id).fadeOut(function() { 
 		$("#"+id).remove();
 	});
@@ -121,8 +125,6 @@ function addElement(id) {
 		outid = outid.replace(" ","_");
 		el.innerHTML = ui.data.name + '<i class="js-remove" onClick="mremove(\''+outid+'\');">✖</i>';
 		el.setAttribute("id",outid);
-		console.log(id);
-		console.log(el);
 		document.getElementById(id).appendChild(el);
 		//addToCapCap("capcap_"+id,outid,ui.data.name,50,50);
 		updateForm();
@@ -151,7 +153,6 @@ function processInvolvement(sector) {
 	});
 	$("#" + sector).addClass("selected");	
 	data["Involvement"] = sector;
-	console.log(data["Involvement"]);
 	if (data["Involvement"] == "I_am_a_data_scientist") {
 		$('#capcap-team').hide();
 	} else {
@@ -338,17 +339,6 @@ function processCapIn(type,id,value) {
 }
 
 function cacheData() {
-	data = {};
-	data["skills"] = {};
-	data["training"] = {};
-	data["country"] = {};
-	data["skills"]["not_required"] = {};
-	data["skills"]["nice_to_have"] = {};
-	data["skills"]["essential"] = {};
-	data["skills"]["capcap"] = {};
-	data["training"]["not_required"] = {};
-	data["training"]["nice_to_have"] = {};
-	data["training"]["essential"] = {};
 	data["skills"]["not_required"] = new Array();
 	data["skills"]["nice_to_have"] = new Array();
 	data["skills"]["essential"] = new Array();
@@ -359,7 +349,6 @@ function cacheData() {
 	
 	$('div','#notID').each(function(){
 		localid = $(this).attr('id');
-		console.log(localid);
 		data["skills"]["not_required"].push(localid);
 	});	
 	$('div','#niceID').each(function(){
@@ -394,15 +383,26 @@ function cacheData() {
 	return data;
 }
 
+
+function setID() {
+        $.get( api_url + "create_id.php", function( ret ) {
+                data["_id"] = ret;
+        })
+        .fail( function() {
+                setTimeout(function() {setID();},10000);
+        });
+}
+
 function processForm(form) {
+	if (data["_id"] == "") {
+		return;
+	}
 	$('[id=submit]').attr("disabled",true);
 	$('[id=submit]').html("Processing");
 	data = cacheData();	
-	console.log(data);
 
 	var tmp = JSON.stringify(data);
 	// tmp value: [{"id":21,"children":[{"id":196},{"id":195},{"id":49},{"id":194}]},{"id":29,"children":[{"id":184},{"id":152}]},...]
-	console.log(tmp);
 	$.ajax({
 		type: 'POST',
 		url: 'http://odi-edsa-data.herokuapp.com/store.php',

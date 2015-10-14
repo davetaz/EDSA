@@ -1,4 +1,5 @@
 var data = {};
+var api_url = "http://odi-edsa-data.herokuapp.com/";
 data["skills"] = {};
 data["training"] = {};
 data["country"] = {};
@@ -34,13 +35,14 @@ var QueryString = function () {
 } ();
 
 $( document ).ready(function() {
+	wakeServer();
+	setID();
 	data["country"]["ISO2"] = QueryString.ISO2;
 	data["country"]["name"] = QueryString.name;
 	addMap();
 	populateForms();
 	updateForm();
 	addListeners();
-	wakeServer();
 });
 
 function wakeServer() {
@@ -57,6 +59,9 @@ function addMap() {
 }
 
 function addListeners() {
+	$('#next').click(function() {
+		processForm();
+	});
 	$('div','#sectorsel').each(function(){
 		$(this).click(function() {
 			processSector($(this).attr('id'));
@@ -259,19 +264,17 @@ function processCapIn(type,id,value) {
 	data["skills"]["capcap"][type + "_" + id] = value;
 }
 
-function processForm(form) {
-	$('[id=submit]').attr("disabled",true);
-	$('[id=submit]').html("Processing");
+function cacheData() {
 	data["skills"]["not_required"] = new Array();
 	data["skills"]["nice_to_have"] = new Array();
 	data["skills"]["essential"] = new Array();
 	data["training"]["not_required"] = new Array();
 	data["training"]["nice_to_have"] = new Array();
 	data["training"]["essential"] = new Array();
-
+	data["tools"] = new Array();
+	
 	$('div','#notID').each(function(){
 		localid = $(this).attr('id');
-		console.log(localid);
 		data["skills"]["not_required"].push(localid);
 	});	
 	$('div','#niceID').each(function(){
@@ -281,6 +284,10 @@ function processForm(form) {
 	$('div','#essentialID').each(function(){
 		localid = $(this).attr('id');
 		data["skills"]["essential"].push(localid);
+	});
+
+	$('#toolsList tli').each(function(i) { 
+		data["tools"].push($(this).attr('name')); 
 	});
 
 	$('div','#trainingNotID').each(function(){
@@ -298,11 +305,29 @@ function processForm(form) {
 	data["contact"]["email"] = $('#email').val();
 	data["contact"]["research"] = $('#contact_research').prop("checked");
 	data["contact"]["results"] = $('#contact_results').prop("checked");
-	console.log(data);
+
+	return data;
+}
+
+function setID() {
+        $.get( api_url + "create_id.php", function( ret ) {
+                data["_id"] = ret;
+        })
+        .fail( function() {
+                setTimeout(function() {setID();},10000);
+        });
+}
+
+function processForm(form) {
+	if (data["_id"] == "") {
+		return;
+	}
+	$('[id=submit]').attr("disabled",true);
+	$('[id=submit]').html("Processing");
+	data = cacheData();	
 
 	var tmp = JSON.stringify(data);
 	// tmp value: [{"id":21,"children":[{"id":196},{"id":195},{"id":49},{"id":194}]},{"id":29,"children":[{"id":184},{"id":152}]},...]
-	console.log(tmp);
 	$.ajax({
 		type: 'POST',
 		url: 'http://odi-edsa-data.herokuapp.com/store.php',
