@@ -195,25 +195,25 @@ function populateForms() {
 	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)');
 	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas');
 
-	addToForm('essentialID','Big data');
-	addToForm('essentialID','Open source tools and concepts');
-	addToForm('niceID','Data collection and analysis');
-	addToForm('niceID','Advanced computing and programming');
-	addToForm('niceID','Data interpretation and visualisation');
-	addToForm('notID','Math and statistics');
-	addToForm('notID','Machine learning and prediction');
-	addToForm('notID','Business intelligence and domain expertise');
+	addToForm('pickID','Big data');
+	addToForm('pickID','Open source tools and concepts');
+	addToForm('pickID','Data collection and analysis');
+	addToForm('pickID','Advanced computing and programming');
+	addToForm('pickID','Data interpretation and visualisation');
+	addToForm('pickID','Math and statistics');
+	addToForm('pickID','Machine learning and prediction');
+	addToForm('pickID','Business intelligence and domain expertise');
 	
-	addToForm('trainingEssentialID','Face to face training');
-	addToForm('trainingEssentialID','Webinars');
-	addToForm('trainingEssentialID','eLearning');
-	addToForm('trainingNiceID','Translated from English');
-	addToForm('trainingNiceID','Tailored to sector');
-	addToForm('trainingNiceID','Accredited');
-	addToForm('trainingNiceID','Uses non-open, non-free software');
-	addToForm('trainingNotID','Coaching');
-	addToForm('trainingNotID','Assessed');
-	addToForm('trainingNotID','Internal assignments');	
+	addToForm('trainingPickID','Face to face training');
+	addToForm('trainingPickID','Webinars');
+	addToForm('trainingPickID','eLearning');
+	addToForm('trainingPickID','Translated from English');
+	addToForm('trainingPickID','Tailored to sector');
+	addToForm('trainingPickID','Accredited');
+	addToForm('trainingPickID','Uses non-open, non-free software');
+	addToForm('trainingPickID','Coaching');
+	addToForm('trainingPickID','Assessed');
+	addToForm('trainingPickID','Internal assignments');	
 
 	addToLinkList('toolsListeg','AWS','toolsList');
 	addToLinkList('toolsListeg','Spark','toolsList');

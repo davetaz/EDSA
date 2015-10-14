@@ -175,25 +175,25 @@ function populateForms() {
 	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)','Ich bin praktizierender Data Scientist, habe aber Lücken in bestimmten Bereichen (z.B. Statistik)');
 	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas','Ich bin ein praktizierender Daten Wissenschaftler mit hervorragenden Kenntnissen in allen Bereichen');
 
-	addToForm('essentialID','Scientific method','Wissenschaftliche Methodik');
-	addToForm('essentialID','Open Culture','Open Culture');
-	addToForm('niceID','Data skills','Umgang mit Daten');
-	addToForm('niceID','Advanced computing','Fortschrittliche Rechenverfahren');
-	addToForm('niceID','Data visualisation','Visualisierung von Daten');
-	addToForm('notID','Math and statistics','Mathematik und Statistik');
-	addToForm('notID','Machine learning','Maschinelles Lernen');
-	addToForm('notID','Domain expertise','Fachwissen');
+	addToForm('pickID','Scientific method','Wissenschaftliche Methodik');
+	addToForm('pickID','Open Culture','Open Culture');
+	addToForm('pickID','Data skills','Umgang mit Daten');
+	addToForm('pickID','Advanced computing','Fortschrittliche Rechenverfahren');
+	addToForm('pickID','Data visualisation','Visualisierung von Daten');
+	addToForm('pickID','Math and statistics','Mathematik und Statistik');
+	addToForm('pickID','Machine learning','Maschinelles Lernen');
+	addToForm('pickID','Domain expertise','Fachwissen');
 	
-	addToForm('trainingEssentialID','Face to face training','Face-to-face Training');
-	addToForm('trainingEssentialID','Webinars','Webinare');
-	addToForm('trainingEssentialID','eLearning','eLearning');
-	addToForm('trainingNiceID','Translated from English','Übersetzt aus dem Englischen');
-	addToForm('trainingNiceID','Tailored to sector','Auf den Sektor zugeschnitten');
-	addToForm('trainingNiceID','Accredited','Akkreditiert');
-	addToForm('trainingNiceID','Uses non-open, non-free software','Verwendung nicht-offener, nicht-freier Software');
-	addToForm('trainingNotID','Coaching','Coaching');
-	addToForm('trainingNotID','Assessed','Bewertet');
-	addToForm('trainingNotID','Internal assignments','Interne Aufgaben');	
+	addToForm('trainingPickID','Face to face training','Face-to-face Training');
+	addToForm('trainingPickID','Webinars','Webinare');
+	addToForm('trainingPickID','eLearning','eLearning');
+	addToForm('trainingPickID','Translated from English','Übersetzt aus dem Englischen');
+	addToForm('trainingPickID','Tailored to sector','Auf den Sektor zugeschnitten');
+	addToForm('trainingPickID','Accredited','Akkreditiert');
+	addToForm('trainingPickID','Uses non-open, non-free software','Verwendung nicht-offener, nicht-freier Software');
+	addToForm('trainingPickID','Coaching','Coaching');
+	addToForm('trainingPickID','Assessed','Bewertet');
+	addToForm('trainingPickID','Internal assignments','Interne Aufgaben');	
 }
 
 

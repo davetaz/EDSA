@@ -206,6 +206,14 @@ a {
 			background-color: #730100;
 		}
 
+.pick {
+	display: block;
+	width: 95%;
+}
+.pick .tile__list div {
+	display: inline-block;
+	width: 170px;
+}
 #exp_manager{
 	position: relative;
 	left: -100px;
