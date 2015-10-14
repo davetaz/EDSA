@@ -172,23 +172,30 @@ function populateForms() {
 		$('#pickCountry').remove();
 		$('#google_translate_element').hide();	
 	}
-	addToForm('sectorsel','Media and Advertising');
-	addToForm('sectorsel','Data and Information Systems');
-	addToForm('sectorsel','Construction and engineering');
-	addToForm('sectorsel','Telecomms');
-	addToForm('sectorsel','Aerospace and defence');
-	addToForm('sectorsel','Professional services');
-	addToForm('sectorsel','Finance, Insurance and Real Estate');
-	addToForm('sectorsel','Consultancy');
-	addToForm('sectorsel','Energy');
-	addToForm('sectorsel','Agriculture');
-	addToForm('sectorsel','Transport');
-	addToForm('sectorsel','Government and public sector');
-	addToForm('sectorsel','Health');
-	addToForm('sectorsel','Consumer services');
-	addToForm('sectorsel','Automative industry');
-	addToForm('sectorsel','Manufacturing');
-	addToForm('sectorsel','Mining');	
+
+    addToForm('sectorsel','Agriculture');
+    addToForm('sectorsel','Mining');
+    addToForm('sectorsel','Manufacturing');
+    addToForm('sectorsel','Energy');
+    addToForm('sectorsel','Water and waste management');
+    addToForm('sectorsel','Construction');
+    addToForm('sectorsel','Wholesale and retail');
+    addToForm('sectorsel','Transport');
+    addToForm('sectorsel','Accommodation and food services');
+    addToForm('sectorsel','Media');
+    addToForm('sectorsel','Data and information systems');
+    addToForm('sectorsel','Finance and insurance services');
+    addToForm('sectorsel','Real Estate');
+    addToForm('sectorsel','Professional services');
+    addToForm('sectorsel','Scientific and market research');
+    addToForm('sectorsel','Business administration services');
+    addToForm('sectorsel','Tourism');
+    addToForm('sectorsel','Public administration and defence');
+    addToForm('sectorsel','Government and public sector ');
+    addToForm('sectorsel','Education');
+    addToForm('sectorsel','Human health and social work');
+    addToForm('sectorsel','Arts, recreation and entertainment');
+    addToForm('sectorsel','Consumer services');
 	
 	addToForm('orgtypesel','Micro (<10 employees)');	
 	addToForm('orgtypesel','SME (10 to 250 employees)');	
