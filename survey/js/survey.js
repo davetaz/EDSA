@@ -190,10 +190,9 @@ function populateForms() {
 	addToForm('sectorsel','Manufacturing');
 	addToForm('sectorsel','Mining');	
 	
-	addToForm('orgtypesel','Individual');	
-	addToForm('orgtypesel','Startup');	
-	addToForm('orgtypesel','SME');	
-	addToForm('orgtypesel','Large corporation');
+	addToForm('orgtypesel','Micro (<10 employees)');	
+	addToForm('orgtypesel','SME (10 to 250 employees)');	
+	addToForm('orgtypesel','Large (250+ employees)');
 
 	addToForm('involvement','I am a data scientist');
 	addToForm('involvement','I manage data scientists');
