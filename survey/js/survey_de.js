@@ -168,12 +168,13 @@ function populateForms() {
 	addToForm('sectorsel','Manufacturing','Produktion');
 	addToForm('sectorsel','Mining','Bergbau');	
 	
-	addToForm('involvement','No involvement','Kein Bezug');
-	addToForm('involvement','I work with data scientists but am not one myself','Ich arbeite mit Data Scientists, bin selbst aber keiner');
+//	addToForm('involvement','No involvement','Kein Bezug');
+//	addToForm('involvement','I work with data scientists but am not one myself','Ich arbeite mit Data Scientists, bin selbst aber keiner');
 	addToForm('involvement','I manage data scientists','Ich leite und koordiniere Data Scientists');
-	addToForm('involvement','My primary role is not data science by I practice occasionally','Ich arbeite gelegentlich als Data Scientist, es ist aber nicht meine Hauptaufgabe');
-	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)','Ich bin praktizierender Data Scientist, habe aber Lücken in bestimmten Bereichen (z.B. Statistik)');
-	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas','Ich bin ein praktizierender Daten Wissenschaftler mit hervorragenden Kenntnissen in allen Bereichen');
+	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)','Ich bin praktizierender Data Scientist');
+//	addToForm('involvement','My primary role is not data science by I practice occasionally','Ich arbeite gelegentlich als Data Scientist, es ist aber nicht meine Hauptaufgabe');
+//	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)','Ich bin praktizierender Data Scientist, habe aber Lücken in bestimmten Bereichen (z.B. Statistik)');
+//	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas','Ich bin ein praktizierender Daten Wissenschaftler mit hervorragenden Kenntnissen in allen Bereichen');
 
 	addToForm('pickID','Scientific method','Wissenschaftliche Methodik');
 	addToForm('pickID','Open Culture','Open Culture');

@@ -187,13 +187,17 @@ function populateForms() {
 	addToForm('orgtypesel','Startup');	
 	addToForm('orgtypesel','SME');	
 	addToForm('orgtypesel','Large corporation');
-	
+
+	addToForm('involvement','I am a data scientist');
+	addToForm('involvement','I manage data scientists');
+/*	
 	addToForm('involvement','No involvement');
 	addToForm('involvement','I work with data scientists but am not one myself');
 	addToForm('involvement','I manage data scientists');
 	addToForm('involvement','My primary role is not data science by I practice occasionally');
 	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)');
 	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas');
+*/
 
 	addToForm('pickID','Big data');
 	addToForm('pickID','Open source tools and concepts');
