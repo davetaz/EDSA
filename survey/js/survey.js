@@ -34,6 +34,7 @@ var QueryString = function () {
 } ();
 
 $( document ).ready(function() {
+	$('#capcap-team').hide();
 	data["country"]["ISO2"] = QueryString.ISO2;
 	data["country"]["name"] = QueryString.name;
 	addMap();
@@ -150,6 +151,12 @@ function processInvolvement(sector) {
 	});
 	$("#" + sector).addClass("selected");	
 	data["Involvement"] = sector;
+	console.log(data["Involvement"]);
+	if (data["Involvement"] == "I_am_a_data_scientist") {
+		$('#capcap-team').hide();
+	} else {
+		$('#capcap-team').show();
+	}
 }
 
 
@@ -324,9 +331,18 @@ function processCapIn(type,id,value) {
 	data["skills"]["capcap"][type + "_" + id] = value;
 }
 
-function processForm(form) {
-	$('[id=submit]').attr("disabled",true);
-	$('[id=submit]').html("Processing");
+function cacheData() {
+	data = {};
+	data["skills"] = {};
+	data["training"] = {};
+	data["country"] = {};
+	data["skills"]["not_required"] = {};
+	data["skills"]["nice_to_have"] = {};
+	data["skills"]["essential"] = {};
+	data["skills"]["capcap"] = {};
+	data["training"]["not_required"] = {};
+	data["training"]["nice_to_have"] = {};
+	data["training"]["essential"] = {};
 	data["skills"]["not_required"] = new Array();
 	data["skills"]["nice_to_have"] = new Array();
 	data["skills"]["essential"] = new Array();
@@ -334,7 +350,7 @@ function processForm(form) {
 	data["training"]["nice_to_have"] = new Array();
 	data["training"]["essential"] = new Array();
 	data["tools"] = new Array();
-
+	
 	$('div','#notID').each(function(){
 		localid = $(this).attr('id');
 		console.log(localid);
@@ -368,6 +384,14 @@ function processForm(form) {
 	data["contact"]["email"] = $('#email').val();
 	data["contact"]["research"] = $('#contact_research').prop("checked");
 	data["contact"]["results"] = $('#contact_results').prop("checked");
+
+	return data;
+}
+
+function processForm(form) {
+	$('[id=submit]').attr("disabled",true);
+	$('[id=submit]').html("Processing");
+	data = cacheData();	
 	console.log(data);
 
 	var tmp = JSON.stringify(data);
