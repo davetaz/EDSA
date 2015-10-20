@@ -1,4 +1,5 @@
 var data = {};
+var lang = "index_de.html";
 var api_url = "http://odi-edsa-data.herokuapp.com/";
 data["skills"] = {};
 data["training"] = {};
@@ -36,6 +37,8 @@ var QueryString = function () {
 
 $( document ).ready(function() {
 	wakeServer();
+        updateLanguageSwitcher();
+	setTimeout(function() {$(".dropdown dt a").show();$('#country-select').show();},2000);
 	setID();
 	data["country"]["ISO2"] = QueryString.ISO2;
 	data["country"]["name"] = QueryString.name;
@@ -155,40 +158,50 @@ function populateForms() {
 		$('#pickCountry').remove();
 		$('#google_translate_element').hide();	
 	}
+	addToForm('sectorsel','Agriculture','Landwirtschaft');
+	addToForm('sectorsel','Mining','Bergbau');	
+	addToForm('sectorsel','Manufacturing','Produktion');
+	addToForm('sectorsel','Energy','Energie');
+	addToForm('sectorsel','Water and waste management','Water and waste management');
+	addToForm('sectorsel','Construction','Bau- und Ingenieurswesen');
+	addToForm('sectorsel','Wholesale and retail','Verbraucherdienste');
+	addToForm('sectorsel','Transport','Transport');
+	addToForm('sectorsel','Accommodation and food services','Hotel und Gastwirtschaft');
 	addToForm('sectorsel','Media and Advertising','Medien und Werbung');
 	addToForm('sectorsel','Data and Information Systems','Daten- und Informationssysteme');
-	addToForm('sectorsel','Construction and engineering','Bau- und Ingenieurswesen');
-	addToForm('sectorsel','Telecomms','Telekommunikation');
-	addToForm('sectorsel','Aerospace and defence','Raumfahrt und Verteidigung');
-	addToForm('sectorsel','Professional services','Professionelle Dienste');
 	addToForm('sectorsel','Finance, Insurance and Real Estate','Finanzen, Versicherungen und Immobilien');
-	addToForm('sectorsel','Consultancy','Beratung');
-	addToForm('sectorsel','Energy','Energie');
-	addToForm('sectorsel','Agriculture','Landwirtschaft');
-	addToForm('sectorsel','Transport','Transport');
-	addToForm('sectorsel','Government and public sector','Regierung und öffentlicher Sektor');
-	addToForm('sectorsel','Health','Gesundheit');
-	addToForm('sectorsel','Consumer services','Verbraucherdienste');
-	addToForm('sectorsel','Automative industry','Automobilindustrie');
-	addToForm('sectorsel','Manufacturing','Produktion');
-	addToForm('sectorsel','Mining','Bergbau');	
+	addToForm('sectorsel','Professional services','Professionelle Dienste');
+	addToForm('sectorsel','Scientific and market research','Scientific and market research');
+	addToForm('sectorsel','Business administration services','Business administration services');
+	addToForm('sectorsel','Tourism','Tourism');
+	addToForm('sectorsel','Public administration and defence','Public administration and defence');
+	addToForm('sectorsel','Government and public sector', 'Government and public sector');
+	addToForm('sectorsel','Education', 'Education');
+	addToForm('sectorsel','Human health and social work', 'Human health and social work');
+	addToForm('sectorsel','Arts, recreation and entertainment', 'Arts, recreation and entertainment');
+	addToForm('sectorsel','Consumer services', 'Consumer services');
+
+        addToForm('orgtypesel','Micro (<10 employees)','Micro (<10 Mitarbeiter)');
+        addToForm('orgtypesel','SME (10 to 250 employees)','SME (10 to 250 Mitarbeiter)');
+        addToForm('orgtypesel','Large (250+ employees)','Groß (250+ Mitarbeiter)');
+
 	
 //	addToForm('involvement','No involvement','Kein Bezug');
 //	addToForm('involvement','I work with data scientists but am not one myself','Ich arbeite mit Data Scientists, bin selbst aber keiner');
-	addToForm('involvement','I manage data scientists','Ich leite und koordiniere Data Scientists');
+	addToForm('involvement','I manage data scientists','Ich manage Data Scientists');
 	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)','Ich bin praktizierender Data Scientist');
 //	addToForm('involvement','My primary role is not data science by I practice occasionally','Ich arbeite gelegentlich als Data Scientist, es ist aber nicht meine Hauptaufgabe');
 //	addToForm('involvement','I am a practicing data scientist but with gaps in certain areas (e.g. statistics)','Ich bin praktizierender Data Scientist, habe aber Lücken in bestimmten Bereichen (z.B. Statistik)');
 //	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas','Ich bin ein praktizierender Daten Wissenschaftler mit hervorragenden Kenntnissen in allen Bereichen');
 
 	addToForm('pickID','Scientific method','Wissenschaftliche Methodik');
-	addToForm('pickID','Open Culture','Open Culture');
-	addToForm('pickID','Data skills','Umgang mit Daten');
-	addToForm('pickID','Advanced computing','Fortschrittliche Rechenverfahren');
-	addToForm('pickID','Data visualisation','Visualisierung von Daten');
+	addToForm('pickID','Open source tools and concepts','Open-Source- Werkzeuge und Konzepte');
+	addToForm('pickID','Data collection and analysis','Datensammlung und -analyse');
+	addToForm('pickID','Advanced computing and programming','Fortgeschrittene Programmierung');
+	addToForm('pickID','Data interpretation and visualisation','Interpretation und Datenvisualisierung');
 	addToForm('pickID','Math and statistics','Mathematik und Statistik');
 	addToForm('pickID','Machine learning','Maschinelles Lernen');
-	addToForm('pickID','Domain expertise','Fachwissen');
+	addToForm('pickID','Business intelligence and domain expertise','Business-Intelligence und Fachwissen');
 	
 	addToForm('trainingPickID','Face to face training','Face-to-face Training');
 	addToForm('trainingPickID','Webinars','Webinare');
@@ -199,9 +212,48 @@ function populateForms() {
 	addToForm('trainingPickID','Uses non-open, non-free software','Verwendung nicht-offener, nicht-freier Software');
 	addToForm('trainingPickID','Coaching','Coaching');
 	addToForm('trainingPickID','Assessed','Bewertet');
-	addToForm('trainingPickID','Internal assignments','Interne Aufgaben');	
+	addToForm('trainingPickID','Internal assignments','Interne Aufgaben');
+
+        addToLinkList('toolsListeg','AWS','toolsList');
+        addToLinkList('toolsListeg','Spark','toolsList');
+        addToLinkList('toolsListeg','Hadoop / MapReduce','toolsList');
+        addToLinkList('toolsListeg','MongoDB','toolsList');
+        addToLinkList('toolsListeg','Open Refine','toolsList');
+        addToLinkList('toolsListeg','QMiner','toolsList');
+        addToLinkList('toolsListeg','Apache Flink','toolsList');
+        addToLinkList('toolsListeg','Apache Storm','toolsList');
+        addToLinkList('toolsListeg','ProM or Disco','toolsList');
+        addToLinkList('toolsListeg','NoSQL / Cassandra','toolsList');
+        addToLinkList('toolsListeg','R','toolsList');
+        addToLinkList('toolsListeg','Python','toolsList');
+        addToLinkList('toolsListeg','Javascript / JQuery','toolsList');
+        addToLinkList('toolsListeg','D3 / nvD3','toolsList');
+        addToLinkList('toolsListeg','Java','toolsList');
+        addToLinkList('toolsListeg','z-scores','toolsList');
+	
 }
 
+function addTool() {
+        if ($('#tool').val() != "") {
+                addToList('toolsList',$('#tool').val());
+                $('#tool').val("");
+        }
+}
+
+function addToList(id,item) {
+        itemID = item.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        itemID = itemID.replace(/\s{2,}/g," ");
+        itemID = itemID.replace(/ /g,"_");
+        insert = '<tli id="' + itemID + '" name="'+item+'">' + item + ' (<remove onClick="$(this).parent().remove();">remove</remove>)</tli>';
+        $('#'+id).append(insert);
+}
+
+function addToLinkList(id,item,target) {
+        itemID = item.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        itemID = itemID.replace(/\s{2,}/g," ");
+        itemID = itemID.replace(/ /g,"_");
+        $('#'+id).append('<tli id="' + itemID + '" onclick="addToList(\''+target+'\',\''+item+'\'); $(this).fadeOut();">' + item + '</tli>');
+}
 
 function addToForm(id,item,text) {
 	help = false;

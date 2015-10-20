@@ -14,6 +14,7 @@
 	<link href="css/app.css" rel="stylesheet" type="text/css"/>
 	<link href="css/toggle.css" rel="stylesheet" type="text/css"/>
 	<link href="css/range.css" rel="stylesheet" type="text/css"/>
+	<link href="css/language_switcher.css" rel="stylesheet" type="text/css"/>
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.jcarousellite.js"></script>
 	<script src="js/jquery.touchSwipe.min.js"></script>
@@ -26,12 +27,39 @@
 	<div class="container">
 		<ul class="invisibleList">
 		<li>
-			<progress max=8 value=0>0/6</progress>
+			<progress max=8 value=0>0/8</progress>
 			<div><div data-force="5" class="layer title title_xl">INFO: Welcome</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-    				<div id="google_translate_element"></div>
-				<br/><br/><br/><h2>Contribute data <span id="countryName">for </span></h2><br/>Tragen Sie Daten für Deutschland bei!<br/><br/>Vielen Dank für Ihre Bereitschaft, Daten zu dieser Umfrage beizutragen. Diese kurze Umfrage sollte nicht mehr als 15 Minuten in Anspruch nehmen. Um zu beginnen, klicken Sie bitte den nächsten Pfeil rechts.<br/><br/><br/></br>
+				<div id="country-select" style="display: none;">
+				    <form action="" style="display:none;">
+				    <select id="country-options" name="country-options">
+				    <option title="index.html" value="en">English</option>
+				    <option title="index_de.html" value="de">German</option>
+				    </select>
+				    <input value="Select" type="submit" />
+				    </form>
+				</div>
+				<br/><h2>Machen Sie bei der EDSA-Umfrage mit</h2>
+Verschaffen Sie Ihrer Stimme Gehör und machen Sie bei der EDSA-Umfrage mit! Wir möchten die europäische Data-Science-Landschaft entdecken und brauchen dazu Ihre Hilfe.
+<br/>
+<h4>Warum sollte ich teilnehmen?</h4>
+<small>
+Wenn Sie ein Data Scientist sind oder Data Scientists managen, ist Ihr Wissen von unschätzbarem Wert für unser Projekt. Wir hoffen, Daten aus allen EU-Ländern zu sammeln, und so können Sie zu einer umfassenden Bewertung der europäischen Data-Science-Landschaft beitragen.
+</small>
+<br/>
+<h4>Was geschieht mit meinen Daten?</h4>
+<small>
+Die Daten werden anonymisiert und unter einer offenen Lizenz online zur Verfügung gestellt. Ihre Antworten werden nie wieder mit Ihnen verknüpft. Die Daten werden analysiert und auf einem Dashboard angezeigt, damit man die Ergebnisse und Trends  in jedem EU-Land untersuchen kann. Wir werden die Antworten nutzen, um den EDSA-Lehrplan und unsere Trainings-Angebote zu verbessern.
+</small>
+<br/>
+<h4>Was ist der Nutzen?</h4>
+<small>
+Sie werden uns allen helfen, die Data-Science-Landschaft in Europa besser zu verstehen und letztendlich die nächste Generation der weltweit führenden Data Scientists auszubilden. Ihre Daten werden mit denen der anderen Teilnehmer kombiniert, um Visualisierungen und Analysen zu erstellen, und die wichtigsten Erkenntnisse zu veranschaulichen. Diese Ansichten werden auch Ihnen zur Verfügung stehen: Je mehr Daten wir bekommen, desto aufschlussreicher wird die Analytik werden. 
+</small>
+<br/>
+<h4>Wo bekomme ich weitere Informationen?</h4>
+<small>Bitte besuchen Sie die Projekt-Website <a href="http://edsa-project.eu">http://edsa-project.eu</a>.</small>
 				<div align="right">
 					Klicken Sie rechts, um zur nächsten Frage zu gelangen
 				</div>
@@ -40,7 +68,7 @@
 		
 		</li>
 		<li id="pickCountry">
-			<progress max=8 value=0>0/6</progress>
+			<progress max=8 value=0>0/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Pick your country</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
@@ -53,29 +81,48 @@
 			</div>
 			</div>
 					
-		</li><li>	
+		</li><li>
 
 		<div id="ability2" style="margin-left: 30px">
-			<progress max=8 value=2>2/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Q: Erfahrung mit Data Science</div></div>
-		
-			<div class="wrapper">
-			<div class="layer tile" style="width: 83%;">
-				<p><b>Wählen Sie die Box, die am besten Ihre Beziehung zur Data Science repräsentiert</b></p>
-				<div class="tile__list list2" id="involvement">
-				</div>
-				<div align="right">
-					Klicken Sie rechts, um zur nächsten Frage zu gelangen
-				</div>
-			</div>
-			</div>
-		</div>
-		<br/>
+                        <progress max=8 value=1>1/8</progress>
+                        <div><div data-force="5" class="layer title title_xl">Data Science Erfahrung</div></div>
 
-		</li><li>
+                        <div class="wrapper">
+                        <div class="layer tile" style="width: 83%;">
+                                <p><b>Was beschreibt Ihre Rolle am besten?</b></p>
+                                <div class="tile__list list2" id="involvement">
+                                </div>
+                                <div align="right">
+					Klicken Sie rechts, um zur nächsten Frage zu gelangen
+                                </div>
+                        </div>
+                        </div>
+                </div>
+                <br/>
+
+                </li><li>
+
+		<div id="orgtype" style="margin-left: 30px">
+                        <progress max=8 value=1>1/8</progress>
+                        <div><div data-force="5" class="layer title title_xl">Größe Ihrer Organisation</div></div>
+
+                        <div class="wrapper">
+                        <div class="layer tile" style="width: 83%;">
+                                <div class="tile__list list2" id="orgtypesel">
+                                </div>
+                                <button id="addorgtypesel">Other</button>
+                                <div align="right">
+					Klicken Sie rechts, um zur nächsten Frage zu gelangen
+                                </div>
+                        </div>
+                        </div>
+                </div>
+                <br/>
+
+                </li><li>
 		
 		<div id="sector" style="margin-left: 30px">
-			<progress max=8 value=1>1/6</progress>
+			<progress max=8 value=1>1/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Select your sector</div></div>
 
 			<div class="wrapper">
@@ -94,8 +141,8 @@
 		</li><li>
 
 		<div id="ability" style="margin-left: 30px">
-			<progress max=8 value=2>2/6</progress>
-			<div><div data-force="5" class="layer title title_xl">Q: Data science experience</div></div>
+			<progress max=8 value=2>2/8</progress>
+			<div><div data-force="5" class="layer title title_xl">Q: Data Science Erfahrung</div></div>
 		
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
@@ -124,13 +171,13 @@
 		</li><li>
 
 		<div id="multi" style="margin-left: 30px">
-			<progress max=8 value=3>3/6</progress>
+			<progress max=8 value=3>3/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Benötigte Fähigkeiten</div></div>
 			
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%">
 				<p><b>Ordnen Sie die Fähigkeiten unten nach ihrer Bedeutung für Data Scientists.</b></p>
-				<p><b>Verschieben Sie</b> die Elemente entsprechend ihrer Bedeutung in Ihrer Branche (entweder <b>unerlässlich, einige Kenntnisse erforderlich</b> oder <b>nicht erforderlich</b>). Sie können auch Elemente zu den einzelnen Kategorien <b>hinzufügen</b>. Bitte füllen Sie alle Kategorien aus, um ein differenziertes Bild zu erhalten.</p>
+				<p>Ziehen Sie die Kästchen je nach der Bedeutung in Ihrer Branche in die passende Kategorie  (wesentlich, wünschenswert, unnötig)</p>
 				<p>Diese Fähigkeiten entstammen der Arbeit von <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" target="_blank">Drew Conway</a> und <a href="http://www.exploringdatascience.com/the-data-science-clock/" target="_blank">Jamie Whitehorn</a>.</p>
 			<div class="layer tile" data-force="20">
 				<div class="tile__name" id="essential">Erforderlich</div>
@@ -165,41 +212,27 @@
 		</li><li>
 
 		<div id="capouter" style="margin-left: 30px">
-			<progress max=8 value=4>4/6</progress>
+			<progress max=8 value=4>4/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Fähigkeiten und Kapazitäten</div></div>	
 			<div class="wrapper">
 			<div id="capcap" class="layer tile" style="width: 83%; overflow-y: scroll; max-height: 600px;">
-			<p>Bewerten Sie in der unten stehenden Tabelle Ihre Fähigkeiten und Kapazitäten in Bezug auf jede der aufgelisteten Fähigkeiten.</p>
-			<table width="100%" style="text-align: center;">
-				<tr><th style="width: 50%;">Fähigkeit</th><th style="width: 50%;">Kapazität</th></tr>
-				<tr><td>Ihre Fähigkeiten in diesem Bereich:</td><td>Ihre Fähigkeit, diese Fertigkeit professionell zu verwenden:</td></tr>
-				<tr><td>
-					<ol start="0">
-						<nli>Keine praktische Kenntnisse</nli>
-						<nli>Genug Wissen, um durchzukommen</nli>
-						<nli>Solides praktisches Wissen</nli>
-						<nli>Umfassendes, aktuelles und vollständiges Wissen</nli>
-						<nli>Führender Experte</nli>
-					</ol>
-				</td><td>
-					<ol start="0">
-						<nli>Nicht benutzt</nli>
-						<nli>Eingeschränkte Nutzung</nli>
-						<nli>Solide Verwendung</nli>
-						<nli>Umfangreiche Verwendung<nli>
-						<nli>Ich verdiene Geld mit Büchern, die ich darüber schreibe(über diese Thematik)</nli>
-					</ol>
-				</td></tr></table>
-			</table>
-
+			<p>
+			In der unten stehenden Tabelle Bitte bewerten <b>Sie <span id="capcap-team">IhreMannschafts</span></b> Stärke in jedem dieser Bereiche.</p>
+                        <ul>
+                        <item><b>1</b> = sehr schlecht: Wenig oder kein Wissen / Know-how.</item><br/>
+                        <item><b>2</b> = Schlecht: Experimentelles / vages Wissen.</item><br/>
+                        <item><b>3</b> = OK: Vertraut und kompetenter Anwender.</item><br/>
+                        <item><b>4</b> = Gut: Regelmäßiger  und sicherer Benutzer.</item><br/>
+                        <item><b>5</b> = Sehr gut: Führender Experte.</item>
+                        </ul>
 				<div id="capcap_essentialID" style="width: 100%;">
-					<h2>Essential Skills</h2>
+					<h2>Wesentliche Fähigkeiten</h2>
 				</div>
 				<div id="capcap_niceID" style="width: 100%;">
-					<h2>Some knowledge required</h2>
+					<h2>Wünschenswerte</h2>
 				</div>
 				<div id="capcap_notID" style="width: 100%;">
-					<h2>Not required</h2>
+					<h2>Unnötige</h2>
 				</div>
 				<div align="right">
 					Klicken Sie rechts, um zur nächsten Frage zu gelangen
@@ -211,8 +244,30 @@
 		
 		</li><li>
 
+		<div id="toolsOuter" style="margin-left: 30px">
+                        <progress max=8 value=5>5/8</progress>
+                        <div><div data-force="5" class="layer title title_xl">Tools, languages and techniques</div></div>
+                        <div class="wrapper">
+                        <div id="tools" class="layer tile" style="width: 83%; overflow-y: scroll; max-height: 600px;">
+                        <p>Bitte helfen Sie uns, Werkzeuge, Sprachen und Techniken zu identifizieren, die zu einem Data Scientist Training gehören sollten. Wählen Sie aus den nachfolgenden Beispielen aus oder fügen Sie Ihre Vorschläge in dem Textfeld hinzu.</p>
+                        <ul id="toolsListeg">
+                        </ul>
+                        <div align="center">
+                        <input type="text" id="tool"></input><button id="addTool" onClick="addTool();">Add</button>
+                        </div>
+                        <ul id="toolsList">
+                        </ul>
+                        </div>
+                        <div align="right">
+                                Click right to continue to the next question.
+                        </div>
+
+
+                </li><li>
+
+
 		<div id="multi2" style="margin-left: 30px">
-			<progress max=8 value=5>5/6</progress>
+			<progress max=8 value=5>6/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Anforderungen an das Training</div></div>
 
 			<div class="wrapper">
@@ -249,7 +304,7 @@
 		<br/>
 		
 		</li><li>
-			<progress max=8 value=6>6/6</progress>
+			<progress max=8 value=6>7/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Kommentare</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
@@ -261,7 +316,7 @@
 			</div>	
 		</li>
 		<li>
-			<progress max=8 value=7>6/6</progress>
+			<progress max=8 value=7>8/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Q: Mitmachen</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
@@ -277,7 +332,7 @@
 			</div>	
 		</li>
 		<li>
-			<progress max=8 value=8>6/6</progress>
+			<progress max=8 value=8>8/8</progress>
 			<div><div data-force="5" class="layer title title_xl">Vielen Dank!</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
@@ -309,6 +364,7 @@
 	<script src="../js/topojson.js"></script>
 	<script src="js/map.js"></script>
 
+	<script src="js/language.js"></script>
 	<script src="js/survey_de.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/data_science.js"></script>

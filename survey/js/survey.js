@@ -1,4 +1,5 @@
 var data = {};
+var lang = "index.html";
 var api_url = "http://odi-edsa-data.herokuapp.com/";
 data["skills"] = {};
 data["training"] = {};
@@ -36,6 +37,8 @@ var QueryString = function () {
 
 $( document ).ready(function() {
 	wakeServer();
+        updateLanguageSwitcher();
+	setTimeout(function() {$(".dropdown dt a").show();$('#country-select').show();},1000);
 	setID();
 	$('#capcap-team').hide();
 	data["country"]["ISO2"] = QueryString.ISO2;
