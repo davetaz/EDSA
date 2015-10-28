@@ -23,7 +23,8 @@ for (i=0;i<training.length;i++) {
     charts[entry] = dc.barChart('#training-' + entry + "-chart");
 }
  
-d3.csv('../data/online_survey_data/crossfilter.csv', function (data) {
+d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
+    console.log(data);
     var ndx = crossfilter(data);
     var all = ndx.groupAll();
 
@@ -76,6 +77,9 @@ d3.csv('../data/online_survey_data/crossfilter.csv', function (data) {
     for (i=0;i<skills.length;i++) {
         entry = skills[i];
         var data = ndx.dimension(function(d) {
+	    if (d["Skills_" + entry] == "") {
+	    	return "" + d["Skills_" + entry];
+	    }
             return d["Skills_" + entry];
         });
         var dataGroup = data.group();
@@ -89,7 +93,7 @@ d3.csv('../data/online_survey_data/crossfilter.csv', function (data) {
             .margins({top: 0, right: 3, bottom: -1, left: -1})
             .group(dataGroup)
             .dimension(data)
-            .colors(d3.scale.ordinal().domain(["essential","nice_to_have","not_required"]).range(['#3182bd', '#6baed6', '#9ecae1']))
+            .colors(d3.scale.ordinal().domain(["","essential","nice_to_have","not_required"]).range(['transparent','#3182bd', '#6baed6', '#9ecae1']))
             .colorAccessor(function(d) { 
                 return d.key;
             })
@@ -110,15 +114,15 @@ d3.csv('../data/online_survey_data/crossfilter.csv', function (data) {
             if (num == "0" || num == "1" || num == "2" || num == "3" || num == "4") {
                 return d["capability_" + entry];
             }
-            return;
+            return "no data";
         });
         var dataGroup = data.group();
         charts["cap" + entry]
             .width(120)
             .height(120)
-            .slicesCap(5)
+            .slicesCap(6)
             .innerRadius(20)
-            .colors(d3.scale.ordinal().domain(["0","1","2","3","4"]).range(['Lavender', 'CadetBlue', 'BlueViolet','DarkBlue','DarkRed']))
+            .colors(d3.scale.ordinal().domain(["no data","0","1","2","3","4"]).range(['transparent','Lavender', 'CadetBlue', 'BlueViolet','DarkBlue','DarkRed']))
             .colorAccessor(function(d) { 
                 return d.key;
             })
@@ -129,6 +133,9 @@ d3.csv('../data/online_survey_data/crossfilter.csv', function (data) {
     for (i=0;i<training.length;i++) {
         entry = training[i];
         var data = ndx.dimension(function(d) {
+	    if (d["Training_" + entry] == "") {
+	    	return "";
+	    }
             return d["Training_" + entry];
         });
         var dataGroup = data.group();
@@ -142,7 +149,7 @@ d3.csv('../data/online_survey_data/crossfilter.csv', function (data) {
             .margins({top: 0, right: 3, bottom: -1, left: -1})
             .group(dataGroup)
             .dimension(data)
-            .colors(d3.scale.ordinal().domain(["essential","nice_to_have","not_required"]).range(['#3182bd', '#6baed6', '#9ecae1']))
+            .colors(d3.scale.ordinal().domain(["","essential","nice_to_have","not_required"]).range(['transparent','#3182bd', '#6baed6', '#9ecae1']))
             .colorAccessor(function(d) { 
                 return d.key;
             })
@@ -154,8 +161,10 @@ d3.csv('../data/online_survey_data/crossfilter.csv', function (data) {
             })
             .elasticY(false)
             .yAxis().ticks(0);
+	var rect = charts[entry].selectAll("rect");
+		
+	rect.attr("width", function(d) {console.log("hello" + d);});
     }
-
 
     var countries = ndx.dimension(function(d) {
         return d.Country;
