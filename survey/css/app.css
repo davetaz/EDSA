@@ -1,7 +1,12 @@
 html {
 	background-color: #d2d8e0; 
 }
-
+circle {
+	cursor: pointer;
+}
+svg text {
+	cursor: pointer;
+}
 html, body {
 	margin: 0;
 	padding: 0;

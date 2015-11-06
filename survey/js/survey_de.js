@@ -181,9 +181,9 @@ function populateForms() {
 	addToForm('sectorsel','Arts, recreation and entertainment', 'Kunst , Erholung und Unterhaltung');
 	addToForm('sectorsel','Consumer services', 'Verbraucherdienste');
 
-        addToForm('orgtypesel','Micro (<10 employees)','Micro (<10 Mitarbeiter)');
+        addToForm('orgtypesel','Micro (less than 10 employees)','Micro (<10 Mitarbeiter)');
         addToForm('orgtypesel','SME (10 to 250 employees)','SME (10 to 250 Mitarbeiter)');
-        addToForm('orgtypesel','Large (250+ employees)','Groß (250+ Mitarbeiter)');
+        addToForm('orgtypesel','Large (250 or more employees)','Groß (250+ Mitarbeiter)');
 
 	
 //	addToForm('involvement','No involvement','Kein Bezug');

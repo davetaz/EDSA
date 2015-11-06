@@ -201,9 +201,9 @@ function populateForms() {
     addToForm('sectorsel','Arts, recreation and entertainment');
     addToForm('sectorsel','Consumer services');
 	
-	addToForm('orgtypesel','Micro (<10 employees)');	
+	addToForm('orgtypesel','Micro (less than 10 employees)');	
 	addToForm('orgtypesel','SME (10 to 250 employees)');	
-	addToForm('orgtypesel','Large (250+ employees)');
+	addToForm('orgtypesel','Large (250 or more employees)');
 
 	addToForm('involvement','I am a data scientist');
 	addToForm('involvement','I manage data scientists');
