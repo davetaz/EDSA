@@ -1,6 +1,6 @@
 body {
 	margin: 20px;
-	width: 1300px;
+	width: 1150px;
 }
 heading {
 	font-size: 20px;
@@ -138,6 +138,21 @@ title {
 	top: 130px;
 	width: 120px;
 }
+footer div {
+	display: inline-block;
+	font-size: 0.8em;
+}
+#credit {
+	position: relative;
+	top: 10px;
+}
+#odi-logo {
+	float: right;
+	position: relative;
+	top: 5px;
+	right: 10px;
+}
+
 /*
 #skills .dc-chart {
 	font-size: 0;

@@ -7,7 +7,7 @@ var map = dc.geoChoroplethChart('#map');
 var involvementChart = dc.pieChart('#involvement-chart');
 var sectorChart = dc.barChart('#sector-chart');
 
-var skills = ["Advanced_computing", "Machine_learning", "Open_Culture", "Scientific_method", "Math_and_statistics", "Data_visualisation", "Domain_expertise", "Data_skills"];
+var skills = ['Big data', 'Open source tools and concepts', 'Data collection and analysis', 'Advanced computing and programming', 'Data interpretation and visualisation', 'Math and statistics', 'Machine learning and prediction', 'Business intelligence and domain expertise'];
 skills.sort();
 var training = ["Translated_from_English", "Coaching", "Assessed", "Internal_assignments", "Accredited", "Uses_nonopen_nonfree_software", "Webinars", "Tailored_to_sector", "Face_to_face_training", "eLearning"];
 training.sort();
@@ -15,6 +15,7 @@ training.sort();
 var charts = {};
 for (i=0;i<skills.length;i++) {
     entry = skills[i];
+    entry = entry.replace(/ /g,"_");
     charts[entry] = dc.barChart('#skills-' + entry + "-chart");
     charts["cap"+entry] = dc.pieChart('#capability-' + entry + "-chart")
 }
@@ -76,6 +77,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
 
     for (i=0;i<skills.length;i++) {
         entry = skills[i];
+    	entry = entry.replace(/ /g,"_");
         var data = ndx.dimension(function(d) {
 	    if (d["Skills_" + entry] == "") {
 	    	return "" + d["Skills_" + entry];
@@ -83,6 +85,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
             return d["Skills_" + entry];
         });
         var dataGroup = data.group();
+	console.log(entry);
         charts[entry]
             .width(80)
             .height(180)
@@ -109,6 +112,8 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
 
     for (i=0;i<skills.length;i++) {
         entry = skills[i];
+	entry = entry.replace(/ /g,"_");
+	console.log(entry);
         var data = ndx.dimension(function(d) {
             num = d["capability_" + entry];
             if (num == "0" || num == "1" || num == "2" || num == "3" || num == "4") {
