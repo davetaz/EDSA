@@ -1,6 +1,9 @@
 var data = {};
 var lang = "index.html";
 var api_url = "http://odi-edsa-data.herokuapp.com/";
+var rightNow = new Date();
+var res = rightNow.toISOString().slice(0,10).replace(/-/g,"");
+data["date"] = res;
 data["skills"] = {};
 data["training"] = {};
 data["country"] = {};
