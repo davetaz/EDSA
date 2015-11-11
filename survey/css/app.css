@@ -86,7 +86,7 @@ button {
 	width: 50px;
 	height: 60px;
 	display: block;
-	position: absolute;
+	position: fixed;
 	cursor: pointer;
 	top: 200px;
 	z-index: 20;
