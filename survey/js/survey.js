@@ -43,14 +43,36 @@ $( document ).ready(function() {
         updateLanguageSwitcher();
 	setTimeout(function() {$(".dropdown dt a").show();$('#country-select').show();},1000);
 	setID();
-	$('#capcap-team').hide();
+	$('#Q6_Question_2').hide();
 	data["country"]["ISO2"] = QueryString.ISO2;
 	data["country"]["name"] = QueryString.name;
 	addMap();
 	populateForms();
 	updateForm();
 	addListeners();
+	lang = getUrlVars()["lang"];
+	if (lang) { translate(lang); }
 });
+
+function getUrlVars() {
+	var vars = {};
+	var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		vars[key] = value;
+	});
+	return vars;
+}
+
+function translate(code) {
+	$.get("data/languages.json", function(data) {
+		lang = data[code];
+		$.each(lang, function(key,val) {
+			if (val) {
+				$('[id=' + key + ']').html(val);
+				$('[name=' + key + ']').html(val);
+			}
+		});
+	});
+}
 
 function wakeServer() {
 	$.get("http://odi-edsa-data.herokuapp.com/wake.php",function(data) {
@@ -160,9 +182,11 @@ function processInvolvement(sector) {
 	$("#" + sector).addClass("selected");	
 	data["Involvement"] = sector;
 	if (data["Involvement"] == "I_am_a_data_scientist") {
-		$('#capcap-team').hide();
+		$('#Q6_Question_1').show();
+		$('#Q6_Question_2').hide();
 	} else {
-		$('#capcap-team').show();
+		$('#Q6_Question_1').hide();
+		$('#Q6_Question_2').show();
 	}
 }
 
@@ -180,36 +204,36 @@ function populateForms() {
 		$('#google_translate_element').hide();	
 	}
 
-    addToForm('sectorsel','Agriculture');
-    addToForm('sectorsel','Mining');
-    addToForm('sectorsel','Manufacturing');
-    addToForm('sectorsel','Energy');
-    addToForm('sectorsel','Water and waste management');
-    addToForm('sectorsel','Construction');
-    addToForm('sectorsel','Wholesale and retail');
-    addToForm('sectorsel','Transport');
-    addToForm('sectorsel','Accommodation and food services');
-    addToForm('sectorsel','Media');
-    addToForm('sectorsel','Data and information systems');
-    addToForm('sectorsel','Finance and insurance services');
-    addToForm('sectorsel','Real Estate');
-    addToForm('sectorsel','Professional services');
-    addToForm('sectorsel','Scientific and market research');
-    addToForm('sectorsel','Business administration services');
-    addToForm('sectorsel','Tourism');
-    addToForm('sectorsel','Public administration and defence');
-    addToForm('sectorsel','Government and public sector ');
-    addToForm('sectorsel','Education');
-    addToForm('sectorsel','Human health and social work');
-    addToForm('sectorsel','Arts, recreation and entertainment');
-    addToForm('sectorsel','Consumer services');
+    addToForm('sectorsel','Agriculture','Q4_Option_1');
+    addToForm('sectorsel','Mining','Q4_Option_2');
+    addToForm('sectorsel','Manufacturing','Q4_Option_3');
+    addToForm('sectorsel','Energy','Q4_Option_4');
+    addToForm('sectorsel','Water and waste management','Q4_Option_5');
+    addToForm('sectorsel','Construction','Q4_Option_6');
+    addToForm('sectorsel','Transport','Q4_Option_7');
+    addToForm('sectorsel','Accommodation and food services','Q4_Option_8');
+    addToForm('sectorsel','Media','Q4_Option_9');
+    addToForm('sectorsel','Data and information systems','Q4_Option_10');
+    addToForm('sectorsel','Finance and insurance services','Q4_Option_11');
+    addToForm('sectorsel','Real Estate','Q4_Option_12');
+    addToForm('sectorsel','Professional services','Q4_Option_13');
+    addToForm('sectorsel','Scientific and market research','Q4_Option_14');
+    addToForm('sectorsel','Business administration services','Q4_Option_15');
+    addToForm('sectorsel','Tourism','Q4_Option_16');
+    addToForm('sectorsel','Public administration and defence','Q4_Option_17');
+    addToForm('sectorsel','Education','Q4_Option_18');
+    addToForm('sectorsel','Human health and social work','Q4_Option_19');
+    addToForm('sectorsel','Arts, recreation and entertainment','Q4_Option_20');
+    addToForm('sectorsel','Consumer services','Q4_Option_21');
+    addToForm('sectorsel','Wholesale and retail','Q4_Option_22');
 	
-	addToForm('orgtypesel','Micro (less than 10 employees)');	
-	addToForm('orgtypesel','SME (10 to 250 employees)');	
-	addToForm('orgtypesel','Large (250 or more employees)');
+	addToForm('orgtypesel','Individual','Q3_Option_1');
+	addToForm('orgtypesel','Micro (less than 10 employees)','Q3_Option_2');	
+	addToForm('orgtypesel','SME (10 to 250 employees)','Q3_Option_3');	
+	addToForm('orgtypesel','Large (250 or more employees)','Q3_Option_4');
 
-	addToForm('involvement','I am a data scientist');
-	addToForm('involvement','I manage data scientists');
+	addToForm('involvement','I am a data scientist','Q2_Option_1');
+	addToForm('involvement','I manage data scientists','Q2_Option_2');
 /*	
 	addToForm('involvement','No involvement');
 	addToForm('involvement','I work with data scientists but am not one myself');
@@ -219,42 +243,42 @@ function populateForms() {
 	addToForm('involvement','I am a practicing data scientist with excellent knowledge in all areas');
 */
 
-	addToForm('pickID','Big data');
-	addToForm('pickID','Open source tools and concepts');
-	addToForm('pickID','Data collection and analysis');
-	addToForm('pickID','Advanced computing and programming');
-	addToForm('pickID','Data interpretation and visualisation');
-	addToForm('pickID','Math and statistics');
-	addToForm('pickID','Machine learning and prediction');
-	addToForm('pickID','Business intelligence and domain expertise');
+	addToForm('pickID','Big data','Q5_Option_1');
+	addToForm('pickID','Open source tools and concepts','Q5_Option_8');
+	addToForm('pickID','Data collection and analysis','Q5_Option_3');
+	addToForm('pickID','Advanced computing and programming','Q5_Option_6');
+	addToForm('pickID','Data interpretation and visualisation','Q5_Option_5');
+	addToForm('pickID','Math and statistics','Q5_Option_4');
+	addToForm('pickID','Machine learning and prediction','Q5_Option_2');
+	addToForm('pickID','Business intelligence and domain expertise','Q5_Option_7');
 	
-	addToForm('trainingPickID','Face to face training');
-	addToForm('trainingPickID','Webinars');
-	addToForm('trainingPickID','eLearning');
-	addToForm('trainingPickID','Translated from English');
-	addToForm('trainingPickID','Tailored to sector');
-	addToForm('trainingPickID','Accredited');
-	addToForm('trainingPickID','Uses non-open, non-free software');
-	addToForm('trainingPickID','Coaching');
-	addToForm('trainingPickID','Assessed');
-	addToForm('trainingPickID','Internal assignments');	
+	addToForm('trainingPickID','Face to face training','Q8_Option_1');
+	addToForm('trainingPickID','Webinars','Q8_Option_2');
+	addToForm('trainingPickID','eLearning','Q8_Option_3');
+	addToForm('trainingPickID','Translated from English','Q8_Option_4');
+	addToForm('trainingPickID','Tailored to sector','Q8_Option_5');
+	addToForm('trainingPickID','Accredited','Q8_Option_6');
+	addToForm('trainingPickID','Uses non-open, non-free software','Q8_Option_7');
+	addToForm('trainingPickID','Coaching','Q8_Option_8');
+	addToForm('trainingPickID','Assessed','Q8_Option_9');
+	addToForm('trainingPickID','Internal assignments','Q8_Option_10');	
 
-	addToLinkList('toolsListeg','AWS','toolsList');
-	addToLinkList('toolsListeg','Spark','toolsList');
-	addToLinkList('toolsListeg','Hadoop / MapReduce','toolsList');
-	addToLinkList('toolsListeg','MongoDB','toolsList');
-	addToLinkList('toolsListeg','Open Refine','toolsList');
-	addToLinkList('toolsListeg','QMiner','toolsList');
-	addToLinkList('toolsListeg','Apache Flink','toolsList');
-	addToLinkList('toolsListeg','Apache Storm','toolsList');
-	addToLinkList('toolsListeg','ProM or Disco','toolsList');
-	addToLinkList('toolsListeg','NoSQL / Cassandra','toolsList');
-	addToLinkList('toolsListeg','R','toolsList');
-	addToLinkList('toolsListeg','Python','toolsList');
-	addToLinkList('toolsListeg','Javascript / JQuery','toolsList');
-	addToLinkList('toolsListeg','D3 / nvD3','toolsList');
-	addToLinkList('toolsListeg','Java','toolsList');
-	addToLinkList('toolsListeg','z-scores','toolsList');
+	addToLinkList('toolsListeg','AWS','toolsList','Q7_Option_1');
+	addToLinkList('toolsListeg','Spark','toolsList','Q7_Option_2');
+	addToLinkList('toolsListeg','Hadoop / MapReduce','toolsList','Q7_Option_3');
+	addToLinkList('toolsListeg','MongoDB','toolsList','Q7_Option_4');
+	addToLinkList('toolsListeg','Open Refine','toolsList','Q7_Option_5');
+	addToLinkList('toolsListeg','QMiner','toolsList','Q7_Option_6');
+	addToLinkList('toolsListeg','Apache Flink','toolsList','Q7_Option_7');
+	addToLinkList('toolsListeg','Apache Storm','toolsList','Q7_Option_8');
+	addToLinkList('toolsListeg','ProM or Disco','toolsList','Q7_Option_9');
+	addToLinkList('toolsListeg','NoSQL / Cassandra','toolsList','Q7_Option_10');
+	addToLinkList('toolsListeg','R','toolsList','Q7_Option_11');
+	addToLinkList('toolsListeg','Python','toolsList','Q7_Option_12');
+	addToLinkList('toolsListeg','Javascript / JQuery','toolsList','Q7_Option_13');
+	addToLinkList('toolsListeg','D3 / nvD3','toolsList','Q7_Option_14');
+	addToLinkList('toolsListeg','Java','toolsList','Q7_Option_15');
+	addToLinkList('toolsListeg','z-scores','toolsList','Q7_Option_16');
 }
 
 function addTool() {
@@ -272,14 +296,14 @@ function addToList(id,item) {
 	$('#'+id).append(insert);
 }
 
-function addToLinkList(id,item,target) {
+function addToLinkList(id,item,target,name) {
 	itemID = item.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
 	itemID = itemID.replace(/\s{2,}/g," ");
 	itemID = itemID.replace(/ /g,"_");
-	$('#'+id).append('<tli id="' + itemID + '" onclick="addToList(\''+target+'\',\''+item+'\'); $(this).fadeOut();">' + item + '</tli>');
+	$('#'+id).append('<tli id="' + itemID + '" name="'+name+'" onclick="addToList(\''+target+'\',\''+item+'\'); $(this).fadeOut();">' + item + '</tli>');
 }
 
-function addToForm(id,item) {
+function addToForm(id,item,name) {
 	help = false;
 	if (id == "essentialID" || id == "niceID" || id == "notID") {
 		help = true;
@@ -295,9 +319,9 @@ function addToForm(id,item) {
 		itemID = prefix + "_" + itemID;
 	}
 	if (help) {
-		$('#'+id).append('<div id="'+itemID+'">'+item+' <a class="helpIcon" href="#" onClick="showMiniHelp(\''+item+'\');">?</a></div>');	
+		$('#'+id).append('<div id="'+itemID+'" name="'+name+'">'+item+' <a class="helpIcon" href="#" onClick="showMiniHelp(\''+item+'\');">?</a></div>');	
 	} else {
-		$('#'+id).append('<div id="'+itemID+'">'+item+'</div>');	
+		$('#'+id).append('<div id="'+itemID+'" name="'+name+'">'+item+'</div>');	
 	}
 }
 

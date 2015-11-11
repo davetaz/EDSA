@@ -111,6 +111,13 @@
 		.fr a span { background-position: -32px 0 }
 		.de a span { background-position: -48px 0 }
 		.nl a span { background-position: -64px 0 }
+		.it a span { background-position: -80px 0 }
+		.br a span { background-position: -96px 0 }
+		.pr a span { background-position: -112px 0 }
+		.gr a span { background-position: -128px 0 }
+		.pl a span { background-position: -144px 0 }
+		.bg a span { background-position: -160px 0 }
+		.ro a span { background-position: -176px 0 }
 
 	.dropdown dd ul item a em,
 	.dropdown dt a em {

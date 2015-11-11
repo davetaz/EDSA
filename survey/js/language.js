@@ -46,7 +46,12 @@ function createDropDown(){
 //	$form.hide();
 	var source = $("#country-options");
 	source.removeAttr("autocomplete");
-	var selected = source.find('[title="'+lang+'"]');
+	code = getUrlVars()["lang"];
+	if (code) { 
+		var selected = source.find('[title="'+lang+'?lang='+code+'"]');
+	} else {
+		var selected = source.find('[title="'+lang+'"]');
+	}
 	var options = $("option", source);
 	$("#country-select").append('<dl id="target" class="dropdown"></dl>')
 		$("#target").append('<dt class="' + selected.val() + '"><a href="#" style="display: inline;"><span class="flag"></span><em>' + selected.text() + '</em></a></dt>')

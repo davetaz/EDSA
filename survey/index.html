@@ -35,27 +35,37 @@
 				    <form action="" style="display:none;">
 				    <select id="country-options" name="country-options">
 				    <option title="index.html" value="en">English</option>
+				    <option title="index.html?lang=fr" value="fr">French</option>
 				    <option title="index_de.html" value="de">German</option>
+				    <option title="index.html?lang=es" value="es">Spanish</option>
+				    <option title="index.html?lang=it" value="it">Italian</option>
+				    <option title="index.html?lang=pt" value="pt">Portuguese</option>
+				    <option title="index.html?lang=gr" value="gr">Greek</option>
+				    <option title="index.html?lang=pl" value="pl">Polish</option>
+				    <option title="index.html?lang=bg" value="bg">Bulgarian</option>
+				    <option title="index.html?lang=ro" value="ro">Romanian</option>
 				    </select>
 				    <input value="Select" type="submit" />
 				    </form>
 				</div>
-				<br/><h2>Take part in the EDSA Survey</h2>
+				<br/><h2 id="Intro_Title">Take part in the EDSA Survey</h2>
+<p id="Intro_Voice">
 Make your voice heard and contribute to the EDSA survey! We’re looking to discover the data science landscape across Europe, and we need your help to shape this.
+</p>
 <br/>
-<h4>Why should I take part?</h4>
-<small>You are a data science expert and your knowledge about the subject is invaluable to our project. We are hoping to gather data from all EU countries, so you will help contribute to a large, European assessment of the data science landscape.</small>
+<h4 id="Intro_Title_Why">Why should I take part?</h4>
+<small id="Intro_Why">You are a data science expert and your knowledge about the subject is invaluable to our project. We are hoping to gather data from all EU countries, so you will help contribute to a large, European assessment of the data science landscape.</small>
 <br/>
-<h4>What will happen to my data?</h4>
-<small>Data will be anonymised and made available online under an open license. Your responses will never be linked back to you. The data will be analysed and displayed on a dashboard to allow the exploration of trends and results in each EU country. We will use the responses to help shape the EDSA curriculum and training that we offer.</small>
+<h4 id="Intro_Title_What">What will happen to my data?</h4>
+<small id="Intro_What">Data will be anonymised and made available online under an open license. Your responses will never be linked back to you. The data will be analysed and displayed on a dashboard to allow the exploration of trends and results in each EU country. We will use the responses to help shape the EDSA curriculum and training that we offer.</small>
 <br/>
-<h4>Are there any benefits?</h4>
-<small>You will be helping the community to understand the data science landscape across the EU, and ultimately to train the next generation of world leading data scientists. Your data will be combined with that of other respondents to create visualisations and analytics to demonstrate the key stories from the data. These will be available for you to view: the more data we have, the more insightful the analytics will be.</small>
+<h4 id="Intro_Title_Benefits">Are there any benefits?</h4>
+<small id="Intro_Benefits">You will be helping the community to understand the data science landscape across the EU, and ultimately to train the next generation of world leading data scientists. Your data will be combined with that of other respondents to create visualisations and analytics to demonstrate the key stories from the data. These will be available for you to view: the more data we have, the more insightful the analytics will be.</small>
 <br/>
-<h4>Where can I get more information?</h4>
-<small>Please see the project website at <a href="http://edsa-project.eu">http://edsa-project.eu</a>.</small>
+<h4 id="Intro_Title_Information">Where can I get more information?</h4>
+<small id="Intro_Information">Please see the project website at <a href="http://edsa-project.eu">http://edsa-project.eu</a>.</small>
 <br/><br/><br/></br>
-				<div align="right">
+				<div id="Click_Start" align="right">
 					Click right to start the survey.
 				</div>
 			</div>
@@ -64,13 +74,13 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 		</li>
 		<li id="pickCountry">
 			<progress max=8 value=0>0/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Pick your country</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Q1_Title">Pick your country</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				In order to discover trends within Europe, please pick the country for which you will be contributing data on the map below.<br/><br/>
+				<p id="Q1_Text">In order to discover trends within Europe, please pick the country for which you will be contributing data on the map below.</p><br/>
 				<h2 id="mapCName">&nbsp;</h2>
 				<div id="map"></div>
-				<div align="right">
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>
@@ -80,14 +90,14 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 
 		<div id="ability2" style="margin-left: 30px">
 			<progress max=8 value=1>1/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Data science experience</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Q2_Title">Data science experience</div></div>
 		
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				<p><b>Which of these best describes your role?</b></p>
+				<p><b id="Q2_Question">Which of these best describes your role?</b></p>
 				<div class="tile__list list2" id="involvement">
 				</div>
-				<div align="right">
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>
@@ -99,14 +109,15 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 
 		<div id="orgtype" style="margin-left: 30px">
 			<progress max=8 value=1>1/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Organisation size</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Q3_Title">Organisation size</div></div>
 
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
+			    <p><b id="Q3_Question">What type of organisation do you work for?</b></p>
 				<div class="tile__list list2" id="orgtypesel">
 				</div>
-				<button id="addorgtypesel">Other</button>
-				<div align="right">
+				<!--<button id="addorgtypesel">Other</button>-->
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>
@@ -118,14 +129,15 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 
 		<div id="sector" style="margin-left: 30px">
 			<progress max=8 value=1>1/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Select your sector</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Q4_Title">Select your sector</div></div>
 
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
+			    <p><b id="Q4_Question">Which sector do you work in? Please choose the one which best describes your main focus.</b></p>
 				<div class="tile__list list2" id="sectorsel">
 				</div>
 				<button id="addsectorsel">Add</button>
-				<div align="right">
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>
@@ -137,25 +149,25 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 
 		<div id="ability" style="margin-left: 30px">
 			<progress max=8 value=2>2/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Data science experience</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Experience_Title">Data science experience</div></div>
 		
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				<p>A data scientist is commonly defined by their ability to combine multiple skills. <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Drew Conway's Data Science venn diagram</a> (below) is currently the most widely adopted visualisation of data science skills.</p>
+				<p id="Experience_Intro">A data scientist is commonly defined by their ability to combine multiple skills. <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Drew Conway's Data Science venn diagram</a> (below) is currently the most widely adopted visualisation of data science skills.</p>
 				<section>
 					<div id="venn"></div>
 					<!--<img id="venn" src="img/Data_Science_VD.png" alt="Data science venn diagram"/></img>-->
 					<section id="intro">
-						<p>Studies have revealed a skills gap in data scientists globally.</p>
-						<p><em>The aim of this suvey is to:</em></p>
+						<p id="Experience_Studies">Studies have revealed a skills gap in data scientists globally.</p>
+						<p><em id="Experience_Aim">The aim of this survey is to:</em></p>
 						<ul>
-							<item>Identify data science skills in Europe</item>
-							<item>Identify key skills gaps</item>
-							<item>Identify areas for new development of training</item>
+							<item id="Experience_Item_1">Identify data science skills in Europe</item>
+							<item id="Experience_Item_1">Identify key skills gaps</item>
+							<item id="Experience_Item_1">Identify areas for new development of training</item>
 						</ul>
 					</section>
 				</section>
-				<div align="right">
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>
@@ -167,29 +179,30 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 
 		<div id="multi" style="margin-left: 30px">
 			<progress max=8 value=3>3/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Required skills?</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Q5_Title">Required skills?</div></div>
 			
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%">
+				<div id="Q5_Question">
 				<p><b>How important is each of the following skills for a data scientist?</b></p>
-				<p><b>Drag</b> the elements to rate their importance in your sector (either <b>essential</b>, <b>desirable</b> or <b>not required</b>). You can also <b>add</b> to each category. Please add skills in <b>all</b> categories.</p>
-				<p>These skills come from the work of <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" target="_blank">Drew Conway</a> and <a href="http://www.exploringdatascience.com/the-data-science-clock/" target="_blank">Jamie Whitehorn</a>.</p>
+				<p><b>Drag</b> the elements to rate their importance in your sector (either <b>essential</b>, <b>desirable</b> or <b>not required</b>). You can also <b>add</b> to each category.</p>
+				</div>
 				<div class="layer tile" data-force="20">
-					<div class="tile__name" id="essential">Essential</div>
+					<div class="tile__name" id="essential" name="Q5_Label_1">Essential</div>
 					<div class="tile__list" id="essentialID">
 					</div>
 					<button id="addessentialID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="25">
-					<div class="tile__name" id="nice_to_have">Desirable</div>
+					<div class="tile__name" id="nice_to_have" name="Q5_Label_2">Desirable</div>
 					<div class="tile__list" id="niceID">
 					</div>
 					<button id="addniceID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="30">
-					<div class="tile__name" id="Not_required">Not required</div>
+					<div class="tile__name" id="Not_required" name="Q5_Label_3">Not required</div>
 					<div class="tile__list" id="notID">
 					</div>
 					<button id="addnotID">Add</button>
@@ -208,37 +221,37 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 
 		<div id="capouter" style="margin-left: 30px">
 			<progress max=8 value=4>4/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Your Strength</div></div>	
+			<div><div data-force="5" class="layer title title_xl" id="Q6_Title">Your Strength</div></div>	
 			<div class="wrapper">
 			<div id="capcap" class="layer tile" style="width: 83%; overflow-y: scroll; max-height: 600px;">
-			<p>In the table below please rate <b>your <span id="capcap-team">team's</span></b> strength in each of these areas.</p>
-			<p>Please use the following scale:</p>
+			<p id="Q6_Question_1">How would you rate your strengths in each of the areas:</p>
+			<p id="Q6_Question_2">How would you rate your team’s strengths in each of the areas:</p>
 			<ul>
-			<item><b>1</b> = Very Poor: Little or no knowledge/expertise.</item><br/>
-			<item><b>2</b> = Poor: Experimental/vague knowledge.</item><br/>
-			<item><b>3</b> = OK: Familiar and competent user.</item><br/>
-			<item><b>4</b> = Good: Regular and confident user.</item><br/>
-			<item><b>5</b> = Very Good: Leading expert.</item>
+			<item><b>1</b> = <span id="Q6_Label_1">Very Poor: Little or no knowledge/expertise.</span></item><br/>
+			<item><b>2</b> = <span id="Q6_Label_2">Poor: Experimental/vague knowledge.</span></item><br/>
+			<item><b>3</b> = <span id="Q6_Label_3">OK: Familiar and competent user.</span></item><br/>
+			<item><b>4</b> = <span id="Q6_Label_4">Good: Regular and confident user.</span></item><br/>
+			<item><b>5</b> = <span id="Q6_Label_5">Very Good: Leading expert.</span></item>
 			</ul>
 				<div id="capcap_essential" style="width: 100%;">
-					<h2>Essential Skills</h2>
+					<h2 id="Q5_Label_1">Essential</h2>
 					<table id="capcap_essentialID" class="capcaptable" style="width: 100%;">
 					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very Poor</span><span style="float: right; padding-right: 70px;">Very Good</span></td></tr>
 					</table>
 				</div>
 				<div id="capcap_nice" style="width: 100%;">
-					<h2>Desirable</h2>
+					<h2 id="Q5_Label_2">Desirable</h2>
 					<table id="capcap_niceID" class="capcaptable" style="width: 100%;">
 					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very Poor</span><span style="float: right; padding-right: 70px;">Very Good</span></td></tr>
 					</table>
 				</div>
 				<div id="capcap_not" style="width: 100%;">
-					<h2>Not required</h2>
+					<h2 id="Q5_Label_3">Not required</h2>
 					<table id="capcap_notID" class="capcaptable" style="width: 100%;">
 					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very Poor</span><span style="float: right; padding-right: 70px;">Very Good</span></td></tr>
 					</table>
 				</div>
-				<div align="right">
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>
@@ -249,10 +262,10 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 		
 		<div id="toolsOuter" style="margin-left: 30px">
 			<progress max=8 value=5>5/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Tools, languages and techniques</div></div>	
+			<div><div data-force="5" class="layer title title_xl" id="Q7_Title">Tools, languages and techniques</div></div>	
 			<div class="wrapper">
 			<div id="tools" class="layer tile" style="width: 83%; overflow-y: scroll; max-height: 600px;">
-			<p>Please help us identify any tools, languages and techniques that you think should be included in data science training. Select from the examples below or add your own using the text box.</p>
+			<p id="Q7_Question">Which data technologies, tools and languages would you like to see included in data science training?</p>
 			<ul id="toolsListeg">
 			</ul>
 			<div align="center">
@@ -261,7 +274,7 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 			<ul id="toolsList">
 			</ul>
 			</div>
-			<div align="right">
+			<div id="Click_Right" align="right">
 				Click right to continue to the next question.
 			</div>
 			
@@ -270,27 +283,27 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 		
 		<div id="multi2" style="margin-left: 30px">
 			<progress max=8 value=6>6/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Training needs</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Q8_Title">Training needs</div></div>
 
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%">
-				<p><b>What delivery methods do you consider to be important factors in successful training (drag and drop)</b></p> 
+				<p><b id="Q8_Question">What training delivery methods do you consider to be important factors in successful training?</b></p> 
 				<div class="layer tile" data-force="20">
-					<div class="tile__name" id="essential">Essential</div>
+					<div class="tile__name" id="essential" name="Q5_Label_1">Essential</div>
 					<div class="tile__list" id="trainingEssentialID">
 					</div>
 					<button id="addtrainingEssentialID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="25">
-					<div class="tile__name" id="where_possible">Desirable</div>
+					<div class="tile__name" id="where_possible" name="Q5_Label_2">Desirable</div>
 					<div class="tile__list" id="trainingNiceID">
 					</div>
 					<button id="addtrainingNiceID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="30">
-					<div class="tile__name" id="Not_required">Not required</div>
+					<div class="tile__name" id="Not_required" name="Q5_Label_3">Not required</div>
 					<div class="tile__list" id="trainingNotID">
 					</div>
 					<button id="addtrainingNotID">Add</button>
@@ -307,38 +320,38 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 		
 		</li><li>
 			<progress max=8 value=7>7/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Comments</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Q9_Title">Comments</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				<p>Please provide any other comments relating to data science skills and requirements in your organisation and sector below.
+				<p id="Q9_Question">If you have any other comments relating to data science skills and requirements in your organisation and sector please feel free to include these below.</p>
 				<textarea id="comments" name="comments"></textarea>
-				<div align="right">
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>	
 		</li>
 		<li>
 			<progress max=8 value=8>8/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Be Involved</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Involved_Title">Be Involved</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				<p>Please leave your name and email if you would like to be involved further:</p>
-				<label for="name">Name</label><input type="text" name="fullname" id="fullname"></input><br/><br/>
-				<label for="email">Email</label><input type="email" name="email" id="email"></input><br/>
+				<p id="Involved_Text">Please leave your name and email if you would like to be involved further:</p>
+				<label for="name" id="Involved_Name">Name</label><input type="text" name="fullname" id="fullname"></input><br/><br/>
+				<label for="email" id="Involved_Email">Email</label><input type="email" name="email" id="email"></input><br/>
 				<br/></br>
-				<input type="checkbox" id="contact_research"></input>I am willing to be contacted about further research.<br/><br/>
-				<input type="checkbox" id="contact_results"></input>Please contact me about results of this research.<br/><br/>
-				<div align="right">
+				<input type="checkbox" id="contact_research"></input><span id="Involved_Research">I am willing to be contacted about further research.</span><br/><br/>
+				<input type="checkbox" id="contact_results"></input><span id="Involved_Results">Please contact me about results of this research.</span><br/><br/>
+				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
 			</div>	
 		</li>
 		<li>
 			<progress max=8 value=8>8/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Thanks!</div></div>
+			<div><div data-force="5" class="layer title title_xl" id="Thanks_Title">Thanks!</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
-				<br/><br/><br/><br/>Thank-you!<br/><br/>You can check your answers and then press submit.<br/><br/>
+				<br/><br/><br/><p id="Thanks_Text">Thank-you for taking part in this survey, your input is very much appreciated.</p><br/><br/>
 				<section id="doneSection">
 				<button id="submit" onClick="processForm('myForm');">Submit</button>
 				</section>

@@ -1,0 +1,20 @@
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro
+Title,"Tools, languages and techniques",,,,,,,,,
+Question,"Which data technologies, tools and languages would you like to see included in data science training?","Welke data technologieën, instrumenten en talen zou u in de data science opleiding willen zien?","Quels sont les technologies, outils et langages que vous souhaitez voir figurer dans la formation sur la data science ?","¿Qué tecnologías de datos, herramientas y lenguajes le gustaría ver incluidos en la formación en ciencias de datos?","Quali tecnologie, strumenti e linguaggi dei dati vorrebbe vedere inclusi nella formazione in scienza dei dati?","Que tecnologias, ferramentas e linguagens de dados gostaria de ver incluídas na formação em ciência de dados?","Ποιες τεχνολογίες, εργαλεία και γλώσσες δεδομένων θα θέλατε να συμπεριληφθούν στην εκπαίδευση στον τομέα επιστήμης δεδομένων;","Jakie technologie danych, narzędzia i języki chciałbyś włączyć do szkolenia w zakresie inżynierii baz danych?","Кои технологии, инструменти и езици за работа с данни бихте искали да видите включени в обучение по науката за данни?","Ce tehnologiile de date, instrumente și limbaje doriți să vedeți incluse în formare în analiza datelor?"
+Option_1,AWS,AWS,AWS,AWS,AWS,AWS,AWS,AWS,AWS,AWS
+Option_2,Spark,Spark,Spark,Spark,Spark,Spark,Spark,Spark,Spark,Spark
+Option_3,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce,Hadoop / MapReduce
+Option_4,MongoDB,MongoDB,MongoDB,MongoDB,MongoDB,MongoDB,MongoDB,MongoDB,MongoDB,MongoDB
+Option_5,Open Refine,Open Refine,Open Refine,Open Refine,Open Refine,Open Refine,Open Refine,Open Refine,Open Refine,Open Refine
+Option_6,QMiner,QMiner,QMiner,QMiner,QMiner,QMiner,QMiner,QMiner,QMiner,QMiner
+Option_7,Apache Flink,Apache Flink,Apache Flink,Apache Flink,Apache Flink,Apache Flink,Apache Flink,Apache Flink,Apache Flink,Apache Flink
+Option_8,Apache Storm,Apache Storm,Apache Storm,Apache Storm,Apache Storm,Apache Storm,Apache Storm,Apache Storm,Apache Storm,Apache Storm
+Option_9,ProM or Disco,ProM of Disco,ProM ou Disco,ProM o Disco,ProM o Disco,ProM ou Disco,ProM ή Disco,ProM lub Disco,ProM или Disco,ProM sau Disco
+Option_10,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra,NoSQL / Cassandra
+Option_11,R,R,R,R,R,R,R,R,R,R
+Option_12,Python,Python,Python,Python,Python,Python,Python,Python,Python,Python
+Option_13,Javascript / JQuery,Javascript / jQuery,Javascript / JQuery,Javascript / JQuery,Javascript / JQuery,Javascript / JQuery,Javascript / JQuery,JavaScript / JQuery,Javascript / JQuery,Javascript / JQuery
+Option_14,D3 / nvD3,D3 / nvD3,D3 / nvD3,D3 / nvD3,D3 / nvD3,D3 / nvD3,D3 / nvD3,D3 / nvD3,D3 / nvD3,D3 / nvD3
+Option_15,Java,Java,Java,Java,Java,Java,Java,Java,Java,Java
+Option_16,z­scores,zscores,Zscores,zscores,z­scores,zscores,z­scores,zscores,zscores,zscores
