@@ -1,6 +1,6 @@
 Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian
 Code,en,de,fr,es,it,pt,gr,pl,bg,ro
-Title,Organisation size,,,,,,,,,
+Title,Organisation size,,Taille de l'entreprise,,,,,,,
 Question,What type of organisation do you work for?,Voor wat voor een soort organisatie werkt u?,Pour quel type d'entreprise travaillez-vous ?,¿Para qué tipo de organización trabaja usted?,Per che tipo di organizzazione lavora?,Para que tipo de organização trabalha?,Σε τι είδους επιχείρηση εργάζεστε;,W jakiego typu organizacji pracujesz?,В какъв тип организация работите?,Pentru ce tip de organizație lucrați?
 Option_1,Individual,Individueel,Individuelle,Individual,Ditta individuale (persona fisica),Individual,Ατομική,Przedsiębiorca indywidualny,Лична (1 служител),Individuală
 Option_2,Micro (<10 employees),Micro (<10 werknemers),Micro (<10 salariés),Micro (<10 empleados),Microimpresa (<10 dipendenti),Microempresa (<10 empregados),Μικρή (<10 υπάλληλοι),Mikroprzedsiębiorstwo (<10 pracowników),Микро (<10 служители),Micro (<10 angajați)

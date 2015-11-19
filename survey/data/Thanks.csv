@@ -1,0 +1,6 @@
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro
+Title,Thanks!,,Merci!,,,,,,,
+Text,"Thank-you for taking part in this survey, your input is very much appreciated.",,"Merci d'avoir pris part à notre sondage, votre contribution est grandement appréciée.",,,,,,,
+Success,Your data has been submitted successfully,,Vos réponses ont étaient correctement reçues.,,,,,,,
+Fail,There was an error. Please click here to email your results to us.,,"Une erreur s'est produite lors du processus d’envoi de vos réponses, veuillez cliquer ici pour nous envoyer vos réponses par email.",,,,,,,

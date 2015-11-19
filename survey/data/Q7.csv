@@ -1,6 +1,6 @@
 Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian
 Code,en,de,fr,es,it,pt,gr,pl,bg,ro
-Title,"Tools, languages and techniques",,,,,,,,,
+Title,"Tools, languages and techniques",,"Outils, langues et techniques",,,,,,,
 Question,"Which data technologies, tools and languages would you like to see included in data science training?","Welke data technologieën, instrumenten en talen zou u in de data science opleiding willen zien?","Quels sont les technologies, outils et langages que vous souhaitez voir figurer dans la formation sur la data science ?","¿Qué tecnologías de datos, herramientas y lenguajes le gustaría ver incluidos en la formación en ciencias de datos?","Quali tecnologie, strumenti e linguaggi dei dati vorrebbe vedere inclusi nella formazione in scienza dei dati?","Que tecnologias, ferramentas e linguagens de dados gostaria de ver incluídas na formação em ciência de dados?","Ποιες τεχνολογίες, εργαλεία και γλώσσες δεδομένων θα θέλατε να συμπεριληφθούν στην εκπαίδευση στον τομέα επιστήμης δεδομένων;","Jakie technologie danych, narzędzia i języki chciałbyś włączyć do szkolenia w zakresie inżynierii baz danych?","Кои технологии, инструменти и езици за работа с данни бихте искали да видите включени в обучение по науката за данни?","Ce tehnologiile de date, instrumente și limbaje doriți să vedeți incluse în formare în analiza datelor?"
 Option_1,AWS,AWS,AWS,AWS,AWS,AWS,AWS,AWS,AWS,AWS
 Option_2,Spark,Spark,Spark,Spark,Spark,Spark,Spark,Spark,Spark,Spark
