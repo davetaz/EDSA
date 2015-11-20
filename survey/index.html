@@ -28,7 +28,7 @@
 		<ul class="invisibleList">
 		<li>
 			<progress max=8 value=0>0/8</progress>
-			<div><div data-force="5" class="layer title title_xl">Welcome</div></div>
+			<div><div data-force="5" id="Intro_Heading" class="layer title title_xl">Welcome</div></div>
 			<div class="wrapper">
 			<div class="layer tile" style="width: 83%;">
 				<div id="country-select" style="display: none;">
@@ -136,7 +136,7 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 			    <p><b id="Q4_Question">Which sector do you work in? Please choose the one which best describes your main focus.</b></p>
 				<div class="tile__list list2" id="sectorsel">
 				</div>
-				<button id="addsectorsel">Add</button>
+				<button name="Click_Add" id="addsectorsel">Add</button>
 				<div id="Click_Right" align="right">
 					Click right to continue to the next question.
 				</div>
@@ -191,21 +191,21 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 					<div class="tile__name" id="essential" name="Q5_Label_1">Essential</div>
 					<div class="tile__list" id="essentialID">
 					</div>
-					<button id="addessentialID">Add</button>
+					<button name="Click_Add" id="addessentialID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="25">
 					<div class="tile__name" id="nice_to_have" name="Q5_Label_2">Desirable</div>
 					<div class="tile__list" id="niceID">
 					</div>
-					<button id="addniceID">Add</button>
+					<button name="Click_Add" id="addniceID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="30">
 					<div class="tile__name" id="Not_required" name="Q5_Label_3">Not required</div>
 					<div class="tile__list" id="notID">
 					</div>
-					<button id="addnotID">Add</button>
+					<button name="Click_Add" id="addnotID">Add</button>
 				</div>
 				<div class="layer tile pick" data-force="15">
 					<div class="tile__list" id="pickID">
@@ -236,19 +236,19 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 				<div id="capcap_essential" style="width: 100%;">
 					<h2 id="Q5_Label_1">Essential</h2>
 					<table id="capcap_essentialID" class="capcaptable" style="width: 100%;">
-					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very Poor</span><span style="float: right; padding-right: 70px;">Very Good</span></td></tr>
+					<tr><td width="20%">&nbsp;</td><td width="80%"><span name="Q6_Label_6" style="float: left; padding-left: 70px;">Very Poor</span><span name="Q6_Label_7" style="float: right; padding-right: 70px;">Very Good</span></td></tr>
 					</table>
 				</div>
 				<div id="capcap_nice" style="width: 100%;">
 					<h2 id="Q5_Label_2">Desirable</h2>
 					<table id="capcap_niceID" class="capcaptable" style="width: 100%;">
-					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very Poor</span><span style="float: right; padding-right: 70px;">Very Good</span></td></tr>
+					<tr><td width="20%">&nbsp;</td><td width="80%"><span name="Q6_Label_6" style="float: left; padding-left: 70px;">Very Poor</span><span name="Q6_Label_7" style="float: right; padding-right: 70px;">Very Good</span></td></tr>
 					</table>
 				</div>
 				<div id="capcap_not" style="width: 100%;">
 					<h2 id="Q5_Label_3">Not required</h2>
 					<table id="capcap_notID" class="capcaptable" style="width: 100%;">
-					<tr><td width="20%">&nbsp;</td><td width="80%"><span style="float: left; padding-left: 70px;">Very Poor</span><span style="float: right; padding-right: 70px;">Very Good</span></td></tr>
+					<tr><td width="20%">&nbsp;</td><td width="80%"><span name="Q6_Label_6" style="float: left; padding-left: 70px;">Very Poor</span><span name="Q6_Label_7" style="float: right; padding-right: 70px;">Very Good</span></td></tr>
 					</table>
 				</div>
 				<div id="Click_Right" align="right">
@@ -269,7 +269,7 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 			<ul id="toolsListeg">
 			</ul>
 			<div align="center">
-			<input type="text" id="tool"></input><button id="addTool" onClick="addTool();">Add</button>
+			<input type="text" id="tool"></input><button name="Click_Add" id="addTool" onClick="addTool();">Add</button>
 			</div>
 			<ul id="toolsList">
 			</ul>
@@ -292,21 +292,21 @@ Make your voice heard and contribute to the EDSA survey! We’re looking to disc
 					<div class="tile__name" id="essential" name="Q5_Label_1">Essential</div>
 					<div class="tile__list" id="trainingEssentialID">
 					</div>
-					<button id="addtrainingEssentialID">Add</button>
+					<button name="Click_Add" id="addtrainingEssentialID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="25">
 					<div class="tile__name" id="where_possible" name="Q5_Label_2">Desirable</div>
 					<div class="tile__list" id="trainingNiceID">
 					</div>
-					<button id="addtrainingNiceID">Add</button>
+					<button name="Click_Add" id="addtrainingNiceID">Add</button>
 				</div>
 				
 				<div class="layer tile" data-force="30">
 					<div class="tile__name" id="Not_required" name="Q5_Label_3">Not required</div>
 					<div class="tile__list" id="trainingNotID">
 					</div>
-					<button id="addtrainingNotID">Add</button>
+					<button name="Click_Add" id="addtrainingNotID">Add</button>
 				</div>
 				<div class="layer tile pick" data-force="15">
 					<div class="tile__list" id="trainingPickID">
