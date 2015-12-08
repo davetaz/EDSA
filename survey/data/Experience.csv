@@ -1,9 +1,9 @@
-Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian
-Code,en,de,fr,es,it,pt,gr,pl,bg,ro
-Title,Click right to start the survey.,,Cliquer à droite pour commencer le sondage,,,,,,,
-Intro,"A data scientist is commonly defined by their ability to combine multiple skills. <a href=""http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram"">Drew Conway's Data Science venn diagram</a> (below) is currently the most widely adopted visualisation of data science skills.",,"Un scientifique des données est communément définit par son abilité à combiner des talents multiples <a href=""http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram""> Drew Conway's Data Science venn diagram</a> ",,,,,,,
-Studies,Studies have revealed a skills gap in data scientists globally.,,Un scientifique des données est communément défini par son habilité à combiner des talents multiples ,,,,,,,
-Aim,The aim of this survey is to:,,Le but de ce sondage est de:,,,,,,,
-Item_1,Identify data science skills in Europe,,Identifier les compétences dans la science des données en Europe,,,,,,,
-Item_2,Identify key skills gaps,,Identifier les gouffres de compétence présents,,,,,,,
-Item_3,Identify areas for new development of training,,Identifier les zones de formation pour de nouveaux développements,,,,,,,
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro,,
+Title,Click right to start the survey.,,Cliquer à droite pour commencer le sondage,,,,Πατήστε δεξιά για να ξεκινήσετε την έρευνα.,,,,,
+Intro,A data scientist is commonly defined by their ability to combine multiple skills. <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Drew Conway's Data Science venn diagram</a> (below) is currently the most widely adopted visualisation of data science skills.,,Un scientifique des données est communément définit par son abilité à combiner des talents multiples <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram"> Drew Conway's Data Science venn diagram</a> ,,,,Ο επιστήμονας δεδομένων καθορίζεται από τη δυνατότητα να συνδιάζει πολλαπλές δεξιότητες. Το <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">διάγραμμα venn του Drew Conway</a> (παρακάτω) είναι η πιο διαδεδομένη απεικόνιση των δεξιοτήτων της επιστήμης δεδομένων.,,,,,
+Studies,Studies have revealed a skills gap in data scientists globally.,,Les études ont révélées une différence dans les compétences des scientifiques des données,,,,Μελέτες έχουν αποκαλύψει ένα κενό στις δεξιότητες των επιστημόνων δεδομένων σε παγκόσμιο επίπεδο.,,,,,
+Aim,The aim of this survey is to:,,Le but de ce sondage est :,,,,Ο σκοπός αυτής της έρευνας είναι:,,,,,
+Item_1,Identify data science skills in Europe,,D'identifier les compétences dans la science des données en Europe,,,,Η ανακάλυψη των δεξιοτήτων της επιστήμης δεδομένων στην Ευρώπη,,,,,
+Item_2,Identify key skills gaps,,D'identifier les différences de compétences présents,,,,Η ανακάλυψη κενών σε αυτές τις δεξιότητες,,,,,
+Item_3,Identify areas for new development of training,,D'identifier les zones de formation pour de nouveaux développements,,,,Η ανακάλυψη νέων πεδίων για ανάπτυξη της εκπαίδευσης,,,,,

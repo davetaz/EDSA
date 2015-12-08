@@ -1,8 +1,8 @@
-Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian
-Code,en,de,fr,es,it,pt,gr,pl,bg,ro
-Title,Be Involved,,Soyez impliqué,,,,,,,
-Text,Please leave your name and email if you would like to be involved further:,,Veuillez laisser votre nom et votre email si vous souhaitez vous impliquer à l’avenir :,,,,,,,
-Name,Name,,Nom,,,,,,,
-Email,Email,,Email,,,,,,,
-Research,I am willing to be contacted about further research.,,Je veux être tenu au courant des futures recherches.,,,,,,,
-Results,Please contact me about results of this research.,,Veuillez me contacter les résultats de cette recherche.,,,,,,,
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro,,
+Title,Be Involved,,Soyez impliqué,,,,Συμμετάσχετε,,,,,
+Text,Please leave your name and email if you would like to be involved further:,,Veuillez laisser votre nom et votre email si vous souhaitez vous impliquer à l’avenir :,,,,Παρακαλούμε αφήστε το όνομα και το email σας σε περίπτωση που θέλετε να συμμετάσχετε περισσότερο:,,,,,
+Name,Name,,Nom,,,,Όνομα,,,,,
+Email,Email,,Email,,,,Email,,,,,
+Research,I am willing to be contacted about further research.,,Je veux être tenu au courant des futures recherches.,,,,Θέλω να επικοινωνήσετε μαζί μου για περαιτέρω έρευνα.,,,,,
+Results,Please contact me about results of this research.,,Veuillez me contacter les résultats de cette recherche.,,,,Παρακαλώ να επικοινωνήσετε μαζί μου σχετικά με τα αποτελέσματα αυτής της έρευνας.,,,,,
