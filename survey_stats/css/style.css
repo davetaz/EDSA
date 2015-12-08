@@ -10,7 +10,14 @@ heading {
 	left: 750px;
 	top: 60px;
 	width: 240px;
-        text-align: center;
+    text-align: center;
+}
+#wordle {
+	position: absolute;
+	left: 600px;
+	top: 10px;
+	width: 530px;
+	height: 300px;
 }
 .multiBar heading {
 	display: block;
@@ -23,7 +30,8 @@ heading {
 }
 #involvement-chart {
 	position: absolute;
-	left: 1000px;
+	left: 380px;
+	top: 240px;
 }
 .multiBar {
 	width: 644px;
