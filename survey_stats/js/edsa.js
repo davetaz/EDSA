@@ -65,7 +65,7 @@ function drawWordCloud(frequency_list) {
         .domain([0,1,2,3,4,5,6,10,15,20,100])
         .range(["#222","#333","#444","#555","#666","#777","#888","#999","#aaa","#bbb","#ccc","#ddd","#eee"]);
             
-    d3.layout.cloud().size([800, 300])
+    d3.layout.cloud().size([640, 220])
         .words(frequency_list)
         .rotate(0)
         .padding(1)
@@ -76,8 +76,8 @@ function drawWordCloud(frequency_list) {
 
     function draw(words) {
         d3.select("#wordle").append("svg")
-                .attr("width", 530)
-                .attr("height", 300)
+                .attr("width", 640)
+                .attr("height", 220)
                 .attr("class", "wordcloud")
                 .append("g")
                 // without the transform, words words would get cutoff to the left and top, they would
