@@ -178,6 +178,34 @@ footer div {
         right: 20px;
         top: 8px;
 }
+#surveyTitle {
+	color: white;
+	background-color: #730100;
+	padding: 10px;
+	margin-top: -40px;
+	border-radius: 10px;
+}
+#instruction {
+	font-weight: bold;
+	font-size: 1.5em;
+	position: relative;
+	z-index: -1000;
+}
+.up_ins {
+	margin-bottom: -20px;
+	bottom: 30px;
+}
+.down_ins {
+	margin-top: -30px;
+}
+arrow {
+	color: #730100;
+	font-size: 2em;
+}
+.down {
+	position: relative;
+	top: 16px;
+}
 /*
 #skills .dc-chart {
 	font-size: 0;
