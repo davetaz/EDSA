@@ -157,7 +157,27 @@ footer div {
 	top: 5px;
 	right: 10px;
 }
-
+#help {
+	cursor: pointer;
+}
+#helpBox {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        width: 1100px;
+        height: 700px;
+        background-color: #ccc;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        margin: 1em;
+        overflow-x: none;
+        overflow-y: auto;
+}
+#closeHelp {
+        position: absolute;
+        right: 20px;
+        top: 8px;
+}
 /*
 #skills .dc-chart {
 	font-size: 0;

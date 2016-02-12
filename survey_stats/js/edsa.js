@@ -280,6 +280,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
         words = getWords(tools.top(10000));
         drawWordCloud(words);
         dc.renderAll();
+	hideHelp();
     });
 
 

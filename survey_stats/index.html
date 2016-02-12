@@ -12,7 +12,11 @@
   </head>
 
   <body>
-
+    <div id="helpBox" style="z-index: 300;">
+        <div id="closeHelp" onClick="hideHelp()">
+                <img src="../img/close_icon.png" width="30px"/>
+        </div>
+        <iframe id="frame1" src="help.html" frameborder="0" scrolling="no" width="100%" height="650px"></iframe></div>
     <div id="map"></div>
     <heading id='sector-role'>Sector and role of respondant</heading>
     <div id="sector-chart"></div>
@@ -145,6 +149,8 @@
     <script src='js/colorbrewer.js'></script>
     <script src="js/d3.layout.cloud.js"></script>
     <script src='js/edsa.js'></script>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/help.js'></script>
     
     <footer>
     <div id="code" title="Get the code">
