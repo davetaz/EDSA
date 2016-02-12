@@ -155,7 +155,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
             return -d.value;
         })
         .brushOn(false)
-        .xAxisLabel("Sectors")
+        .xAxisLabel("")
         .yAxisLabel("% of respondants")
         .dimension(sector)
         .barPadding(0.1)
