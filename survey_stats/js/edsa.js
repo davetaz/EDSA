@@ -125,7 +125,10 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
         .ordinalColors(['blue', 'green','red','purple'])
         .label(function (d) {
             return d.key;
-        });
+        })
+	.title(function(d) {
+		return Math.round((d.value / all.value()) * 100) + "%";
+	});
     
     var sector = ndx.dimension(function(d) {
         temp = d.Sector;
@@ -145,12 +148,15 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
         .margins({top: 10, right: 10, bottom: 65, left: 24})
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
+	.valueAccessor(function(d) {
+		return Math.round((d.value / all.value()) * 100);
+	})
         .ordering(function(d) {
             return -d.value;
         })
         .brushOn(false)
         .xAxisLabel("Sectors")
-        .yAxisLabel("No of people")
+        .yAxisLabel("% of respondants")
         .dimension(sector)
         .barPadding(0.1)
         .outerPadding(0.05)
@@ -186,14 +192,21 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
                 return d.key.replace(/_/g," ");
             })
             .title(function (d) {
-		key = d.key.replace(/a_/g," ");
-                key = d.key.replace(/_/g," ");
-		return key + ": " + d.value;
+		key = d.key.replace("a_"," ");
+                key = key.replace(/_/g," ");
+		if (key == "") { key = "no answer"; }
+		return key + ": " + Math.round((d.value / all.value()) * 100) + "%";
             })
             .elasticY(false)
             .yAxis().ticks(0);
     }
 
+    var level = [];
+    level[0] = "Beginner (1)";
+    level[1] = "Novice (2)";
+    level[2] = "Intermediate (3)";
+    level[3] = "Practicioner (4)";
+    level[4] = "Expert (5)";
     for (i=0;i<skills.length;i++) {
         entry = skills[i];
 	entry = entry.replace(/ /g,"_");
@@ -215,6 +228,12 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
             .colorAccessor(function(d) { 
                 return d.key;
             })
+	    .label(function(d) {
+		return "";
+	    })
+	    .title(function(d) {
+		return level[d.key] + ": " + Math.round((d.value / all.value()) * 100) + "%";
+	    })
             .dimension(data)
             .group(dataGroup);
     }
@@ -279,7 +298,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
 		if (!d.value) {
 			d.value = 0;
 		}
-		return d.key + ": " + d.value + " survey responses";
+		return d.key + ": " + Math.round((d.value / all.value()) * 100) + "% of survey responses";
             })
             .overlayGeoJson(mapJson.features, "name", function (d) {
                 return d.properties.name;
