@@ -275,9 +275,15 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
             .colors(d3.scale.quantize().range(["#0061B5", "#C4E4FF"]))
             .colorDomain([0, 200])
             .colorCalculator(function (d) { return d ? map.colors()(d) : '#ccc'; })
+            .title(function (d) {
+		if (!d.value) {
+			d.value = 0;
+		}
+		return d.key + ": " + d.value + " survey responses";
+            })
             .overlayGeoJson(mapJson.features, "name", function (d) {
                 return d.properties.name;
-            })
+            });
         words = getWords(tools.top(10000));
         drawWordCloud(words);
         dc.renderAll();
