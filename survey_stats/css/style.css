@@ -12,6 +12,14 @@ heading {
 	width: 240px;
     text-align: center;
 }
+#role-heading {
+	position: absolute;
+	left: 940px;
+	top: 245px;
+	width: 240px;
+	text-align: center;
+	font-size: 1.4em;
+}
 #wordle {
 	position: inline-block;
 	width: 530px;
@@ -28,7 +36,7 @@ heading {
 #involvement-chart {
 	position: absolute;
 	left: 980px;
-	top: 40px;
+	top: 80px;
 }
 .multiBar {
 	width: 644px;
@@ -191,20 +199,22 @@ footer div {
 	position: relative;
 	z-index: -1000;
 }
-.up_ins {
+/*.up_ins {
 	margin-bottom: -20px;
 	bottom: 30px;
 }
 .down_ins {
 	margin-top: -30px;
 }
-arrow {
-	color: #730100;
-	font-size: 2em;
-}
 .down {
 	position: relative;
 	top: 16px;
+}
+*/
+arrow {
+	color: #730100;
+	font-size: 2em;
+	display: none;
 }
 /*
 #skills .dc-chart {
