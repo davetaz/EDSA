@@ -54,6 +54,7 @@ function getWords(all) {
         var obj = {};
         obj.text = tool;
         obj.size = Math.round(count/max * 40);
+	obj.count = count;
         words.push(obj);
     }
     return words;
