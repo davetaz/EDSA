@@ -96,7 +96,7 @@ function drawWordCloud(frequency_list) {
     }
 }
 
-d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
+d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data) {
     var ndx = crossfilter(data);
     var all = ndx.groupAll();
 
@@ -124,8 +124,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
         .group(involvementGroup)
         .ordinalColors(['blue', 'green','red','purple'])
         .label(function (d) {
-            var label = d.key;
-            return label;
+            return d.key;
         });
     
     var sector = ndx.dimension(function(d) {
@@ -179,7 +178,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
             .margins({top: 0, right: 3, bottom: -1, left: -1})
             .group(dataGroup)
             .dimension(data)
-            .colors(d3.scale.ordinal().domain(["","essential","desirable","not_required"]).range(['transparent','#3182bd', '#6baed6', '#9ecae1']))
+            .colors(d3.scale.ordinal().domain(["","a_essential","desirable","not_required"]).range(['transparent','#3182bd', '#6baed6', '#9ecae1']))
             .colorAccessor(function(d) { 
                 return d.key;
             })
@@ -187,7 +186,9 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php', function (data) {
                 return d.key.replace(/_/g," ");
             })
             .title(function (d) {
-                return d.value;
+		key = d.key.replace(/a_/g," ");
+                key = d.key.replace(/_/g," ");
+		return key + ": " + d.value;
             })
             .elasticY(false)
             .yAxis().ticks(0);
