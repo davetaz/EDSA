@@ -1,5 +1,5 @@
-Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian
-Code,en,de,fr,es,it,pt,gr,pl,bg,ro,,
-Title,Pick your country,,Choisissez votre pays,,,,Διαλέξτε την χώρα σας,,,,,
-Question,Which country do you work in?,In welk land bent u werkzaam?,Dans quel pays travaillez-vous ?,¿En qué país trabaja usted?,In quale paese lavora?,Em que país trabalha?,Σε ποια χώρα εργάζεστε;,W jakim kraju pracujesz?,В коя държава работите?,În ce țară lucrați?,,
-Text,"In order to discover trends within Europe, please pick the country for which you will be contributing data on the map below.",,"Pour découvrir les tendances européennes, veuillez choisir votre pays sur la carte ci-dessous.",,,,"Για να ανακαλύψουμε τάσεις μέσα στην Ευρώπη, παρακαλούμε επιλέξτε στον χάρτη παρακάτω την χώρα για την οποία θα συνεισφέρετε δεδομένα.",,,,,
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian,Swedish
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro,sl,,
+Title,Pick your country,,Choisissez votre pays,,,,Διαλέξτε την χώρα σας,Wybierz swój kraj,,,Izberite državo,,
+Question,Which country do you work in?,In welk land bent u werkzaam?,Dans quel pays travaillez-vous ?,¿En qué país trabaja usted?,In quale paese lavora?,Em que país trabalha?,Σε ποια χώρα εργάζεστε;,W jakim kraju pracujesz?,В коя държава работите?,În ce țară lucrați?,V kateri državi delate?,,
+Text,"In order to discover trends within Europe, please pick the country for which you will be contributing data on the map below.",,"Pour découvrir les tendances européennes, veuillez choisir votre pays sur la carte ci-dessous.",,,,"Για να ανακαλύψουμε τάσεις μέσα στην Ευρώπη, παρακαλούμε επιλέξτε στον χάρτη παρακάτω την χώρα για την οποία θα συνεισφέρετε δεδομένα.","Aby odkryć trendy w Europie, wybierz kraj który będziesz reprezentował na mapie poniżej.",,,"Za odkrivanje trendov znotraj Evrope, prosimo kliknite na državo na zemljevidu, za katero boste prispevali podatke.",,

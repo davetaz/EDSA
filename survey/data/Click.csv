@@ -1,5 +1,5 @@
-Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian
-Code,en,de,fr,es,it,pt,gr,pl,bg,ro,,
-Start,Click right to start the survey.,,Cliquer sur la flèche de droite pour commencer le sondage,,,,Πατήστε δεξιά για να ξεκινήσετε την έρευνα.,,,,,
-Right,Click right to continue to the next question.,,Cliquer sur la flèche de droite droite pour continuer ,,,,Πατήστε δεξιά για να συνεχίσετε με την επόμενη ερώτηση.,,,,,
-Add,Add,,Ajouter,,,,Προσθήκη,,,,,
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian,Swedish
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro,sl,,
+Start,Click right to start the survey.,,Cliquer sur la flèche de droite pour commencer le sondage,,,,Πατήστε δεξιά για να ξεκινήσετε την έρευνα.,"Kliknij w prawo, aby zacząć ankietę",,,Kliknite desno za začetek raziskave.,,
+Right,Click right to continue to the next question.,,Cliquer sur la flèche de droite droite pour continuer ,,,,Πατήστε δεξιά για να συνεχίσετε με την επόμενη ερώτηση.,"Kliknij w prawo, aby przejść do następnego pytania",,,Kliknite desno za nadaljevanje z naslednjim vprašanjem.,,
+Add,Add,,Ajouter,,,,Προσθήκη,Dodaj,,,Dodaj,,

@@ -1,8 +1,8 @@
-Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian
-Code,en,de,fr,es,it,pt,gr,pl,bg,ro,,
-Title,Be Involved,,Soyez impliqué,,,,Συμμετάσχετε,,,,,
-Text,Please leave your name and email if you would like to be involved further:,,Veuillez laisser votre nom et votre email si vous souhaitez vous impliquer à l’avenir :,,,,Παρακαλούμε αφήστε το όνομα και το email σας σε περίπτωση που θέλετε να συμμετάσχετε περισσότερο:,,,,,
-Name,Name,,Nom,,,,Όνομα,,,,,
-Email,Email,,Email,,,,Email,,,,,
-Research,I am willing to be contacted about further research.,,Je veux être tenu au courant des futures recherches.,,,,Θέλω να επικοινωνήσετε μαζί μου για περαιτέρω έρευνα.,,,,,
-Results,Please contact me about results of this research.,,Veuillez me contacter les résultats de cette recherche.,,,,Παρακαλώ να επικοινωνήσετε μαζί μου σχετικά με τα αποτελέσματα αυτής της έρευνας.,,,,,
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian,Swedish
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro,sl,,
+Title,Be Involved,,Soyez impliqué,,,,Συμμετάσχετε,Zaangażuj się,,,Sodelujte,,
+Text,Please leave your name and email if you would like to be involved further:,,Veuillez laisser votre nom et votre email si vous souhaitez vous impliquer à l’avenir :,,,,Παρακαλούμε αφήστε το όνομα και το email σας σε περίπτωση που θέλετε να συμμετάσχετε περισσότερο:,"Prosimy podać nazwisko i adres e-mail, jeśli chcesz być zaangazowany dalej w naszym projekcie",,,"Če želite še naprej sodelovati, prosimo pustite svoje ime in elektronsko pošto:",,
+Name,Name,,Nom,,,,Όνομα,Nazwisko,,,Ime,,
+Email,Email,,Email,,,,Email,Email,,,Elektronska pošta,,
+Research,I am willing to be contacted about further research.,,Je veux être tenu au courant des futures recherches.,,,,Θέλω να επικοινωνήσετε μαζί μου για περαιτέρω έρευνα.,Wyrażam zgodę na kontakt ze mną w celu wzięcia udziału w dalszych badaniach,,,Želim sodelovati v nadaljnih raziskavah.,,
+Results,Please contact me about results of this research.,,Veuillez me contacter les résultats de cette recherche.,,,,Παρακαλώ να επικοινωνήσετε μαζί μου σχετικά με τα αποτελέσματα αυτής της έρευνας.,Proszę o informację z wynikami przeprowadzonych badań,,,"Prosim, da me obvestite o rezultatih raziskave.",,

@@ -1,6 +1,6 @@
-Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian
-Code,en,de,fr,es,it,pt,gr,pl,bg,ro,,
-Title,Thanks!,,Merci!,,,,Ευχαριστούμε!,,,,,
-Text,"Thank-you for taking part in this survey, your input is very much appreciated.",,"Merci d'avoir pris part à notre sondage, votre contribution est grandement appréciée.",,,,"Ευχαριστούμε για τη συμμετοχή σας σε αυτή την έρευνα, η συνεισφορά σας είναι πολύτιμη.",,,,,
-Success,Your data has been submitted successfully,,Vos réponses ont étaient correctement reçues.,,,,Οι απαντήσεις σας έχουν σταλεί επιτυχώς.,,,,,
-Fail,There was an error. Please click here to email your results to us.,,"Une erreur s'est produite lors du processus d’envoi de vos réponses, veuillez cliquer ici pour nous envoyer vos réponses par email.",,,,Υπήρξε ένα πρόβλημα. Παρακαλούμε κάντε κλικ εδώ για να μας στείλετε τις απαντήσεις σας με email.,,,,,
+Type,English,Dutch (Nederlands),French (France),Spanish,Italian (Italy),Portuguese (Portugal),Greek (Modern),Polish,Bulgarian,Romanian,Slovenian,Croatian,Swedish
+Code,en,de,fr,es,it,pt,gr,pl,bg,ro,sl,,
+Title,Thanks!,,Merci!,,,,Ευχαριστούμε!,Dziękujemy,,,Hvala!,,
+Text,"Thank-you for taking part in this survey, your input is very much appreciated.",,"Merci d'avoir pris part à notre sondage, votre contribution est grandement appréciée.",,,,"Ευχαριστούμε για τη συμμετοχή σας σε αυτή την έρευνα, η συνεισφορά σας είναι πολύτιμη.",Dziękujemy za udzial w naszej ankiecie.,,,Zahvaljujemo se vam za sodelovanje pri raziskavi. Vaši podatki so zelo cenjeni.,,
+Success,Your data has been submitted successfully,,Vos réponses ont étaient correctement reçues.,,,,Οι απαντήσεις σας έχουν σταλεί επιτυχώς.,Twoje odpowedzi zostały zgłoszone z powodzeniem,,,Vaši podatki so bili uspešno predloženi.,,
+Fail,There was an error. Please click here to email your results to us.,,"Une erreur s'est produite lors du processus d’envoi de vos réponses, veuillez cliquer ici pour nous envoyer vos réponses par email.",,,,Υπήρξε ένα πρόβλημα. Παρακαλούμε κάντε κλικ εδώ για να μας στείλετε τις απαντήσεις σας με email.,"Wystąpił błąd. Proszę kliknąć tutaj, aby wysłaćodpowiedzi do nas.",,,"Prišlo je do napake. Prosimo, kliknite tukaj in posredujte vaše podatke preko elektronske pošte.",,
