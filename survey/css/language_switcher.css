@@ -119,6 +119,7 @@
 		.bg a span { background-position: -160px 0 }
 		.ro a span { background-position: -176px 0 }
 		.sl a span { background-position: -192px 0 }
+		.sv a span { background-position: -208px 0 }
 
 	.dropdown dd ul item a em,
 	.dropdown dt a em {
