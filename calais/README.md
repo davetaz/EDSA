@@ -1,7 +1,7 @@
 Thematic analyser
 =================
 
-You need an API key to open calais in a config file (api_key.php)
+You need an API key to open calais in a config file (api_key.php) You can get one from https://permid.org/onecalaisViewer by registering. 
 
 <?php 
 	
