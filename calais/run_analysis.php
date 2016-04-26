@@ -7,7 +7,7 @@
 	while ($line = fgets($handle)) {
 		$oc = new OpenCalais($api_key);
 		$entities[] = $oc->getEntities($line);
-		sleep(1);
+		sleep(2);
 	}
 	fclose($handle);
 	
@@ -35,7 +35,7 @@ h3 {
 				echo '<h4><a onClick="showHide(' . $topic . ');">' . $topic . ' [' . count($values) . ']</a></h4>';
 				echo '<ul id="'.$topic.'_lines" style="display: block">';
 				for ($i=0;$i<count($values);$i++) {	
-					echo '<li>' . getLine($values[$i]) . '</li>';
+					echo '<li id="' . $values[$i] . '">' . $values[$i] . ': ' . getLine($values[$i]) . '</li>';
 				}
 				echo '</ul>';
 			}
