@@ -125,6 +125,9 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
         .group(involvementGroup)
         .ordinalColors(['#3182bd', '#730100','gray'])
         .label(function (d) {
+	    if (d.key == "Data Scientist") {
+	    	return "Practitioner";
+	    }
             return d.key;
         })
 	.title(function(d) {
