@@ -123,7 +123,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
         .radius(80)
         .dimension(involvement)
         .group(involvementGroup)
-        .ordinalColors(['blue', 'green','red','purple'])
+        .ordinalColors(['#3182bd', '#730100','gray'])
         .label(function (d) {
             return d.key;
         })
@@ -225,7 +225,7 @@ d3.csv('https://odi-edsa-data.herokuapp.com/data.php?type=dash', function (data)
             .height(120)
             .slicesCap(6)
             .innerRadius(20)
-            .colors(d3.scale.ordinal().domain(["no data","0","1","2","3","4"]).range(['transparent','Lavender', 'CadetBlue', 'BlueViolet','DarkBlue','DarkRed']))
+            .colors(d3.scale.ordinal().domain(["no data","0","1","2","3","4"]).range(['transparent','#deeeff', '#cce5ff', '#93cae1','#6baed6','#3182bd']))
             .colorAccessor(function(d) { 
                 return d.key;
             })

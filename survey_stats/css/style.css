@@ -65,8 +65,8 @@ title {
 #require_section {
 	display: inline-block;
 	width: 644px;
-	border-radius: 10px 0px 10px 10px;
-	background-color: lightgrey;
+/*	border-radius: 10px 0px 10px 10px;*/
+	background-color: #e6e6e6;
 }
 .legend {
 	display: inline-block;
@@ -75,11 +75,11 @@ title {
 	padding: 10px;
 }
 #key_essential {
-	border-radius: 0px 10px 10px 0px;
+/*	border-radius: 0px 10px 10px 0px;*/
 	left: -5px;
 	position: relative;
     	height: 140px;
-	background-color: lightgrey;
+	background-color: #e6e6e6;
 }
 .essential {
 	background: #3182bd;
@@ -101,19 +101,19 @@ title {
 	margin-right: 10px;
 }
 .skill0 {
-	background: Lavender;
+	background: #deeeff;
 }
 .skill1 {
-	background: CadetBlue;
+	background: #cce5ff;
 }
 .skill2 {
-	background: BlueViolet;
+	background: #93cae1;
 }
 .skill3 {
-	background: DarkBlue;
+	background: #6baed6;
 }
 .skill4 {
-	background: DarkRed;
+	background: #3182bd;
 }
 .box2 {
 	display: inline-block;
@@ -128,12 +128,12 @@ title {
 	float: right;
 }
 #key_capability {
-	border-radius: 10px 10px 0px 0px;
+/*	border-radius: 10px 10px 0px 0px;*/
     	height: 140px;
 	margin-top: 5px;
 	position: relative;
 	float: right;
-	background-color: lightblue;
+	background-color: #e6e6e6;
 }
 #sidebar {
 	display: inline-block;
@@ -144,8 +144,8 @@ title {
 	display: inline-block;
 	width: 500px;
 	vertical-align: top;
-	border-radius: 10px 0px 10px 10px;
-	background-color: lightblue;
+/*	border-radius: 10px 0px 10px 10px;*/
+	background-color: #e6e6e6;
 }
 #capability title {
 	top: 130px;
@@ -175,7 +175,7 @@ footer div {
         width: 1100px;
         height: 700px;
         background-color: #ccc;
-        border-radius: 10px;
+/*        border-radius: 10px;*/
         border: 1px solid #ddd;
         margin: 1em;
         overflow-x: none;
@@ -191,7 +191,7 @@ footer div {
 	background-color: #730100;
 	padding: 10px;
 	margin-top: -10px;
-	border-radius: 10px;
+/*	border-radius: 10px;*/
 }
 #instruction {
 	font-weight: bold;
