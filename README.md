@@ -18,7 +18,7 @@ gb
 
 Then run it through the translator to add all of the other required languages.
 
-Once done you can add the new line to the bottom of an existing file, the lnaguages are sorted alphabetically, so they will line up.
+Once done you can add the new line to the bottom of an existing file, the languages are sorted alphabetically, so they will line up.
 
 
 
